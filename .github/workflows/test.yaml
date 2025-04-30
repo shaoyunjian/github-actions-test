@@ -1,0 +1,20 @@
+name: Confirm Yes to Proceed
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type "yes" to proceed'
+        required: true
+
+jobs:
+  check-confirmation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if input is "yes"
+        run: |
+          if [[ "${{ github.event.inputs.confirm }}" != "yes" ]]; then
+            echo "❌ You did not confirm. Exiting..."
+            exit 1
+          fi
+          echo "✅ Confirmation accepted. Proceeding..."
