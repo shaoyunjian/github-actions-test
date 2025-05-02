@@ -28,19 +28,10 @@ jobs:
       - name: Terraform Plan
         id: plan
         run: |
-          terraform plan -no-color | grep -A20 'Terraform will perform the following actions' > plan.txt > plan.txt
+          terraform plan -no-color | grep -A20 'Terraform will perform the following actions' > plan.txt
           echo "PLAN_OUTPUT<<EOF" >> $GITHUB_ENV
           cat plan.txt >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
-
-      # 暫時棄用
-      # - name: Comment on PR
-      #   uses: marocchino/sticky-pull-request-comment@v2
-      #   with:
-      #     message: |
-      #       ## 📌 Terraform Plan Result
-      #       ```
-      #       ${{ env.PLAN_OUTPUT }}
 
       # 選手一
       - name: Comment on PR
@@ -55,13 +46,21 @@ jobs:
             ```
 
       # 選手二
-      - run: terraform plan -out terraform.plan
-      - run: terraform show -no-color terraform.plan > terraform.text
-      - run: terraform show -json terraform.plan > terraform.json
+      - name: Terraform Plan Output
+        run: |
+          terraform plan -out terraform.plan
+          terraform show -no-color terraform.plan > terraform.text
+          terraform show -json terraform.plan > terraform.json
 
+      # - uses: ahmadnassri/action-terraform-report@v4
+      #   with:
+      #     # tell the action the plan outputs
+      #     terraform-text: ${{ github.workspace }}/terraform.text
+      #     terraform-json: ${{ github.workspace }}/terraform.json
+      #     show-diff: true
       - uses: ahmadnassri/action-terraform-report@v4
         with:
           # tell the action the plan outputs
-          terraform-text: ${{ github.workspace }}/terraform.text
-          terraform-json: ${{ github.workspace }}/terraform.json
+          terraform-text: test.text
+          terraform-json: test.json
           show-diff: true

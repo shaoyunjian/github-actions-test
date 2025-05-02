@@ -1,0 +1,1759 @@
+15:38:26.276 STDOUT [aws] terraform: module.efs_csi_driver_irsa.data.aws_partition.current: Reading...
+15:38:26.277 STDOUT [aws] terraform: data.aws_iam_group.aws_iam_group: Reading...
+15:38:26.277 STDOUT [aws] terraform: data.aws_secretsmanager_secret.cloudflare_creds: Reading...
+15:38:26.277 STDOUT [aws] terraform: data.aws_availability_zones.available: Reading...
+15:38:26.277 STDOUT [aws] terraform: module.efs_csi_driver_irsa.data.aws_iam_policy_document.efs_csi[0]: Reading...
+15:38:26.277 STDOUT [aws] terraform: module.cluster_secretstore_role.data.aws_caller_identity.current: Reading...
+15:38:26.277 STDOUT [aws] terraform: data.aws_caller_identity.current: Reading...
+15:38:26.278 STDOUT [aws] terraform: module.efs_csi_driver_irsa.data.aws_region.current: Reading...
+15:38:26.278 STDOUT [aws] terraform: module.s3_csi_driver_irsa.data.aws_partition.current: Reading...
+15:38:26.278 STDOUT [aws] terraform: aws_iam_policy.cloudfront_access_policy: Refreshing state... [id=arn:aws:iam::916739622174:policy/CloudFrontAccessPolicy]
+15:38:26.278 STDOUT [aws] terraform: module.efs_csi_driver_irsa.data.aws_region.current: Read complete after 0s [id=us-east-2]
+15:38:26.278 STDOUT [aws] terraform: module.s3_csi_driver_irsa.data.aws_partition.current: Read complete after 0s [id=aws]
+15:38:26.278 STDOUT [aws] terraform: module.efs_csi_driver_irsa.data.aws_partition.current: Read complete after 0s [id=aws]
+15:38:26.280 STDOUT [aws] terraform: module.s3_csi_driver_irsa.data.aws_region.current: Reading...
+15:38:26.280 STDOUT [aws] terraform: module.cluster_secretstore_role.data.aws_region.current: Reading...
+15:38:26.280 STDOUT [aws] terraform: module.efs_csi_driver_irsa.data.aws_iam_policy_document.efs_csi[0]: Read complete after 0s [id=3064053908]
+15:38:26.281 STDOUT [aws] terraform: module.s3_csi_driver_irsa.data.aws_region.current: Read complete after 0s [id=us-east-2]
+15:38:26.281 STDOUT [aws] terraform: module.cluster_secretstore_role.data.aws_region.current: Read complete after 0s [id=us-east-2]
+15:38:26.281 STDOUT [aws] terraform: aws_efs_file_system.shared_efs: Refreshing state... [id=fs-00f5a39dfcae5d186]
+15:38:26.282 STDOUT [aws] terraform: module.s3_csi_driver_irsa.data.aws_caller_identity.current: Reading...
+15:38:26.282 STDOUT [aws] terraform: module.ebs_csi_driver_irsa.data.aws_caller_identity.current: Reading...
+15:38:26.282 STDOUT [aws] terraform: module.efs_csi_driver_irsa.data.aws_caller_identity.current: Reading...
+15:38:26.493 STDOUT [aws] terraform: module.cluster_secretstore_role.data.aws_caller_identity.current: Read complete after 0s [id=916739622174]
+15:38:26.496 STDOUT [aws] terraform: aws_iam_policy.s3_access_policy: Refreshing state... [id=arn:aws:iam::916739622174:policy/S3AccessPolicy]
+15:38:26.706 STDOUT [aws] terraform: data.aws_caller_identity.current: Read complete after 1s [id=916739622174]
+15:38:26.710 STDOUT [aws] terraform: aws_acm_certificate.efmt_app_cert: Refreshing state... [id=arn:aws:acm:us-east-2:916739622174:certificate/6622aa20-dc19-4574-b8b2-2c53c5b1171b]
+15:38:26.922 STDOUT [aws] terraform: module.s3_csi_driver_irsa.data.aws_caller_identity.current: Read complete after 1s [id=916739622174]
+15:38:26.926 STDOUT [aws] terraform: module.ebs_csi_driver_irsa.data.aws_region.current: Reading...
+15:38:26.927 STDOUT [aws] terraform: module.ebs_csi_driver_irsa.data.aws_region.current: Read complete after 0s [id=us-east-2]
+15:38:26.929 STDOUT [aws] terraform: aws_iam_policy.ecr_access_policy: Refreshing state... [id=arn:aws:iam::916739622174:policy/ECRAccessPolicy]
+15:38:27.140 STDOUT [aws] terraform: module.efs_csi_driver_irsa.data.aws_caller_identity.current: Read complete after 1s [id=916739622174]
+15:38:27.141 STDOUT [aws] terraform: module.ebs_csi_driver_irsa.data.aws_caller_identity.current: Read complete after 1s [id=916739622174]
+15:38:27.143 STDOUT [aws] terraform: module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-06d000b2fa8862c79]
+15:38:27.143 STDOUT [aws] terraform: aws_acm_certificate.efavormart_com_cert: Refreshing state... [id=arn:aws:acm:us-east-2:916739622174:certificate/aa1bce13-b912-49e4-bc6c-0e8d42d06c7b]
+15:38:27.230 STDOUT [aws] terraform: data.aws_iam_group.aws_iam_group: Read complete after 1s [id=AGPA5K4PQQUPIOOPCODV3]
+15:38:27.232 STDOUT [aws] terraform: module.ebs_csi_driver_irsa.data.aws_partition.current: Reading...
+15:38:27.233 STDOUT [aws] terraform: module.ebs_csi_driver_irsa.data.aws_partition.current: Read complete after 0s [id=aws]
+15:38:27.235 STDOUT [aws] terraform: module.cluster_secretstore_role.data.aws_partition.current: Reading...
+15:38:27.236 STDOUT [aws] terraform: module.cluster_secretstore_role.data.aws_partition.current: Read complete after 0s [id=aws]
+15:38:27.239 STDOUT [aws] terraform: aws_kms_key.secrets: Refreshing state... [id=de84ad41-00bb-4c5f-b46b-9959c737a08a]
+15:38:27.246 STDOUT [aws] terraform: data.aws_availability_zones.available: Read complete after 1s [id=us-east-2]
+15:38:27.251 STDOUT [aws] terraform: module.efs_csi_driver_irsa.aws_iam_policy.efs_csi[0]: Refreshing state... [id=arn:aws:iam::916739622174:policy/AmazonEKS_EFS_CSI_Policy-20241216090350233700000001]
+15:38:27.329 STDOUT [aws] terraform: data.aws_secretsmanager_secret.cloudflare_creds: Read complete after 1s [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:yaya-k8s/secret/cloudflare-creds-wBILJp]
+15:38:27.335 STDOUT [aws] terraform: module.s3_csi_driver_irsa.data.aws_iam_policy_document.mountpoint_s3_csi[0]: Reading...
+15:38:27.336 STDOUT [aws] terraform: module.s3_csi_driver_irsa.data.aws_iam_policy_document.mountpoint_s3_csi[0]: Read complete after 0s [id=1178420011]
+15:38:27.337 STDOUT [aws] terraform: data.aws_secretsmanager_secret_version.cloudflare_creds: Reading...
+15:38:27.480 STDOUT [aws] terraform: module.ebs_csi_driver_irsa.data.aws_iam_policy_document.ebs_csi[0]: Reading...
+15:38:27.481 STDOUT [aws] terraform: module.s3_csi_driver_irsa.aws_iam_policy.mountpoint_s3_csi[0]: Refreshing state... [id=arn:aws:iam::916739622174:policy/AmazonEKS_Mountpoint_S3_CSI-20241224084104489400000001]
+15:38:27.485 STDOUT [aws] terraform: module.ebs_csi_driver_irsa.data.aws_iam_policy_document.ebs_csi[0]: Read complete after 0s [id=435063099]
+15:38:27.488 STDOUT [aws] terraform: module.ebs_csi_driver_irsa.aws_iam_policy.ebs_csi[0]: Refreshing state... [id=arn:aws:iam::916739622174:policy/AmazonEKS_EBS_CSI_Policy-20241107073409511300000001]
+15:38:27.578 STDOUT [aws] terraform: data.aws_secretsmanager_secret_version.cloudflare_creds: Read complete after 1s [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:yaya-k8s/secret/cloudflare-creds-wBILJp|AWSCURRENT]
+15:38:27.659 STDOUT [aws] terraform: data.cloudflare_zone.efavormart_com: Reading...
+15:38:27.723 STDOUT [aws] terraform: data.cloudflare_zone.efmt_app: Reading...
+15:38:28.157 STDOUT [aws] terraform: data.cloudflare_zone.efavormart_com: Read complete after 0s [id=faa4cfe78d969e96469c893c6ab7a088]
+15:38:28.167 STDOUT [aws] terraform: cloudflare_record.efavormart_com_cert_validation: Refreshing state... [id=f15a1961d2929235974692be53e79112]
+15:38:28.212 STDOUT [aws] terraform: data.cloudflare_zone.efmt_app: Read complete after 0s [id=161b707d45122e4cb1372d606795f5f7]
+15:38:28.214 STDOUT [aws] terraform: cloudflare_record.efmt_app_cert_validation: Refreshing state... [id=d9f7645d9a6221e6297b3385622f42ab]
+15:38:28.682 STDOUT [aws] terraform: aws_secretsmanager_secret.secret: Refreshing state... [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:demo-secret-bYGsGJ]
+15:38:29.235 STDOUT [aws] terraform: aws_secretsmanager_secret_version.secret: Refreshing state... [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:demo-secret-bYGsGJ|terraform-20241107073417905200000003]
+15:38:29.235 STDOUT [aws] terraform: aws_iam_policy.cluster_secretstore: Refreshing state... [id=arn:aws:iam::916739622174:policy/external-secrets-sa20241107073417905900000004]
+15:38:29.362 STDOUT [aws] terraform: module.vpc.aws_default_route_table.default[0]: Refreshing state... [id=rtb-0f5ef13f2cc5c44c1]
+15:38:29.362 STDOUT [aws] terraform: module.vpc.aws_route_table.private[0]: Refreshing state... [id=rtb-00445172954cbe031]
+15:38:29.363 STDOUT [aws] terraform: aws_security_group.redis_sg: Refreshing state... [id=sg-0d3c67f7f232addea]
+15:38:29.364 STDOUT [aws] terraform: module.vpc.aws_default_network_acl.this[0]: Refreshing state... [id=acl-02c4806e23a13c70b]
+15:38:29.364 STDOUT [aws] terraform: aws_security_group.allow_nfs: Refreshing state... [id=sg-085dee34c42cdcf7c]
+15:38:29.366 STDOUT [aws] terraform: module.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-0d5be4ecfd0bb7a22]
+15:38:29.367 STDOUT [aws] terraform: module.vpc.aws_default_security_group.this[0]: Refreshing state... [id=sg-0de9301713abbb689]
+15:38:29.370 STDOUT [aws] terraform: module.vpc.aws_subnet.private[2]: Refreshing state... [id=subnet-099b56d2c59a1d83e]
+15:38:29.572 STDOUT [aws] terraform: module.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-0da5b18d60f50617c]
+15:38:29.753 STDOUT [aws] terraform: module.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-0e4058634cac71eac]
+15:38:29.763 STDOUT [aws] terraform: module.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-07a7344bf7fd62ea9]
+15:38:29.910 STDOUT [aws] terraform: module.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-0bcc0a7bb076cefc6]
+15:38:30.091 STDOUT [aws] terraform: module.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-094bc51650271007f]
+15:38:30.093 STDOUT [aws] terraform: module.vpc.aws_subnet.public[2]: Refreshing state... [id=subnet-01887df27d6f98f8f]
+15:38:30.798 STDOUT [aws] terraform: module.vpc.aws_eip.nat[0]: Refreshing state... [id=eipalloc-0a6bc932086d52b35]
+15:38:30.798 STDOUT [aws] terraform: module.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-0d5be4ecfd0bb7a221080289494]
+15:38:30.802 STDOUT [aws] terraform: aws_elasticache_subnet_group.redis: Refreshing state... [id=cache-subnet]
+15:38:30.803 STDOUT [aws] terraform: module.vpc.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-08bc90de621a9cfde]
+15:38:30.803 STDOUT [aws] terraform: module.vpc.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-0cde32d435e6895ef]
+15:38:30.803 STDOUT [aws] terraform: module.vpc.aws_route_table_association.public[2]: Refreshing state... [id=rtbassoc-0fc66047519be009e]
+15:38:30.803 STDOUT [aws] terraform: module.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-0878a3658a993db1f]
+15:38:30.803 STDOUT [aws] terraform: module.vpc.aws_route_table_association.private[2]: Refreshing state... [id=rtbassoc-07c95727548cd80a5]
+15:38:30.803 STDOUT [aws] terraform: module.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-079e83bcc2bc165cd]
+15:38:30.804 STDOUT [aws] terraform: data.aws_subnets.deploy_az_a_subnets: Reading...
+15:38:31.137 STDOUT [aws] terraform: data.aws_subnets.deploy_az_a_subnets: Read complete after 0s [id=us-east-2]
+15:38:31.141 STDOUT [aws] terraform: aws_efs_mount_target.shared_efs[0]: Refreshing state... [id=fsmt-0a243ece48acd9382]
+15:38:31.142 STDOUT [aws] terraform: aws_efs_mount_target.shared_efs[2]: Refreshing state... [id=fsmt-06cad7d23e8077288]
+15:38:31.142 STDOUT [aws] terraform: aws_efs_mount_target.shared_efs[1]: Refreshing state... [id=fsmt-0191c2ea75a434d93]
+15:38:31.479 STDOUT [aws] terraform: module.vpc.aws_nat_gateway.this[0]: Refreshing state... [id=nat-0304655a739c4b87e]
+15:38:31.826 STDOUT [aws] terraform: module.vpc.aws_route.private_nat_gateway[0]: Refreshing state... [id=r-rtb-00445172954cbe0311080289494]
+15:38:32.166 STDOUT [aws] terraform: module.eks.data.aws_caller_identity.current[0]: Reading...
+15:38:32.170 STDOUT [aws] terraform: module.eks.aws_cloudwatch_log_group.this[0]: Refreshing state... [id=/aws/eks/yaya-cluster/cluster]
+15:38:32.187 STDOUT [aws] terraform: module.eks.data.aws_partition.current[0]: Reading...
+15:38:32.190 STDOUT [aws] terraform: module.eks.data.aws_partition.current[0]: Read complete after 0s [id=aws]
+15:38:32.191 STDOUT [aws] terraform: module.eks.aws_security_group.cluster[0]: Refreshing state... [id=sg-0632d1da37902e7a8]
+15:38:32.192 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["high-load"].data.aws_caller_identity.current: Reading...
+15:38:32.192 STDOUT [aws] terraform: module.eks.data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+15:38:32.192 STDOUT [aws] terraform: module.eks.module.kms.data.aws_caller_identity.current[0]: Reading...
+15:38:32.193 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["development"].data.aws_caller_identity.current: Reading...
+15:38:32.193 STDOUT [aws] terraform: module.eks.module.kms.data.aws_partition.current[0]: Reading...
+15:38:32.194 STDOUT [aws] terraform: module.eks.module.kms.data.aws_partition.current[0]: Read complete after 0s [id=aws]
+15:38:32.194 STDOUT [aws] terraform: module.eks.data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2830595799]
+15:38:32.195 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["node_repair_config"].data.aws_caller_identity.current: Reading...
+15:38:32.195 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["initial"].data.aws_caller_identity.current: Reading...
+15:38:32.197 STDOUT [aws] terraform: module.eks.aws_security_group.node[0]: Refreshing state... [id=sg-091dbae7fafe48479]
+15:38:32.408 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["node_repair_config"].data.aws_caller_identity.current: Read complete after 0s [id=916739622174]
+15:38:32.408 STDOUT [aws] terraform: module.eks.data.aws_caller_identity.current[0]: Read complete after 0s [id=916739622174]
+15:38:32.408 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["high-load"].data.aws_caller_identity.current: Read complete after 0s [id=916739622174]
+15:38:32.409 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["staging"].data.aws_caller_identity.current: Reading...
+15:38:32.409 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["payload"].data.aws_caller_identity.current: Reading...
+15:38:32.409 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["matomo"].data.aws_caller_identity.current: Reading...
+15:38:32.414 STDOUT [aws] terraform: module.eks.module.kms.data.aws_caller_identity.current[0]: Read complete after 0s [id=916739622174]
+15:38:32.415 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["development"].data.aws_caller_identity.current: Read complete after 0s [id=916739622174]
+15:38:32.416 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["node_repair_config"].data.aws_partition.current: Reading...
+15:38:32.416 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["high-load"].data.aws_partition.current: Reading...
+15:38:32.417 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["node_repair_config"].data.aws_partition.current: Read complete after 0s [id=aws]
+15:38:32.417 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["high-load"].data.aws_partition.current: Read complete after 0s [id=aws]
+15:38:32.417 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["initial"].data.aws_partition.current: Reading...
+15:38:32.418 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["matomo"].data.aws_partition.current: Reading...
+15:38:32.418 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["initial"].data.aws_partition.current: Read complete after 0s [id=aws]
+15:38:32.418 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["matomo"].data.aws_partition.current: Read complete after 0s [id=aws]
+15:38:32.419 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["payload"].data.aws_partition.current: Reading...
+15:38:32.419 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["staging"].data.aws_partition.current: Reading...
+15:38:32.419 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["payload"].data.aws_partition.current: Read complete after 0s [id=aws]
+15:38:32.420 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["staging"].data.aws_partition.current: Read complete after 0s [id=aws]
+15:38:32.420 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["development"].data.aws_partition.current: Reading...
+15:38:32.421 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["development"].data.aws_partition.current: Read complete after 0s [id=aws]
+15:38:32.425 STDOUT [aws] terraform: module.eks.data.aws_iam_session_context.current[0]: Reading...
+15:38:32.425 STDOUT [aws] terraform: module.eks.data.aws_iam_session_context.current[0]: Read complete after 0s [id=arn:aws:iam::916739622174:user/shaoyun@ya-ya.tw]
+15:38:32.425 STDOUT [aws] terraform: module.eks.aws_iam_role.this[0]: Refreshing state... [id=yaya-cluster-cluster-2024110707360614740000000a]
+15:38:32.429 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["node_repair_config"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+15:38:32.429 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["node_repair_config"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296]
+15:38:32.431 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["development"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+15:38:32.431 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["development"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296]
+15:38:32.432 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["high-load"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+15:38:32.433 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["high-load"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296]
+15:38:32.434 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["staging"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+15:38:32.435 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["staging"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296]
+15:38:32.436 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["payload"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+15:38:32.436 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["payload"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296]
+15:38:32.437 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["initial"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+15:38:32.438 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["initial"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296]
+15:38:32.439 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["matomo"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+15:38:32.439 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["matomo"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296]
+15:38:32.443 STDOUT [aws] terraform: module.eks.data.aws_iam_policy_document.custom[0]: Reading...
+15:38:32.445 STDOUT [aws] terraform: module.eks.data.aws_iam_policy_document.custom[0]: Read complete after 0s [id=513122117]
+15:38:32.448 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["high-load"].aws_iam_role.this[0]: Refreshing state... [id=high-load-eks-node-group-20241212063241816700000001]
+15:38:32.555 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["node_repair_config"].aws_iam_role.this[0]: Refreshing state... [id=node_repair_config-eks-node-group-20250328074112532200000001]
+15:38:32.577 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["development"].aws_iam_role.this[0]: Refreshing state... [id=development-eks-node-group-20250206050939465700000001]
+15:38:32.683 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["staging"].data.aws_caller_identity.current: Read complete after 1s [id=916739622174]
+15:38:32.683 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["initial"].data.aws_caller_identity.current: Read complete after 1s [id=916739622174]
+15:38:32.683 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["payload"].data.aws_caller_identity.current: Read complete after 1s [id=916739622174]
+15:38:32.683 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["matomo"].data.aws_caller_identity.current: Read complete after 1s [id=916739622174]
+15:38:32.685 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["staging"].aws_iam_role.this[0]: Refreshing state... [id=staging-eks-node-group-20241209062005038800000001]
+15:38:32.685 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["initial"].aws_iam_role.this[0]: Refreshing state... [id=initial-eks-node-group-2024110707360614780000000b]
+15:38:32.686 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["payload"].aws_iam_role.this[0]: Refreshing state... [id=payload-eks-node-group-20250306042933927700000001]
+15:38:32.686 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["matomo"].aws_iam_role.this[0]: Refreshing state... [id=matomo-eks-node-group-20241127040806141000000001]
+15:38:32.689 STDOUT [aws] terraform: module.eks.aws_iam_policy.custom[0]: Refreshing state... [id=arn:aws:iam::916739622174:policy/yaya-cluster-cluster-20250227045304695600000001]
+15:38:33.403 STDOUT [aws] terraform: aws_elasticache_cluster.redis: Refreshing state... [id=cluster-redis]
+15:38:33.403 STDOUT [aws] terraform: module.eks.aws_iam_role_policy_attachment.this["AmazonEKSVPCResourceController"]: Refreshing state... [id=yaya-cluster-cluster-2024110707360614740000000a-2024110707360812760000000c]
+15:38:33.403 STDOUT [aws] terraform: module.eks.aws_iam_role_policy_attachment.this["AmazonEKSClusterPolicy"]: Refreshing state... [id=yaya-cluster-cluster-2024110707360614740000000a-2024110707360817580000000d]
+15:38:33.756 STDOUT [aws] terraform: module.eks.aws_iam_role_policy_attachment.custom[0]: Refreshing state... [id=yaya-cluster-cluster-2024110707360614740000000a-20250227045306519000000002]
+15:38:33.758 STDOUT [aws] terraform: module.eks.aws_security_group_rule.node["egress_all"]: Refreshing state... [id=sgrule-3354633611]
+15:38:33.758 STDOUT [aws] terraform: module.eks.aws_security_group_rule.node["ingress_cluster_443"]: Refreshing state... [id=sgrule-3919493266]
+15:38:33.758 STDOUT [aws] terraform: module.eks.aws_security_group_rule.node["ingress_self_coredns_udp"]: Refreshing state... [id=sgrule-3926003085]
+15:38:33.759 STDOUT [aws] terraform: module.eks.aws_security_group_rule.node["ingress_nodes_ephemeral"]: Refreshing state... [id=sgrule-375553842]
+15:38:33.759 STDOUT [aws] terraform: module.eks.aws_security_group_rule.node["ingress_cluster_8443_webhook"]: Refreshing state... [id=sgrule-1871291179]
+15:38:33.759 STDOUT [aws] terraform: module.eks.aws_security_group_rule.node["ingress_cluster_kubelet"]: Refreshing state... [id=sgrule-3870170885]
+15:38:33.760 STDOUT [aws] terraform: module.eks.aws_security_group_rule.node["ingress_cluster_6443_webhook"]: Refreshing state... [id=sgrule-2094374666]
+15:38:33.790 STDOUT [aws] terraform: module.eks.aws_security_group_rule.node["ingress_cluster_9443_webhook"]: Refreshing state... [id=sgrule-187207904]
+15:38:34.109 STDOUT [aws] terraform: module.eks.aws_security_group_rule.node["ingress_cluster_4443_webhook"]: Refreshing state... [id=sgrule-3046635676]
+15:38:34.111 STDOUT [aws] terraform: module.eks.aws_security_group_rule.node["ingress_self_coredns_tcp"]: Refreshing state... [id=sgrule-1314762338]
+15:38:34.467 STDOUT [aws] terraform: module.eks.aws_security_group_rule.cluster["ingress_nodes_443"]: Refreshing state... [id=sgrule-12334794]
+15:38:34.469 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["initial"].aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=initial-eks-node-group-2024110707360614780000000b-2024110707360848390000000f]
+15:38:34.470 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["staging"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=staging-eks-node-group-20241209062005038800000001-20241209062007516000000004]
+15:38:34.470 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["development"].aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=development-eks-node-group-20250206050939465700000001-20250206050941581900000003]
+15:38:34.470 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["staging"].aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=staging-eks-node-group-20241209062005038800000001-20241209062007249900000003]
+15:38:34.470 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["development"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=development-eks-node-group-20250206050939465700000001-20250206050941323400000002]
+15:38:34.471 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["initial"].aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"]: Refreshing state... [id=initial-eks-node-group-2024110707360614780000000b-2024110707360838190000000e]
+15:38:34.641 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["matomo"].aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"]: Refreshing state... [id=matomo-eks-node-group-20241127040806141000000001-20241127040808044600000002]
+15:38:34.815 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["payload"].aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"]: Refreshing state... [id=payload-eks-node-group-20250306042933927700000001-20250306042936133700000003]
+15:38:34.815 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["high-load"].aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"]: Refreshing state... [id=high-load-eks-node-group-20241212063241816700000001-20241212063244372400000004]
+15:38:34.815 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["node_repair_config"].aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=node_repair_config-eks-node-group-20250328074112532200000001-20250328074114542700000002]
+15:38:34.817 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["high-load"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=high-load-eks-node-group-20241212063241816700000001-20241212063244104000000003]
+15:38:34.817 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["payload"].aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=payload-eks-node-group-20250306042933927700000001-20250306042936386100000004]
+15:38:34.817 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["initial"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=initial-eks-node-group-2024110707360614780000000b-20241107073608648800000010]
+15:38:34.820 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["matomo"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=matomo-eks-node-group-20241127040806141000000001-20241127040808638700000004]
+15:38:34.988 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["staging"].aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"]: Refreshing state... [id=staging-eks-node-group-20241209062005038800000001-20241209062006983400000002]
+15:38:35.026 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["matomo"].aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=matomo-eks-node-group-20241127040806141000000001-20241127040808342400000003]
+15:38:35.177 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["node_repair_config"].aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"]: Refreshing state... [id=node_repair_config-eks-node-group-20250328074112532200000001-20250328074115153500000004]
+15:38:35.178 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["development"].aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"]: Refreshing state... [id=development-eks-node-group-20250206050939465700000001-20250206050941881100000004]
+15:38:35.178 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["payload"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=payload-eks-node-group-20250306042933927700000001-20250306042935867600000002]
+15:38:35.180 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["high-load"].aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=high-load-eks-node-group-20241212063241816700000001-20241212063243832900000002]
+15:38:35.180 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["node_repair_config"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=node_repair_config-eks-node-group-20250328074112532200000001-20250328074114848700000003]
+15:38:35.183 STDOUT [aws] terraform: module.eks.module.kms.data.aws_iam_policy_document.this[0]: Reading...
+15:38:35.186 STDOUT [aws] terraform: module.eks.module.kms.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=2689591022]
+15:38:35.189 STDOUT [aws] terraform: module.eks.module.kms.aws_kms_key.this[0]: Refreshing state... [id=e234658e-5ae3-431a-83d3-c3ebb453158c]
+15:38:36.528 STDOUT [aws] terraform: module.eks.module.kms.aws_kms_alias.this["cluster"]: Refreshing state... [id=alias/eks/yaya-cluster]
+15:38:36.530 STDOUT [aws] terraform: module.eks.aws_iam_policy.cluster_encryption[0]: Refreshing state... [id=arn:aws:iam::916739622174:policy/yaya-cluster-cluster-ClusterEncryption20241107073633588100000011]
+15:38:36.532 STDOUT [aws] terraform: module.eks.aws_eks_cluster.this[0]: Refreshing state... [id=yaya-cluster]
+15:38:37.040 STDOUT [aws] terraform: module.eks.aws_iam_role_policy_attachment.cluster_encryption[0]: Refreshing state... [id=yaya-cluster-cluster-2024110707360614740000000a-20241107073634578800000012]
+15:38:37.371 STDOUT [aws] terraform: module.eks.aws_ec2_tag.cluster_primary_security_group["team"]: Refreshing state... [id=sg-020abcea79a6cbe7c,team]
+15:38:37.372 STDOUT [aws] terraform: module.eks.data.tls_certificate.this[0]: Reading...
+15:38:37.692 STDOUT [aws] terraform: module.eks.time_sleep.this[0]: Refreshing state... [id=2024-11-07T07:44:26Z]
+15:38:37.693 STDOUT [aws] terraform: aws_eks_access_policy_association.policy_association["AIDA5K4PQQUPMIWWVLS62"]: Refreshing state... [id=yaya-cluster#arn:aws:iam::916739622174:user/yanxianz@ya-ya.tw#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy]
+15:38:37.693 STDOUT [aws] terraform: aws_eks_access_policy_association.policy_association["AIDA5K4PQQUPA3VBJM2FE"]: Refreshing state... [id=yaya-cluster#arn:aws:iam::916739622174:user/jay@ya-ya.tw#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy]
+15:38:37.693 STDOUT [aws] terraform: aws_eks_access_policy_association.policy_association["AIDA5K4PQQUPFYEHDUIJA"]: Refreshing state... [id=yaya-cluster#arn:aws:iam::916739622174:user/devops@ya-ya.tw#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy]
+15:38:37.693 STDOUT [aws] terraform: aws_eks_access_policy_association.policy_association["AIDA5K4PQQUPAVRAR7XEC"]: Refreshing state... [id=yaya-cluster#arn:aws:iam::916739622174:user/shaoyun@ya-ya.tw#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy]
+15:38:37.693 STDOUT [aws] terraform: aws_eks_access_policy_association.policy_association["AIDA5K4PQQUPFHJWCPMKS"]: Refreshing state... [id=yaya-cluster#arn:aws:iam::916739622174:user/jackson@ya-ya.tw#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy]
+15:38:37.699 STDOUT [aws] terraform: aws_eks_access_policy_association.policy_association["AIDA5K4PQQUPBVREAEET4"]: Refreshing state... [id=yaya-cluster#arn:aws:iam::916739622174:user/william@ya-ya.tw#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy]
+15:38:37.700 STDOUT [aws] terraform: aws_eks_access_entry.developer["AIDA5K4PQQUPA3VBJM2FE"]: Refreshing state... [id=yaya-cluster:arn:aws:iam::916739622174:user/jay@ya-ya.tw]
+15:38:37.701 STDOUT [aws] terraform: aws_eks_access_entry.developer["AIDA5K4PQQUPAVRAR7XEC"]: Refreshing state... [id=yaya-cluster:arn:aws:iam::916739622174:user/shaoyun@ya-ya.tw]
+15:38:37.739 STDOUT [aws] terraform: aws_eks_access_entry.developer["AIDA5K4PQQUPFHJWCPMKS"]: Refreshing state... [id=yaya-cluster:arn:aws:iam::916739622174:user/jackson@ya-ya.tw]
+15:38:38.124 STDOUT [aws] terraform: module.eks.data.tls_certificate.this[0]: Read complete after 1s [id=0a759b1370f2328d0bd5dd3ac81215f4c3398ef8]
+15:38:38.127 STDOUT [aws] terraform: aws_eks_access_entry.developer["AIDA5K4PQQUPFYEHDUIJA"]: Refreshing state... [id=yaya-cluster:arn:aws:iam::916739622174:user/devops@ya-ya.tw]
+15:38:38.152 STDOUT [aws] terraform: aws_eks_access_entry.developer["AIDA5K4PQQUPBVREAEET4"]: Refreshing state... [id=yaya-cluster:arn:aws:iam::916739622174:user/william@ya-ya.tw]
+15:38:38.152 STDOUT [aws] terraform: aws_eks_access_entry.developer["AIDA5K4PQQUPMIWWVLS62"]: Refreshing state... [id=yaya-cluster:arn:aws:iam::916739622174:user/yanxianz@ya-ya.tw]
+15:38:38.172 STDOUT [aws] terraform: module.eks.aws_iam_openid_connect_provider.oidc_provider[0]: Refreshing state... [id=arn:aws:iam::916739622174:oidc-provider/oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858]
+15:38:38.172 STDOUT [aws] terraform: kubectl_manifest.efs_storage_class: Refreshing state... [id=/apis/storage.k8s.io/v1/storageclasses/efs-sc]
+15:38:38.176 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["node_repair_config"].module.user_data.null_resource.validate_cluster_service_cidr: Refreshing state... [id=5880741831882933338]
+15:38:38.180 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["development"].module.user_data.null_resource.validate_cluster_service_cidr: Refreshing state... [id=7977801064761416344]
+15:38:38.183 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["payload"].module.user_data.null_resource.validate_cluster_service_cidr: Refreshing state... [id=2008355880694589216]
+15:38:38.186 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["staging"].module.user_data.null_resource.validate_cluster_service_cidr: Refreshing state... [id=5093780378627293717]
+15:38:38.190 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["high-load"].module.user_data.null_resource.validate_cluster_service_cidr: Refreshing state... [id=8359835087918137930]
+15:38:38.192 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["initial"].module.user_data.null_resource.validate_cluster_service_cidr: Refreshing state... [id=4928705715290618155]
+15:38:38.193 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["matomo"].module.user_data.null_resource.validate_cluster_service_cidr: Refreshing state... [id=4772871903921100691]
+15:38:38.214 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["high-load"].aws_launch_template.this[0]: Refreshing state... [id=lt-0280930bfe2c9ff1b]
+15:38:38.214 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["initial"].aws_launch_template.this[0]: Refreshing state... [id=lt-0a4b21e39dc49d29c]
+15:38:38.358 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["node_repair_config"].aws_launch_template.this[0]: Refreshing state... [id=lt-07ca8a09cebcb16fe]
+15:38:38.358 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["matomo"].aws_launch_template.this[0]: Refreshing state... [id=lt-01f78b78c77a282ab]
+15:38:38.426 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["payload"].aws_launch_template.this[0]: Refreshing state... [id=lt-07a8deff5dc747107]
+15:38:38.622 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["staging"].aws_launch_template.this[0]: Refreshing state... [id=lt-0becd4e645d01ca27]
+15:38:38.625 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["development"].aws_launch_template.this[0]: Refreshing state... [id=lt-01c182c6e825fa9dc]
+15:38:38.644 STDOUT [aws] terraform: module.efs_csi_driver_irsa.data.aws_iam_policy_document.this[0]: Reading...
+15:38:38.645 STDOUT [aws] terraform: module.efs_csi_driver_irsa.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=419370042]
+15:38:38.647 STDOUT [aws] terraform: module.ebs_csi_driver_irsa.data.aws_iam_policy_document.this[0]: Reading...
+15:38:38.647 STDOUT [aws] terraform: module.ebs_csi_driver_irsa.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=2263275252]
+15:38:38.649 STDOUT [aws] terraform: module.s3_csi_driver_irsa.data.aws_iam_policy_document.this[0]: Reading...
+15:38:38.649 STDOUT [aws] terraform: module.s3_csi_driver_irsa.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=2208512578]
+15:38:38.651 STDOUT [aws] terraform: module.cluster_secretstore_role.data.aws_iam_policy_document.this[0]: Reading...
+15:38:38.652 STDOUT [aws] terraform: module.cluster_secretstore_role.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=2431237149]
+15:38:38.653 STDOUT [aws] terraform: module.efs_csi_driver_irsa.aws_iam_role.this[0]: Refreshing state... [id=yaya-cluster-efs-csi-20241216090350244700000002]
+15:38:38.700 STDOUT [aws] terraform: module.ebs_csi_driver_irsa.aws_iam_role.this[0]: Refreshing state... [id=yaya-cluster-ebs-csi-driver-20241107074358395800000014]
+15:38:38.703 STDOUT [aws] terraform: module.s3_csi_driver_irsa.aws_iam_role.this[0]: Refreshing state... [id=yaya-cluster-s3-csi-20241224082005841700000002]
+15:38:38.843 STDOUT [aws] terraform: module.cluster_secretstore_role.aws_iam_role.this[0]: Refreshing state... [id=yaya-cluster-secrets-manager-20241107074358395600000013]
+15:38:39.243 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["node_repair_config"].aws_eks_node_group.this[0]: Refreshing state... [id=yaya-cluster:node_repair_config-20250328074123021300000007]
+15:38:39.243 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["matomo"].aws_eks_node_group.this[0]: Refreshing state... [id=yaya-cluster:matomo-20250401033131006300000001]
+15:38:39.243 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["high-load"].aws_eks_node_group.this[0]: Refreshing state... [id=yaya-cluster:high-load-20241212063246158200000007]
+15:38:39.243 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["initial"].aws_eks_node_group.this[0]: Refreshing state... [id=yaya-cluster:initial-20241107074427528000000019]
+15:38:39.244 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["payload"].aws_eks_node_group.this[0]: Refreshing state... [id=yaya-cluster:payload-20250306042944153100000007]
+15:38:39.424 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["staging"].aws_eks_node_group.this[0]: Refreshing state... [id=yaya-cluster:staging-20241209062009122400000007]
+15:38:39.425 STDOUT [aws] terraform: module.eks.module.eks_managed_node_group["development"].aws_eks_node_group.this[0]: Refreshing state... [id=yaya-cluster:development-20250206050943470900000007]
+15:38:39.435 STDOUT [aws] terraform: module.efs_csi_driver_irsa.aws_iam_role_policy_attachment.efs_csi[0]: Refreshing state... [id=yaya-cluster-efs-csi-20241216090350244700000002-20241216090352263800000004]
+15:38:39.583 STDOUT [aws] terraform: module.ebs_csi_driver_irsa.aws_iam_role_policy_attachment.ebs_csi[0]: Refreshing state... [id=yaya-cluster-ebs-csi-driver-20241107074358395800000014-20241107074359948300000015]
+15:38:39.584 STDOUT [aws] terraform: module.s3_csi_driver_irsa.aws_iam_role_policy_attachment.mountpoint_s3_csi[0]: Refreshing state... [id=yaya-cluster-s3-csi-20241224082005841700000002-20241224084105512700000002]
+15:38:39.596 STDOUT [aws] terraform: module.cluster_secretstore_role.aws_iam_role_policy_attachment.this["policy"]: Refreshing state... [id=yaya-cluster-secrets-manager-20241107074358395600000013-20241107074400052400000016]
+15:38:39.805 STDOUT [aws] terraform: aws_iam_role_policy_attachment.s3_csi_driver_irsa_policy_attachment["staging"]: Refreshing state... [id=staging-eks-node-group-20241209062005038800000001-20250103064604597000000006]
+15:38:39.808 STDOUT [aws] terraform: aws_iam_role_policy_attachment.s3_csi_driver_irsa_policy_attachment["high-load"]: Refreshing state... [id=high-load-eks-node-group-20241212063241816700000001-20250103064604591500000005]
+15:38:39.810 STDOUT [aws] terraform: aws_iam_role_policy_attachment.s3_csi_driver_irsa_policy_attachment["development"]: Refreshing state... [id=development-eks-node-group-20250206050939465700000001-20250206051137767100000009]
+15:38:39.811 STDOUT [aws] terraform: aws_iam_role_policy_attachment.s3_csi_driver_irsa_policy_attachment["matomo"]: Refreshing state... [id=matomo-eks-node-group-20241127040806141000000001-20250103064604644500000008]
+15:38:39.811 STDOUT [aws] terraform: aws_iam_role_policy_attachment.s3_csi_driver_irsa_policy_attachment["initial"]: Refreshing state... [id=initial-eks-node-group-2024110707360614780000000b-20250103064604597000000007]
+15:38:39.812 STDOUT [aws] terraform: aws_iam_role_policy_attachment.s3_csi_driver_irsa_policy_attachment["payload"]: Refreshing state... [id=payload-eks-node-group-20250306042933927700000001-20250306043138637600000009]
+15:38:39.822 STDOUT [aws] terraform: aws_iam_role_policy_attachment.ebs_csi_driver_irsa_policy_attachment["staging"]: Refreshing state... [id=staging-eks-node-group-20241209062005038800000001-20241224110101171500000002]
+15:38:39.830 STDOUT [aws] terraform: aws_iam_role_policy_attachment.s3_csi_driver_irsa_policy_attachment["node_repair_config"]: Refreshing state... [id=node_repair_config-eks-node-group-20250328074112532200000001-2025032807431616470000000c]
+15:38:39.845 STDOUT [aws] terraform: module.eks_blueprints_addons.random_bytes.this: Refreshing state...
+15:38:39.852 STDOUT [aws] terraform: aws_iam_role_policy_attachment.ebs_csi_driver_irsa_policy_attachment["development"]: Refreshing state... [id=development-eks-node-group-20250206050939465700000001-2025020605113777620000000a]
+15:38:40.046 STDOUT [aws] terraform: aws_iam_role_policy_attachment.ebs_csi_driver_irsa_policy_attachment["high-load"]: Refreshing state... [id=high-load-eks-node-group-20241212063241816700000001-20241224110101173800000003]
+15:38:40.055 STDOUT [aws] terraform: aws_iam_role_policy_attachment.ebs_csi_driver_irsa_policy_attachment["matomo"]: Refreshing state... [id=matomo-eks-node-group-20241127040806141000000001-20241224110101192600000004]
+15:38:40.056 STDOUT [aws] terraform: aws_iam_role_policy_attachment.ebs_csi_driver_irsa_policy_attachment["initial"]: Refreshing state... [id=initial-eks-node-group-2024110707360614780000000b-20241224110707811000000001]
+15:38:40.061 STDOUT [aws] terraform: aws_iam_role_policy_attachment.ebs_csi_driver_irsa_policy_attachment["node_repair_config"]: Refreshing state... [id=node_repair_config-eks-node-group-20250328074112532200000001-2025032807431616900000000d]
+15:38:40.062 STDOUT [aws] terraform: aws_iam_role_policy_attachment.ebs_csi_driver_irsa_policy_attachment["payload"]: Refreshing state... [id=payload-eks-node-group-20250306042933927700000001-2025030604313863760000000a]
+15:38:40.072 STDOUT [aws] terraform: aws_iam_role_policy_attachment.cloudfront_access_policy_attachment["node_repair_config"]: Refreshing state... [id=node_repair_config-eks-node-group-20250328074112532200000001-20250401075216088900000005]
+15:38:40.075 STDOUT [aws] terraform: aws_iam_role_policy_attachment.cloudfront_access_policy_attachment["payload"]: Refreshing state... [id=payload-eks-node-group-20250306042933927700000001-20250401075216084800000004]
+15:38:40.087 STDOUT [aws] terraform: aws_iam_role_policy_attachment.cloudfront_access_policy_attachment["staging"]: Refreshing state... [id=staging-eks-node-group-20241209062005038800000001-20250401075216132300000007]
+15:38:40.101 STDOUT [aws] terraform: aws_iam_role_policy_attachment.cloudfront_access_policy_attachment["development"]: Refreshing state... [id=development-eks-node-group-20250206050939465700000001-20250401075216095200000006]
+15:38:40.296 STDOUT [aws] terraform: aws_iam_role_policy_attachment.cloudfront_access_policy_attachment["initial"]: Refreshing state... [id=initial-eks-node-group-2024110707360614780000000b-20250401075215752900000002]
+15:38:40.298 STDOUT [aws] terraform: aws_iam_role_policy_attachment.cloudfront_access_policy_attachment["high-load"]: Refreshing state... [id=high-load-eks-node-group-20241212063241816700000001-20250401075215510500000001]
+15:38:40.304 STDOUT [aws] terraform: aws_iam_role_policy_attachment.cloudfront_access_policy_attachment["matomo"]: Refreshing state... [id=matomo-eks-node-group-20241127040806141000000001-20250401075215999600000003]
+15:38:40.361 STDOUT [aws] terraform: module.eks_blueprints_addons.aws_cloudformation_stack.usage_telemetry[0]: Refreshing state... [id=arn:aws:cloudformation:us-east-2:916739622174:stack/yaya-cluster-8b97/5ff9a870-9cdc-11ef-867e-02536da60d35]
+15:38:40.364 STDOUT [aws] terraform: module.eks_blueprints_addons.time_sleep.this: Refreshing state... [id=2024-11-07T07:46:48Z]
+15:38:40.382 STDOUT [aws] terraform: module.eks_blueprints_addons.module.metrics_server.helm_release.this[0]: Refreshing state... [id=metrics-server]
+15:38:40.386 STDOUT [aws] terraform: module.eks_blueprints_addons.module.external_secrets.aws_iam_policy.this[0]: Refreshing state... [id=arn:aws:iam::916739622174:policy/external-secrets-2024110707461835920000001c]
+15:38:40.399 STDOUT [aws] terraform: module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_role.this[0]: Refreshing state... [id=alb-controller-20241107074649133900000024]
+15:38:40.400 STDOUT [aws] terraform: module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_policy.this[0]: Refreshing state... [id=arn:aws:iam::916739622174:policy/alb-controller-2024110707461839820000001d]
+15:38:40.405 STDOUT [aws] terraform: module.eks_blueprints_addons.module.external_secrets.aws_iam_role.this[0]: Refreshing state... [id=external-secrets-20241107074649130900000023]
+15:38:40.453 STDOUT [aws] terraform: module.eks_blueprints_addons.aws_eks_addon.this["aws-ebs-csi-driver"]: Refreshing state... [id=yaya-cluster:aws-ebs-csi-driver]
+15:38:40.531 STDOUT [aws] terraform: module.eks_blueprints_addons.aws_eks_addon.this["aws-efs-csi-driver"]: Refreshing state... [id=yaya-cluster:aws-efs-csi-driver]
+15:38:40.543 STDOUT [aws] terraform: module.eks_blueprints_addons.aws_eks_addon.this["aws-mountpoint-s3-csi-driver"]: Refreshing state... [id=yaya-cluster:aws-mountpoint-s3-csi-driver]
+15:38:40.559 STDOUT [aws] terraform: module.eks_blueprints_addons.aws_eks_addon.this["coredns"]: Refreshing state... [id=yaya-cluster:coredns]
+15:38:40.803 STDOUT [aws] terraform: module.eks_blueprints_addons.aws_eks_addon.this["kube-proxy"]: Refreshing state... [id=yaya-cluster:kube-proxy]
+15:38:40.872 STDOUT [aws] terraform: module.eks_blueprints_addons.aws_eks_addon.this["snapshot-controller"]: Refreshing state... [id=yaya-cluster:snapshot-controller]
+15:38:40.877 STDOUT [aws] terraform: module.eks_blueprints_addons.aws_eks_addon.this["vpc-cni"]: Refreshing state... [id=yaya-cluster:vpc-cni]
+15:38:41.141 STDOUT [aws] terraform: module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_role_policy_attachment.this[0]: Refreshing state... [id=alb-controller-20241107074649133900000024-20241107074650430800000025]
+15:38:41.146 STDOUT [aws] terraform: module.eks_blueprints_addons.module.external_secrets.aws_iam_role_policy_attachment.this[0]: Refreshing state... [id=external-secrets-20241107074649130900000023-20241107074650693700000026]
+15:38:41.147 STDOUT [aws] terraform: module.eks_blueprints_addons.module.aws_load_balancer_controller.helm_release.this[0]: Refreshing state... [id=aws-load-balancer-controller]
+15:38:41.151 STDOUT [aws] terraform: module.eks_blueprints_addons.module.external_secrets.helm_release.this[0]: Refreshing state... [id=external-secrets]
+15:38:50.605 STDOUT [aws] terraform: Note: Objects have changed outside of Terraform
+15:38:50.605 STDOUT [aws] terraform: Terraform detected the following changes made outside of Terraform since the
+15:38:50.605 STDOUT [aws] terraform: last "terraform apply" which may have affected this plan:
+15:38:50.605 STDOUT [aws] terraform:   # module.eks.aws_eks_cluster.this[0] has changed
+15:38:50.605 STDOUT [aws] terraform:   ~ resource "aws_eks_cluster" "this" {
+15:38:50.605 STDOUT [aws] terraform:         id                            = "yaya-cluster"
+15:38:50.605 STDOUT [aws] terraform:         name                          = "yaya-cluster"
+15:38:50.605 STDOUT [aws] terraform:       ~ platform_version              = "eks.20" -> "eks.22"
+15:38:50.605 STDOUT [aws] terraform:         tags                          = {
+15:38:50.605 STDOUT [aws] terraform:             "team"                  = "yaya-tw"
+15:38:50.605 STDOUT [aws] terraform:             "terraform-aws-modules" = "eks"
+15:38:50.605 STDOUT [aws] terraform:         }
+15:38:50.605 STDOUT [aws] terraform:         # (11 unchanged attributes hidden)
+15:38:50.605 STDOUT [aws] terraform:         # (6 unchanged blocks hidden)
+15:38:50.606 STDOUT [aws] terraform:     }
+15:38:50.606 STDOUT [aws] terraform: Unless you have made equivalent changes to your configuration, or ignored the
+15:38:50.606 STDOUT [aws] terraform: relevant attributes using ignore_changes, the following plan may include
+15:38:50.606 STDOUT [aws] terraform: actions to undo or respond to these changes.
+15:38:50.606 STDOUT [aws] terraform: ─────────────────────────────────────────────────────────────────────────────
+15:38:50.606 STDOUT [aws] terraform: Terraform used the selected providers to generate the following execution
+15:38:50.606 STDOUT [aws] terraform: plan. Resource actions are indicated with the following symbols:
+15:38:50.606 STDOUT [aws] terraform:   ~ update in-place
+15:38:50.606 STDOUT [aws] terraform:   - destroy
+15:38:50.606 STDOUT [aws] terraform:  <= read (data resources)
+15:38:50.606 STDOUT [aws] terraform: Terraform will perform the following actions:
+15:38:50.606 STDOUT [aws] terraform:   # aws_eks_access_entry.developer["AIDA5K4PQQUPBVREAEET4"] will be destroyed
+15:38:50.606 STDOUT [aws] terraform:   # (because key ["AIDA5K4PQQUPBVREAEET4"] is not in for_each map)
+15:38:50.606 STDOUT [aws] terraform:   - resource "aws_eks_access_entry" "developer" {
+15:38:50.606 STDOUT [aws] terraform:       - access_entry_arn  = "arn:aws:eks:us-east-2:916739622174:access-entry/yaya-cluster/user/916739622174/william@ya-ya.tw/c2c982ca-3bb3-8a53-f103-0e3679d9bc26" -> null
+15:38:50.606 STDOUT [aws] terraform:       - cluster_name      = "yaya-cluster" -> null
+15:38:50.606 STDOUT [aws] terraform:       - created_at        = "2024-11-07T07:43:56Z" -> null
+15:38:50.606 STDOUT [aws] terraform:       - id                = "yaya-cluster:arn:aws:iam::916739622174:user/william@ya-ya.tw" -> null
+15:38:50.606 STDOUT [aws] terraform:       - kubernetes_groups = [] -> null
+15:38:50.606 STDOUT [aws] terraform:       - modified_at       = "2024-11-07T07:43:56Z" -> null
+15:38:50.606 STDOUT [aws] terraform:       - principal_arn     = "arn:aws:iam::916739622174:user/william@ya-ya.tw" -> null
+15:38:50.606 STDOUT [aws] terraform:       - tags              = {} -> null
+15:38:50.606 STDOUT [aws] terraform:       - tags_all          = {} -> null
+15:38:50.606 STDOUT [aws] terraform:       - type              = "STANDARD" -> null
+15:38:50.606 STDOUT [aws] terraform:       - user_name         = "arn:aws:iam::916739622174:user/william@ya-ya.tw" -> null
+15:38:50.606 STDOUT [aws] terraform:     }
+15:38:50.606 STDOUT [aws] terraform:   # aws_eks_access_policy_association.policy_association["AIDA5K4PQQUPBVREAEET4"] will be destroyed
+15:38:50.606 STDOUT [aws] terraform:   # (because key ["AIDA5K4PQQUPBVREAEET4"] is not in for_each map)
+15:38:50.606 STDOUT [aws] terraform:   - resource "aws_eks_access_policy_association" "policy_association" {
+15:38:50.606 STDOUT [aws] terraform:       - associated_at = "2024-11-07 07:43:57.442 +0000 UTC" -> null
+15:38:50.606 STDOUT [aws] terraform:       - cluster_name  = "yaya-cluster" -> null
+15:38:50.606 STDOUT [aws] terraform:       - id            = "yaya-cluster#arn:aws:iam::916739622174:user/william@ya-ya.tw#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy" -> null
+15:38:50.606 STDOUT [aws] terraform:       - modified_at   = "2024-11-07 07:43:57.442 +0000 UTC" -> null
+15:38:50.606 STDOUT [aws] terraform:       - policy_arn    = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy" -> null
+15:38:50.606 STDOUT [aws] terraform:       - principal_arn = "arn:aws:iam::916739622174:user/william@ya-ya.tw" -> null
+15:38:50.606 STDOUT [aws] terraform:       - access_scope {
+15:38:50.606 STDOUT [aws] terraform:           - namespaces = [] -> null
+15:38:50.606 STDOUT [aws] terraform:           - type       = "cluster" -> null
+15:38:50.606 STDOUT [aws] terraform:         }
+15:38:50.606 STDOUT [aws] terraform:     }
+15:38:50.606 STDOUT [aws] terraform:   # module.eks.aws_iam_openid_connect_provider.oidc_provider[0] will be updated in-place
+15:38:50.606 STDOUT [aws] terraform:   ~ resource "aws_iam_openid_connect_provider" "oidc_provider" {
+15:38:50.606 STDOUT [aws] terraform:         id              = "arn:aws:iam::916739622174:oidc-provider/oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858"
+15:38:50.607 STDOUT [aws] terraform:         tags            = {
+15:38:50.607 STDOUT [aws] terraform:             "Name" = "yaya-cluster-eks-irsa"
+15:38:50.607 STDOUT [aws] terraform:             "team" = "yaya-tw"
+15:38:50.607 STDOUT [aws] terraform:         }
+15:38:50.607 STDOUT [aws] terraform:       ~ thumbprint_list = [
+15:38:50.607 STDOUT [aws] terraform:           ~ "9e99a48a9960b14926bb7f3b02e22da2b0ab7280" -> "06b25927c42a721631c1efd9431e648fa62e1e39",
+15:38:50.607 STDOUT [aws] terraform:         ]
+15:38:50.607 STDOUT [aws] terraform:         # (4 unchanged attributes hidden)
+15:38:50.607 STDOUT [aws] terraform:     }
+15:38:50.607 STDOUT [aws] terraform:   # module.eks_blueprints_addons.data.aws_caller_identity.current will be read during apply
+15:38:50.607 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.607 STDOUT [aws] terraform:  <= data "aws_caller_identity" "current" {
+15:38:50.607 STDOUT [aws] terraform:       + account_id = (known after apply)
+15:38:50.607 STDOUT [aws] terraform:       + arn        = (known after apply)
+15:38:50.607 STDOUT [aws] terraform:       + id         = (known after apply)
+15:38:50.607 STDOUT [aws] terraform:       + user_id    = (known after apply)
+15:38:50.607 STDOUT [aws] terraform:     }
+15:38:50.607 STDOUT [aws] terraform:   # module.eks_blueprints_addons.data.aws_eks_addon_version.this["aws-ebs-csi-driver"] will be read during apply
+15:38:50.607 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.607 STDOUT [aws] terraform:  <= data "aws_eks_addon_version" "this" {
+15:38:50.607 STDOUT [aws] terraform:       + addon_name         = "aws-ebs-csi-driver"
+15:38:50.607 STDOUT [aws] terraform:       + id                 = (known after apply)
+15:38:50.607 STDOUT [aws] terraform:       + kubernetes_version = "1.31"
+15:38:50.607 STDOUT [aws] terraform:       + most_recent        = true
+15:38:50.607 STDOUT [aws] terraform:       + version            = (known after apply)
+15:38:50.607 STDOUT [aws] terraform:     }
+15:38:50.607 STDOUT [aws] terraform:   # module.eks_blueprints_addons.data.aws_eks_addon_version.this["aws-efs-csi-driver"] will be read during apply
+15:38:50.607 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.607 STDOUT [aws] terraform:  <= data "aws_eks_addon_version" "this" {
+15:38:50.607 STDOUT [aws] terraform:       + addon_name         = "aws-efs-csi-driver"
+15:38:50.607 STDOUT [aws] terraform:       + id                 = (known after apply)
+15:38:50.607 STDOUT [aws] terraform:       + kubernetes_version = "1.31"
+15:38:50.607 STDOUT [aws] terraform:       + most_recent        = true
+15:38:50.607 STDOUT [aws] terraform:       + version            = (known after apply)
+15:38:50.607 STDOUT [aws] terraform:     }
+15:38:50.607 STDOUT [aws] terraform:   # module.eks_blueprints_addons.data.aws_eks_addon_version.this["aws-mountpoint-s3-csi-driver"] will be read during apply
+15:38:50.607 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.607 STDOUT [aws] terraform:  <= data "aws_eks_addon_version" "this" {
+15:38:50.607 STDOUT [aws] terraform:       + addon_name         = "aws-mountpoint-s3-csi-driver"
+15:38:50.607 STDOUT [aws] terraform:       + id                 = (known after apply)
+15:38:50.607 STDOUT [aws] terraform:       + kubernetes_version = "1.31"
+15:38:50.607 STDOUT [aws] terraform:       + most_recent        = true
+15:38:50.607 STDOUT [aws] terraform:       + version            = (known after apply)
+15:38:50.607 STDOUT [aws] terraform:     }
+15:38:50.607 STDOUT [aws] terraform:   # module.eks_blueprints_addons.data.aws_eks_addon_version.this["coredns"] will be read during apply
+15:38:50.607 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.607 STDOUT [aws] terraform:  <= data "aws_eks_addon_version" "this" {
+15:38:50.607 STDOUT [aws] terraform:       + addon_name         = "coredns"
+15:38:50.607 STDOUT [aws] terraform:       + id                 = (known after apply)
+15:38:50.607 STDOUT [aws] terraform:       + kubernetes_version = "1.31"
+15:38:50.607 STDOUT [aws] terraform:       + most_recent        = true
+15:38:50.607 STDOUT [aws] terraform:       + version            = (known after apply)
+15:38:50.607 STDOUT [aws] terraform:     }
+15:38:50.607 STDOUT [aws] terraform:   # module.eks_blueprints_addons.data.aws_eks_addon_version.this["kube-proxy"] will be read during apply
+15:38:50.608 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.608 STDOUT [aws] terraform:  <= data "aws_eks_addon_version" "this" {
+15:38:50.608 STDOUT [aws] terraform:       + addon_name         = "kube-proxy"
+15:38:50.608 STDOUT [aws] terraform:       + id                 = (known after apply)
+15:38:50.608 STDOUT [aws] terraform:       + kubernetes_version = "1.31"
+15:38:50.608 STDOUT [aws] terraform:       + most_recent        = true
+15:38:50.608 STDOUT [aws] terraform:       + version            = (known after apply)
+15:38:50.608 STDOUT [aws] terraform:     }
+15:38:50.608 STDOUT [aws] terraform:   # module.eks_blueprints_addons.data.aws_eks_addon_version.this["snapshot-controller"] will be read during apply
+15:38:50.608 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.608 STDOUT [aws] terraform:  <= data "aws_eks_addon_version" "this" {
+15:38:50.608 STDOUT [aws] terraform:       + addon_name         = "snapshot-controller"
+15:38:50.608 STDOUT [aws] terraform:       + id                 = (known after apply)
+15:38:50.608 STDOUT [aws] terraform:       + kubernetes_version = "1.31"
+15:38:50.608 STDOUT [aws] terraform:       + most_recent        = true
+15:38:50.608 STDOUT [aws] terraform:       + version            = (known after apply)
+15:38:50.608 STDOUT [aws] terraform:     }
+15:38:50.608 STDOUT [aws] terraform:   # module.eks_blueprints_addons.data.aws_eks_addon_version.this["vpc-cni"] will be read during apply
+15:38:50.608 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.608 STDOUT [aws] terraform:  <= data "aws_eks_addon_version" "this" {
+15:38:50.608 STDOUT [aws] terraform:       + addon_name         = "vpc-cni"
+15:38:50.608 STDOUT [aws] terraform:       + id                 = (known after apply)
+15:38:50.608 STDOUT [aws] terraform:       + kubernetes_version = "1.31"
+15:38:50.608 STDOUT [aws] terraform:       + most_recent        = true
+15:38:50.608 STDOUT [aws] terraform:       + version            = (known after apply)
+15:38:50.608 STDOUT [aws] terraform:     }
+15:38:50.608 STDOUT [aws] terraform:   # module.eks_blueprints_addons.data.aws_iam_policy_document.aws_load_balancer_controller[0] will be read during apply
+15:38:50.608 STDOUT [aws] terraform:   # (config refers to values not yet known)
+15:38:50.608 STDOUT [aws] terraform:  <= data "aws_iam_policy_document" "aws_load_balancer_controller" {
+15:38:50.608 STDOUT [aws] terraform:       + id                        = (known after apply)
+15:38:50.608 STDOUT [aws] terraform:       + json                      = (known after apply)
+15:38:50.608 STDOUT [aws] terraform:       + minified_json             = (known after apply)
+15:38:50.608 STDOUT [aws] terraform:       + override_policy_documents = []
+15:38:50.608 STDOUT [aws] terraform:       + source_policy_documents   = []
+15:38:50.608 STDOUT [aws] terraform:       + statement {
+15:38:50.608 STDOUT [aws] terraform:           + actions   = [
+15:38:50.608 STDOUT [aws] terraform:               + "iam:CreateServiceLinkedRole",
+15:38:50.608 STDOUT [aws] terraform:             ]
+15:38:50.608 STDOUT [aws] terraform:           + resources = [
+15:38:50.608 STDOUT [aws] terraform:               + "*",
+15:38:50.608 STDOUT [aws] terraform:             ]
+15:38:50.608 STDOUT [aws] terraform:           + condition {
+15:38:50.608 STDOUT [aws] terraform:               + test     = "StringEquals"
+15:38:50.608 STDOUT [aws] terraform:               + values   = [
+15:38:50.608 STDOUT [aws] terraform:                   + "elasticloadbalancing.amazonaws.com",
+15:38:50.608 STDOUT [aws] terraform:                 ]
+15:38:50.608 STDOUT [aws] terraform:               + variable = "iam:AWSServiceName"
+15:38:50.608 STDOUT [aws] terraform:             }
+15:38:50.608 STDOUT [aws] terraform:         }
+15:38:50.608 STDOUT [aws] terraform:       + statement {
+15:38:50.608 STDOUT [aws] terraform:           + actions   = [
+15:38:50.608 STDOUT [aws] terraform:               + "ec2:DescribeAccountAttributes",
+15:38:50.608 STDOUT [aws] terraform:               + "ec2:DescribeAddresses",
+15:38:50.608 STDOUT [aws] terraform:               + "ec2:DescribeAvailabilityZones",
+15:38:50.608 STDOUT [aws] terraform:               + "ec2:DescribeCoipPools",
+15:38:50.608 STDOUT [aws] terraform:               + "ec2:DescribeInstances",
+15:38:50.608 STDOUT [aws] terraform:               + "ec2:DescribeInternetGateways",
+15:38:50.608 STDOUT [aws] terraform:               + "ec2:DescribeIpamPools",
+15:38:50.609 STDOUT [aws] terraform:               + "ec2:DescribeNetworkInterfaces",
+15:38:50.609 STDOUT [aws] terraform:               + "ec2:DescribeSecurityGroups",
+15:38:50.609 STDOUT [aws] terraform:               + "ec2:DescribeSubnets",
+15:38:50.609 STDOUT [aws] terraform:               + "ec2:DescribeTags",
+15:38:50.609 STDOUT [aws] terraform:               + "ec2:DescribeVpcPeeringConnections",
+15:38:50.609 STDOUT [aws] terraform:               + "ec2:DescribeVpcs",
+15:38:50.609 STDOUT [aws] terraform:               + "ec2:GetCoipPoolUsage",
+15:38:50.609 STDOUT [aws] terraform:               + "ec2:GetSecurityGroupsForVpc",
+15:38:50.609 STDOUT [aws] terraform:               + "elasticloadbalancing:DescribeCapacityReservation",
+15:38:50.609 STDOUT [aws] terraform:               + "elasticloadbalancing:DescribeListenerAttributes",
+15:38:50.609 STDOUT [aws] terraform:               + "elasticloadbalancing:DescribeListenerCertificates",
+15:38:50.609 STDOUT [aws] terraform:               + "elasticloadbalancing:DescribeListeners",
+15:38:50.609 STDOUT [aws] terraform:               + "elasticloadbalancing:DescribeLoadBalancerAttributes",
+15:38:50.609 STDOUT [aws] terraform:               + "elasticloadbalancing:DescribeLoadBalancers",
+15:38:50.609 STDOUT [aws] terraform:               + "elasticloadbalancing:DescribeRules",
+15:38:50.609 STDOUT [aws] terraform:               + "elasticloadbalancing:DescribeSSLPolicies",
+15:38:50.609 STDOUT [aws] terraform:               + "elasticloadbalancing:DescribeTags",
+15:38:50.609 STDOUT [aws] terraform:               + "elasticloadbalancing:DescribeTargetGroupAttributes",
+15:38:50.609 STDOUT [aws] terraform:               + "elasticloadbalancing:DescribeTargetGroups",
+15:38:50.609 STDOUT [aws] terraform:               + "elasticloadbalancing:DescribeTargetHealth",
+15:38:50.609 STDOUT [aws] terraform:               + "elasticloadbalancing:DescribeTrustStores",
+15:38:50.609 STDOUT [aws] terraform:             ]
+15:38:50.609 STDOUT [aws] terraform:           + resources = [
+15:38:50.609 STDOUT [aws] terraform:               + "*",
+15:38:50.609 STDOUT [aws] terraform:             ]
+15:38:50.609 STDOUT [aws] terraform:         }
+15:38:50.609 STDOUT [aws] terraform:       + statement {
+15:38:50.609 STDOUT [aws] terraform:           + actions   = [
+15:38:50.609 STDOUT [aws] terraform:               + "acm:DescribeCertificate",
+15:38:50.609 STDOUT [aws] terraform:               + "acm:ListCertificates",
+15:38:50.609 STDOUT [aws] terraform:               + "cognito-idp:DescribeUserPoolClient",
+15:38:50.609 STDOUT [aws] terraform:               + "iam:GetServerCertificate",
+15:38:50.609 STDOUT [aws] terraform:               + "iam:ListServerCertificates",
+15:38:50.609 STDOUT [aws] terraform:               + "shield:CreateProtection",
+15:38:50.609 STDOUT [aws] terraform:               + "shield:DeleteProtection",
+15:38:50.609 STDOUT [aws] terraform:               + "shield:DescribeProtection",
+15:38:50.609 STDOUT [aws] terraform:               + "shield:GetSubscriptionState",
+15:38:50.609 STDOUT [aws] terraform:               + "waf-regional:AssociateWebACL",
+15:38:50.609 STDOUT [aws] terraform:               + "waf-regional:DisassociateWebACL",
+15:38:50.609 STDOUT [aws] terraform:               + "waf-regional:GetWebACL",
+15:38:50.609 STDOUT [aws] terraform:               + "waf-regional:GetWebACLForResource",
+15:38:50.609 STDOUT [aws] terraform:               + "wafv2:AssociateWebACL",
+15:38:50.609 STDOUT [aws] terraform:               + "wafv2:DisassociateWebACL",
+15:38:50.609 STDOUT [aws] terraform:               + "wafv2:GetWebACL",
+15:38:50.609 STDOUT [aws] terraform:               + "wafv2:GetWebACLForResource",
+15:38:50.609 STDOUT [aws] terraform:             ]
+15:38:50.609 STDOUT [aws] terraform:           + resources = [
+15:38:50.609 STDOUT [aws] terraform:               + "*",
+15:38:50.609 STDOUT [aws] terraform:             ]
+15:38:50.609 STDOUT [aws] terraform:         }
+15:38:50.609 STDOUT [aws] terraform:       + statement {
+15:38:50.609 STDOUT [aws] terraform:           + actions   = [
+15:38:50.609 STDOUT [aws] terraform:               + "ec2:AuthorizeSecurityGroupIngress",
+15:38:50.609 STDOUT [aws] terraform:               + "ec2:RevokeSecurityGroupIngress",
+15:38:50.609 STDOUT [aws] terraform:             ]
+15:38:50.609 STDOUT [aws] terraform:           + resources = [
+15:38:50.609 STDOUT [aws] terraform:               + "*",
+15:38:50.609 STDOUT [aws] terraform:             ]
+15:38:50.609 STDOUT [aws] terraform:         }
+15:38:50.609 STDOUT [aws] terraform:       + statement {
+15:38:50.609 STDOUT [aws] terraform:           + actions   = [
+15:38:50.609 STDOUT [aws] terraform:               + "ec2:CreateSecurityGroup",
+15:38:50.609 STDOUT [aws] terraform:             ]
+15:38:50.609 STDOUT [aws] terraform:           + resources = [
+15:38:50.609 STDOUT [aws] terraform:               + "*",
+15:38:50.609 STDOUT [aws] terraform:             ]
+15:38:50.609 STDOUT [aws] terraform:         }
+15:38:50.609 STDOUT [aws] terraform:       + statement {
+15:38:50.609 STDOUT [aws] terraform:           + actions   = [
+15:38:50.609 STDOUT [aws] terraform:               + "ec2:CreateTags",
+15:38:50.610 STDOUT [aws] terraform:             ]
+15:38:50.610 STDOUT [aws] terraform:           + resources = [
+15:38:50.610 STDOUT [aws] terraform:               + (known after apply),
+15:38:50.610 STDOUT [aws] terraform:             ]
+15:38:50.610 STDOUT [aws] terraform:           + condition {
+15:38:50.610 STDOUT [aws] terraform:               + test     = "Null"
+15:38:50.610 STDOUT [aws] terraform:               + values   = [
+15:38:50.610 STDOUT [aws] terraform:                   + "false",
+15:38:50.610 STDOUT [aws] terraform:                 ]
+15:38:50.610 STDOUT [aws] terraform:               + variable = "aws:RequestTag/elbv2.k8s.aws/cluster"
+15:38:50.610 STDOUT [aws] terraform:             }
+15:38:50.610 STDOUT [aws] terraform:           + condition {
+15:38:50.610 STDOUT [aws] terraform:               + test     = "StringEquals"
+15:38:50.610 STDOUT [aws] terraform:               + values   = [
+15:38:50.610 STDOUT [aws] terraform:                   + "CreateSecurityGroup",
+15:38:50.610 STDOUT [aws] terraform:                 ]
+15:38:50.610 STDOUT [aws] terraform:               + variable = "ec2:CreateAction"
+15:38:50.610 STDOUT [aws] terraform:             }
+15:38:50.610 STDOUT [aws] terraform:         }
+15:38:50.610 STDOUT [aws] terraform:       + statement {
+15:38:50.610 STDOUT [aws] terraform:           + actions   = [
+15:38:50.610 STDOUT [aws] terraform:               + "ec2:CreateTags",
+15:38:50.610 STDOUT [aws] terraform:               + "ec2:DeleteTags",
+15:38:50.610 STDOUT [aws] terraform:             ]
+15:38:50.610 STDOUT [aws] terraform:           + resources = [
+15:38:50.610 STDOUT [aws] terraform:               + (known after apply),
+15:38:50.610 STDOUT [aws] terraform:             ]
+15:38:50.610 STDOUT [aws] terraform:           + condition {
+15:38:50.610 STDOUT [aws] terraform:               + test     = "Null"
+15:38:50.610 STDOUT [aws] terraform:               + values   = [
+15:38:50.610 STDOUT [aws] terraform:                   + "false",
+15:38:50.610 STDOUT [aws] terraform:                 ]
+15:38:50.610 STDOUT [aws] terraform:               + variable = "aws:ResourceTag/elbv2.k8s.aws/cluster"
+15:38:50.610 STDOUT [aws] terraform:             }
+15:38:50.610 STDOUT [aws] terraform:           + condition {
+15:38:50.610 STDOUT [aws] terraform:               + test     = "Null"
+15:38:50.610 STDOUT [aws] terraform:               + values   = [
+15:38:50.610 STDOUT [aws] terraform:                   + "true",
+15:38:50.610 STDOUT [aws] terraform:                 ]
+15:38:50.610 STDOUT [aws] terraform:               + variable = "aws:RequestTag/elbv2.k8s.aws/cluster"
+15:38:50.610 STDOUT [aws] terraform:             }
+15:38:50.610 STDOUT [aws] terraform:         }
+15:38:50.610 STDOUT [aws] terraform:       + statement {
+15:38:50.610 STDOUT [aws] terraform:           + actions   = [
+15:38:50.610 STDOUT [aws] terraform:               + "ec2:AuthorizeSecurityGroupIngress",
+15:38:50.610 STDOUT [aws] terraform:               + "ec2:DeleteSecurityGroup",
+15:38:50.610 STDOUT [aws] terraform:               + "ec2:RevokeSecurityGroupIngress",
+15:38:50.610 STDOUT [aws] terraform:             ]
+15:38:50.610 STDOUT [aws] terraform:           + resources = [
+15:38:50.610 STDOUT [aws] terraform:               + "*",
+15:38:50.610 STDOUT [aws] terraform:             ]
+15:38:50.610 STDOUT [aws] terraform:           + condition {
+15:38:50.610 STDOUT [aws] terraform:               + test     = "Null"
+15:38:50.610 STDOUT [aws] terraform:               + values   = [
+15:38:50.610 STDOUT [aws] terraform:                   + "false",
+15:38:50.610 STDOUT [aws] terraform:                 ]
+15:38:50.610 STDOUT [aws] terraform:               + variable = "aws:ResourceTag/elbv2.k8s.aws/cluster"
+15:38:50.610 STDOUT [aws] terraform:             }
+15:38:50.610 STDOUT [aws] terraform:         }
+15:38:50.610 STDOUT [aws] terraform:       + statement {
+15:38:50.610 STDOUT [aws] terraform:           + actions   = [
+15:38:50.610 STDOUT [aws] terraform:               + "elasticloadbalancing:CreateLoadBalancer",
+15:38:50.610 STDOUT [aws] terraform:               + "elasticloadbalancing:CreateTargetGroup",
+15:38:50.610 STDOUT [aws] terraform:             ]
+15:38:50.610 STDOUT [aws] terraform:           + resources = [
+15:38:50.610 STDOUT [aws] terraform:               + "*",
+15:38:50.610 STDOUT [aws] terraform:             ]
+15:38:50.610 STDOUT [aws] terraform:           + condition {
+15:38:50.610 STDOUT [aws] terraform:               + test     = "Null"
+15:38:50.610 STDOUT [aws] terraform:               + values   = [
+15:38:50.610 STDOUT [aws] terraform:                   + "false",
+15:38:50.610 STDOUT [aws] terraform:                 ]
+15:38:50.610 STDOUT [aws] terraform:               + variable = "aws:RequestTag/elbv2.k8s.aws/cluster"
+15:38:50.610 STDOUT [aws] terraform:             }
+15:38:50.610 STDOUT [aws] terraform:         }
+15:38:50.610 STDOUT [aws] terraform:       + statement {
+15:38:50.610 STDOUT [aws] terraform:           + actions   = [
+15:38:50.610 STDOUT [aws] terraform:               + "elasticloadbalancing:CreateListener",
+15:38:50.610 STDOUT [aws] terraform:               + "elasticloadbalancing:CreateRule",
+15:38:50.610 STDOUT [aws] terraform:               + "elasticloadbalancing:DeleteListener",
+15:38:50.610 STDOUT [aws] terraform:               + "elasticloadbalancing:DeleteRule",
+15:38:50.610 STDOUT [aws] terraform:             ]
+15:38:50.610 STDOUT [aws] terraform:           + resources = [
+15:38:50.610 STDOUT [aws] terraform:               + "*",
+15:38:50.610 STDOUT [aws] terraform:             ]
+15:38:50.610 STDOUT [aws] terraform:         }
+15:38:50.610 STDOUT [aws] terraform:       + statement {
+15:38:50.610 STDOUT [aws] terraform:           + actions   = [
+15:38:50.610 STDOUT [aws] terraform:               + "elasticloadbalancing:AddTags",
+15:38:50.610 STDOUT [aws] terraform:               + "elasticloadbalancing:RemoveTags",
+15:38:50.610 STDOUT [aws] terraform:             ]
+15:38:50.610 STDOUT [aws] terraform:           + resources = [
+15:38:50.610 STDOUT [aws] terraform:               + (known after apply),
+15:38:50.610 STDOUT [aws] terraform:               + (known after apply),
+15:38:50.610 STDOUT [aws] terraform:               + (known after apply),
+15:38:50.610 STDOUT [aws] terraform:             ]
+15:38:50.610 STDOUT [aws] terraform:           + condition {
+15:38:50.610 STDOUT [aws] terraform:               + test     = "Null"
+15:38:50.611 STDOUT [aws] terraform:               + values   = [
+15:38:50.611 STDOUT [aws] terraform:                   + "false",
+15:38:50.611 STDOUT [aws] terraform:                 ]
+15:38:50.611 STDOUT [aws] terraform:               + variable = "aws:ResourceTag/elbv2.k8s.aws/cluster"
+15:38:50.611 STDOUT [aws] terraform:             }
+15:38:50.611 STDOUT [aws] terraform:           + condition {
+15:38:50.611 STDOUT [aws] terraform:               + test     = "Null"
+15:38:50.611 STDOUT [aws] terraform:               + values   = [
+15:38:50.611 STDOUT [aws] terraform:                   + "true",
+15:38:50.611 STDOUT [aws] terraform:                 ]
+15:38:50.611 STDOUT [aws] terraform:               + variable = "aws:RequestTag/elbv2.k8s.aws/cluster"
+15:38:50.611 STDOUT [aws] terraform:             }
+15:38:50.611 STDOUT [aws] terraform:         }
+15:38:50.611 STDOUT [aws] terraform:       + statement {
+15:38:50.611 STDOUT [aws] terraform:           + actions   = [
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:AddTags",
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:RemoveTags",
+15:38:50.611 STDOUT [aws] terraform:             ]
+15:38:50.611 STDOUT [aws] terraform:           + resources = [
+15:38:50.611 STDOUT [aws] terraform:               + (known after apply),
+15:38:50.611 STDOUT [aws] terraform:               + (known after apply),
+15:38:50.611 STDOUT [aws] terraform:               + (known after apply),
+15:38:50.611 STDOUT [aws] terraform:               + (known after apply),
+15:38:50.611 STDOUT [aws] terraform:             ]
+15:38:50.611 STDOUT [aws] terraform:         }
+15:38:50.611 STDOUT [aws] terraform:       + statement {
+15:38:50.611 STDOUT [aws] terraform:           + actions   = [
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:DeleteLoadBalancer",
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:DeleteTargetGroup",
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:ModifyCapacityReservation",
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:ModifyIpPools",
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:ModifyListenerAttributes",
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:ModifyLoadBalancerAttributes",
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:ModifyTargetGroup",
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:ModifyTargetGroupAttributes",
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:SetIpAddressType",
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:SetSecurityGroups",
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:SetSubnets",
+15:38:50.611 STDOUT [aws] terraform:             ]
+15:38:50.611 STDOUT [aws] terraform:           + resources = [
+15:38:50.611 STDOUT [aws] terraform:               + "*",
+15:38:50.611 STDOUT [aws] terraform:             ]
+15:38:50.611 STDOUT [aws] terraform:           + condition {
+15:38:50.611 STDOUT [aws] terraform:               + test     = "Null"
+15:38:50.611 STDOUT [aws] terraform:               + values   = [
+15:38:50.611 STDOUT [aws] terraform:                   + "false",
+15:38:50.611 STDOUT [aws] terraform:                 ]
+15:38:50.611 STDOUT [aws] terraform:               + variable = "aws:ResourceTag/elbv2.k8s.aws/cluster"
+15:38:50.611 STDOUT [aws] terraform:             }
+15:38:50.611 STDOUT [aws] terraform:         }
+15:38:50.611 STDOUT [aws] terraform:       + statement {
+15:38:50.611 STDOUT [aws] terraform:           + actions   = [
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:AddTags",
+15:38:50.611 STDOUT [aws] terraform:             ]
+15:38:50.611 STDOUT [aws] terraform:           + resources = [
+15:38:50.611 STDOUT [aws] terraform:               + (known after apply),
+15:38:50.611 STDOUT [aws] terraform:               + (known after apply),
+15:38:50.611 STDOUT [aws] terraform:               + (known after apply),
+15:38:50.611 STDOUT [aws] terraform:             ]
+15:38:50.611 STDOUT [aws] terraform:           + condition {
+15:38:50.611 STDOUT [aws] terraform:               + test     = "Null"
+15:38:50.611 STDOUT [aws] terraform:               + values   = [
+15:38:50.611 STDOUT [aws] terraform:                   + "false",
+15:38:50.611 STDOUT [aws] terraform:                 ]
+15:38:50.611 STDOUT [aws] terraform:               + variable = "aws:RequestTag/elbv2.k8s.aws/cluster"
+15:38:50.611 STDOUT [aws] terraform:             }
+15:38:50.611 STDOUT [aws] terraform:           + condition {
+15:38:50.611 STDOUT [aws] terraform:               + test     = "StringEquals"
+15:38:50.611 STDOUT [aws] terraform:               + values   = [
+15:38:50.611 STDOUT [aws] terraform:                   + "CreateTargetGroup",
+15:38:50.611 STDOUT [aws] terraform:                   + "CreateLoadBalancer",
+15:38:50.611 STDOUT [aws] terraform:                 ]
+15:38:50.611 STDOUT [aws] terraform:               + variable = "elasticloadbalancing:CreateAction"
+15:38:50.611 STDOUT [aws] terraform:             }
+15:38:50.611 STDOUT [aws] terraform:         }
+15:38:50.611 STDOUT [aws] terraform:       + statement {
+15:38:50.611 STDOUT [aws] terraform:           + actions   = [
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:DeregisterTargets",
+15:38:50.611 STDOUT [aws] terraform:               + "elasticloadbalancing:RegisterTargets",
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:           + resources = [
+15:38:50.612 STDOUT [aws] terraform:               + (known after apply),
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:         }
+15:38:50.612 STDOUT [aws] terraform:       + statement {
+15:38:50.612 STDOUT [aws] terraform:           + actions   = [
+15:38:50.612 STDOUT [aws] terraform:               + "elasticloadbalancing:AddListenerCertificates",
+15:38:50.612 STDOUT [aws] terraform:               + "elasticloadbalancing:ModifyListener",
+15:38:50.612 STDOUT [aws] terraform:               + "elasticloadbalancing:ModifyRule",
+15:38:50.612 STDOUT [aws] terraform:               + "elasticloadbalancing:RemoveListenerCertificates",
+15:38:50.612 STDOUT [aws] terraform:               + "elasticloadbalancing:SetRulePriorities",
+15:38:50.612 STDOUT [aws] terraform:               + "elasticloadbalancing:SetWebAcl",
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:           + resources = [
+15:38:50.612 STDOUT [aws] terraform:               + "*",
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:         }
+15:38:50.612 STDOUT [aws] terraform:     }
+15:38:50.612 STDOUT [aws] terraform:   # module.eks_blueprints_addons.data.aws_iam_policy_document.external_secrets[0] will be read during apply
+15:38:50.612 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.612 STDOUT [aws] terraform:  <= data "aws_iam_policy_document" "external_secrets" {
+15:38:50.612 STDOUT [aws] terraform:       + id                        = (known after apply)
+15:38:50.612 STDOUT [aws] terraform:       + json                      = (known after apply)
+15:38:50.612 STDOUT [aws] terraform:       + minified_json             = (known after apply)
+15:38:50.612 STDOUT [aws] terraform:       + override_policy_documents = []
+15:38:50.612 STDOUT [aws] terraform:       + source_policy_documents   = []
+15:38:50.612 STDOUT [aws] terraform:       + statement {
+15:38:50.612 STDOUT [aws] terraform:           + actions   = [
+15:38:50.612 STDOUT [aws] terraform:               + "ssm:DescribeParameters",
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:           + resources = [
+15:38:50.612 STDOUT [aws] terraform:               + "*",
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:         }
+15:38:50.612 STDOUT [aws] terraform:       + statement {
+15:38:50.612 STDOUT [aws] terraform:           + actions   = [
+15:38:50.612 STDOUT [aws] terraform:               + "ssm:GetParameter",
+15:38:50.612 STDOUT [aws] terraform:               + "ssm:GetParameters",
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:           + resources = [
+15:38:50.612 STDOUT [aws] terraform:               + "arn:aws:ssm:*:*:parameter/*",
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:         }
+15:38:50.612 STDOUT [aws] terraform:       + statement {
+15:38:50.612 STDOUT [aws] terraform:           + actions   = [
+15:38:50.612 STDOUT [aws] terraform:               + "secretsmanager:ListSecrets",
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:           + resources = [
+15:38:50.612 STDOUT [aws] terraform:               + "*",
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:         }
+15:38:50.612 STDOUT [aws] terraform:       + statement {
+15:38:50.612 STDOUT [aws] terraform:           + actions   = [
+15:38:50.612 STDOUT [aws] terraform:               + "secretsmanager:BatchGetSecretValue",
+15:38:50.612 STDOUT [aws] terraform:               + "secretsmanager:DescribeSecret",
+15:38:50.612 STDOUT [aws] terraform:               + "secretsmanager:GetResourcePolicy",
+15:38:50.612 STDOUT [aws] terraform:               + "secretsmanager:GetSecretValue",
+15:38:50.612 STDOUT [aws] terraform:               + "secretsmanager:ListSecretVersionIds",
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:           + resources = [
+15:38:50.612 STDOUT [aws] terraform:               + "arn:aws:secretsmanager:*:*:secret:*",
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:         }
+15:38:50.612 STDOUT [aws] terraform:       + statement {
+15:38:50.612 STDOUT [aws] terraform:           + actions   = [
+15:38:50.612 STDOUT [aws] terraform:               + "kms:Decrypt",
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:           + resources = [
+15:38:50.612 STDOUT [aws] terraform:               + "arn:aws:kms:*:*:key/*",
+15:38:50.612 STDOUT [aws] terraform:             ]
+15:38:50.612 STDOUT [aws] terraform:         }
+15:38:50.612 STDOUT [aws] terraform:     }
+15:38:50.612 STDOUT [aws] terraform:   # module.eks_blueprints_addons.data.aws_partition.current will be read during apply
+15:38:50.612 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.613 STDOUT [aws] terraform:  <= data "aws_partition" "current" {
+15:38:50.613 STDOUT [aws] terraform:       + dns_suffix         = (known after apply)
+15:38:50.613 STDOUT [aws] terraform:       + id                 = (known after apply)
+15:38:50.613 STDOUT [aws] terraform:       + partition          = (known after apply)
+15:38:50.613 STDOUT [aws] terraform:       + reverse_dns_prefix = (known after apply)
+15:38:50.613 STDOUT [aws] terraform:     }
+15:38:50.613 STDOUT [aws] terraform:   # module.eks_blueprints_addons.data.aws_region.current will be read during apply
+15:38:50.613 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.613 STDOUT [aws] terraform:  <= data "aws_region" "current" {
+15:38:50.613 STDOUT [aws] terraform:       + description = (known after apply)
+15:38:50.613 STDOUT [aws] terraform:       + endpoint    = (known after apply)
+15:38:50.613 STDOUT [aws] terraform:       + id          = (known after apply)
+15:38:50.613 STDOUT [aws] terraform:       + name        = (known after apply)
+15:38:50.613 STDOUT [aws] terraform:     }
+15:38:50.613 STDOUT [aws] terraform:   # module.eks_blueprints_addons.aws_eks_addon.this["aws-ebs-csi-driver"] will be updated in-place
+15:38:50.613 STDOUT [aws] terraform:   ~ resource "aws_eks_addon" "this" {
+15:38:50.613 STDOUT [aws] terraform:       ~ addon_version               = "v1.41.0-eksbuild.1" -> (known after apply)
+15:38:50.613 STDOUT [aws] terraform:         id                          = "yaya-cluster:aws-ebs-csi-driver"
+15:38:50.613 STDOUT [aws] terraform:         tags                        = {
+15:38:50.613 STDOUT [aws] terraform:             "team" = "yaya-tw"
+15:38:50.613 STDOUT [aws] terraform:         }
+15:38:50.613 STDOUT [aws] terraform:         # (11 unchanged attributes hidden)
+15:38:50.613 STDOUT [aws] terraform:         # (1 unchanged block hidden)
+15:38:50.613 STDOUT [aws] terraform:     }
+15:38:50.613 STDOUT [aws] terraform:   # module.eks_blueprints_addons.aws_eks_addon.this["aws-efs-csi-driver"] will be updated in-place
+15:38:50.613 STDOUT [aws] terraform:   ~ resource "aws_eks_addon" "this" {
+15:38:50.613 STDOUT [aws] terraform:       ~ addon_version               = "v2.1.7-eksbuild.1" -> (known after apply)
+15:38:50.613 STDOUT [aws] terraform:         id                          = "yaya-cluster:aws-efs-csi-driver"
+15:38:50.613 STDOUT [aws] terraform:         tags                        = {
+15:38:50.613 STDOUT [aws] terraform:             "team" = "yaya-tw"
+15:38:50.613 STDOUT [aws] terraform:         }
+15:38:50.613 STDOUT [aws] terraform:         # (11 unchanged attributes hidden)
+15:38:50.613 STDOUT [aws] terraform:         # (1 unchanged block hidden)
+15:38:50.613 STDOUT [aws] terraform:     }
+15:38:50.613 STDOUT [aws] terraform:   # module.eks_blueprints_addons.aws_eks_addon.this["aws-mountpoint-s3-csi-driver"] will be updated in-place
+15:38:50.613 STDOUT [aws] terraform:   ~ resource "aws_eks_addon" "this" {
+15:38:50.613 STDOUT [aws] terraform:       ~ addon_version               = "v1.13.0-eksbuild.1" -> (known after apply)
+15:38:50.613 STDOUT [aws] terraform:         id                          = "yaya-cluster:aws-mountpoint-s3-csi-driver"
+15:38:50.613 STDOUT [aws] terraform:         tags                        = {
+15:38:50.613 STDOUT [aws] terraform:             "team" = "yaya-tw"
+15:38:50.613 STDOUT [aws] terraform:         }
+15:38:50.613 STDOUT [aws] terraform:         # (11 unchanged attributes hidden)
+15:38:50.613 STDOUT [aws] terraform:         # (1 unchanged block hidden)
+15:38:50.613 STDOUT [aws] terraform:     }
+15:38:50.613 STDOUT [aws] terraform:   # module.eks_blueprints_addons.aws_eks_addon.this["coredns"] will be updated in-place
+15:38:50.613 STDOUT [aws] terraform:   ~ resource "aws_eks_addon" "this" {
+15:38:50.613 STDOUT [aws] terraform:       ~ addon_version               = "v1.11.4-eksbuild.2" -> (known after apply)
+15:38:50.613 STDOUT [aws] terraform:         id                          = "yaya-cluster:coredns"
+15:38:50.613 STDOUT [aws] terraform:         tags                        = {
+15:38:50.613 STDOUT [aws] terraform:             "team" = "yaya-tw"
+15:38:50.613 STDOUT [aws] terraform:         }
+15:38:50.613 STDOUT [aws] terraform:         # (11 unchanged attributes hidden)
+15:38:50.613 STDOUT [aws] terraform:         # (1 unchanged block hidden)
+15:38:50.613 STDOUT [aws] terraform:     }
+15:38:50.613 STDOUT [aws] terraform:   # module.eks_blueprints_addons.aws_eks_addon.this["kube-proxy"] will be updated in-place
+15:38:50.613 STDOUT [aws] terraform:   ~ resource "aws_eks_addon" "this" {
+15:38:50.613 STDOUT [aws] terraform:       ~ addon_version               = "v1.31.3-eksbuild.2" -> (known after apply)
+15:38:50.613 STDOUT [aws] terraform:         id                          = "yaya-cluster:kube-proxy"
+15:38:50.613 STDOUT [aws] terraform:         tags                        = {
+15:38:50.613 STDOUT [aws] terraform:             "team" = "yaya-tw"
+15:38:50.613 STDOUT [aws] terraform:         }
+15:38:50.613 STDOUT [aws] terraform:         # (11 unchanged attributes hidden)
+15:38:50.613 STDOUT [aws] terraform:         # (1 unchanged block hidden)
+15:38:50.613 STDOUT [aws] terraform:     }
+15:38:50.613 STDOUT [aws] terraform:   # module.eks_blueprints_addons.aws_eks_addon.this["snapshot-controller"] will be updated in-place
+15:38:50.614 STDOUT [aws] terraform:   ~ resource "aws_eks_addon" "this" {
+15:38:50.614 STDOUT [aws] terraform:       ~ addon_version               = "v8.2.0-eksbuild.1" -> (known after apply)
+15:38:50.614 STDOUT [aws] terraform:         id                          = "yaya-cluster:snapshot-controller"
+15:38:50.614 STDOUT [aws] terraform:         tags                        = {
+15:38:50.614 STDOUT [aws] terraform:             "team" = "yaya-tw"
+15:38:50.614 STDOUT [aws] terraform:         }
+15:38:50.614 STDOUT [aws] terraform:         # (11 unchanged attributes hidden)
+15:38:50.614 STDOUT [aws] terraform:         # (1 unchanged block hidden)
+15:38:50.614 STDOUT [aws] terraform:     }
+15:38:50.614 STDOUT [aws] terraform:   # module.eks_blueprints_addons.aws_eks_addon.this["vpc-cni"] will be updated in-place
+15:38:50.614 STDOUT [aws] terraform:   ~ resource "aws_eks_addon" "this" {
+15:38:50.614 STDOUT [aws] terraform:       ~ addon_version               = "v1.19.3-eksbuild.1" -> (known after apply)
+15:38:50.614 STDOUT [aws] terraform:         id                          = "yaya-cluster:vpc-cni"
+15:38:50.614 STDOUT [aws] terraform:         tags                        = {
+15:38:50.614 STDOUT [aws] terraform:             "team" = "yaya-tw"
+15:38:50.614 STDOUT [aws] terraform:         }
+15:38:50.614 STDOUT [aws] terraform:         # (11 unchanged attributes hidden)
+15:38:50.614 STDOUT [aws] terraform:         # (1 unchanged block hidden)
+15:38:50.614 STDOUT [aws] terraform:     }
+15:38:50.614 STDOUT [aws] terraform:   # module.eks.module.kms.aws_kms_key.this[0] will be updated in-place
+15:38:50.614 STDOUT [aws] terraform:   ~ resource "aws_kms_key" "this" {
+15:38:50.614 STDOUT [aws] terraform:         id                                 = "e234658e-5ae3-431a-83d3-c3ebb453158c"
+15:38:50.614 STDOUT [aws] terraform:       ~ policy                             = jsonencode(
+15:38:50.614 STDOUT [aws] terraform:           ~ {
+15:38:50.614 STDOUT [aws] terraform:               ~ Statement = [
+15:38:50.614 STDOUT [aws] terraform:                     {
+15:38:50.614 STDOUT [aws] terraform:                         Action    = "kms:*"
+15:38:50.614 STDOUT [aws] terraform:                         Effect    = "Allow"
+15:38:50.614 STDOUT [aws] terraform:                         Principal = {
+15:38:50.614 STDOUT [aws] terraform:                             AWS = "arn:aws:iam::916739622174:root"
+15:38:50.614 STDOUT [aws] terraform:                         }
+15:38:50.614 STDOUT [aws] terraform:                         Resource  = "*"
+15:38:50.614 STDOUT [aws] terraform:                         Sid       = "Default"
+15:38:50.614 STDOUT [aws] terraform:                     },
+15:38:50.614 STDOUT [aws] terraform:                   ~ {
+15:38:50.614 STDOUT [aws] terraform:                       ~ Principal = {
+15:38:50.614 STDOUT [aws] terraform:                           ~ AWS = [
+15:38:50.614 STDOUT [aws] terraform:                                 "arn:aws:iam::916739622174:user/yanxianz@ya-ya.tw",
+15:38:50.614 STDOUT [aws] terraform:                               - "arn:aws:iam::916739622174:user/william@ya-ya.tw",
+15:38:50.614 STDOUT [aws] terraform:                                 "arn:aws:iam::916739622174:user/shaoyun@ya-ya.tw",
+15:38:50.614 STDOUT [aws] terraform:                                 # (3 unchanged elements hidden)
+15:38:50.614 STDOUT [aws] terraform:                             ]
+15:38:50.614 STDOUT [aws] terraform:                         }
+15:38:50.614 STDOUT [aws] terraform:                         # (4 unchanged attributes hidden)
+15:38:50.614 STDOUT [aws] terraform:                     },
+15:38:50.614 STDOUT [aws] terraform:                     {
+15:38:50.614 STDOUT [aws] terraform:                         Action    = [
+15:38:50.614 STDOUT [aws] terraform:                             "kms:ReEncrypt*",
+15:38:50.614 STDOUT [aws] terraform:                             "kms:GenerateDataKey*",
+15:38:50.614 STDOUT [aws] terraform:                             "kms:Encrypt",
+15:38:50.614 STDOUT [aws] terraform:                             "kms:DescribeKey",
+15:38:50.614 STDOUT [aws] terraform:                             "kms:Decrypt",
+15:38:50.614 STDOUT [aws] terraform:                         ]
+15:38:50.614 STDOUT [aws] terraform:                         Effect    = "Allow"
+15:38:50.614 STDOUT [aws] terraform:                         Principal = {
+15:38:50.614 STDOUT [aws] terraform:                             AWS = "arn:aws:iam::916739622174:role/yaya-cluster-cluster-2024110707360614740000000a"
+15:38:50.614 STDOUT [aws] terraform:                         }
+15:38:50.614 STDOUT [aws] terraform:                         Resource  = "*"
+15:38:50.614 STDOUT [aws] terraform:                         Sid       = "KeyUsage"
+15:38:50.614 STDOUT [aws] terraform:                     },
+15:38:50.614 STDOUT [aws] terraform:                 ]
+15:38:50.614 STDOUT [aws] terraform:                 # (1 unchanged attribute hidden)
+15:38:50.614 STDOUT [aws] terraform:             }
+15:38:50.614 STDOUT [aws] terraform:         )
+15:38:50.614 STDOUT [aws] terraform:         tags                               = {
+15:38:50.614 STDOUT [aws] terraform:             "team"                  = "yaya-tw"
+15:38:50.614 STDOUT [aws] terraform:             "terraform-aws-modules" = "eks"
+15:38:50.614 STDOUT [aws] terraform:         }
+15:38:50.614 STDOUT [aws] terraform:         # (13 unchanged attributes hidden)
+15:38:50.615 STDOUT [aws] terraform:     }
+15:38:50.615 STDOUT [aws] terraform:   # module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_caller_identity.current[0] will be read during apply
+15:38:50.615 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.615 STDOUT [aws] terraform:  <= data "aws_caller_identity" "current" {
+15:38:50.615 STDOUT [aws] terraform:       + account_id = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:       + arn        = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:       + id         = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:       + user_id    = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:     }
+15:38:50.615 STDOUT [aws] terraform:   # module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_policy_document.assume[0] will be read during apply
+15:38:50.615 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.615 STDOUT [aws] terraform:  <= data "aws_iam_policy_document" "assume" {
+15:38:50.615 STDOUT [aws] terraform:       + id            = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:       + json          = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:       + minified_json = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:       + statement {
+15:38:50.615 STDOUT [aws] terraform:           + actions = [
+15:38:50.615 STDOUT [aws] terraform:               + "sts:AssumeRoleWithWebIdentity",
+15:38:50.615 STDOUT [aws] terraform:             ]
+15:38:50.615 STDOUT [aws] terraform:           + effect  = "Allow"
+15:38:50.615 STDOUT [aws] terraform:           + condition {
+15:38:50.615 STDOUT [aws] terraform:               + test     = "StringEquals"
+15:38:50.615 STDOUT [aws] terraform:               + values   = [
+15:38:50.615 STDOUT [aws] terraform:                   + "sts.amazonaws.com",
+15:38:50.615 STDOUT [aws] terraform:                 ]
+15:38:50.615 STDOUT [aws] terraform:               + variable = "oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858:aud"
+15:38:50.615 STDOUT [aws] terraform:             }
+15:38:50.615 STDOUT [aws] terraform:           + condition {
+15:38:50.615 STDOUT [aws] terraform:               + test     = "StringEquals"
+15:38:50.615 STDOUT [aws] terraform:               + values   = [
+15:38:50.615 STDOUT [aws] terraform:                   + "system:serviceaccount:kube-system:aws-load-balancer-controller-sa",
+15:38:50.615 STDOUT [aws] terraform:                 ]
+15:38:50.615 STDOUT [aws] terraform:               + variable = "oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858:sub"
+15:38:50.615 STDOUT [aws] terraform:             }
+15:38:50.615 STDOUT [aws] terraform:           + principals {
+15:38:50.615 STDOUT [aws] terraform:               + identifiers = [
+15:38:50.615 STDOUT [aws] terraform:                   + "arn:aws:iam::916739622174:oidc-provider/oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858",
+15:38:50.615 STDOUT [aws] terraform:                 ]
+15:38:50.615 STDOUT [aws] terraform:               + type        = "Federated"
+15:38:50.615 STDOUT [aws] terraform:             }
+15:38:50.615 STDOUT [aws] terraform:         }
+15:38:50.615 STDOUT [aws] terraform:     }
+15:38:50.615 STDOUT [aws] terraform:   # module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_policy_document.this[0] will be read during apply
+15:38:50.615 STDOUT [aws] terraform:   # (config refers to values not yet known)
+15:38:50.615 STDOUT [aws] terraform:  <= data "aws_iam_policy_document" "this" {
+15:38:50.615 STDOUT [aws] terraform:       + id                        = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:       + json                      = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:       + minified_json             = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:       + override_policy_documents = []
+15:38:50.615 STDOUT [aws] terraform:       + source_policy_documents   = [
+15:38:50.615 STDOUT [aws] terraform:           + (known after apply),
+15:38:50.615 STDOUT [aws] terraform:         ]
+15:38:50.615 STDOUT [aws] terraform:     }
+15:38:50.615 STDOUT [aws] terraform:   # module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_partition.current[0] will be read during apply
+15:38:50.615 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.615 STDOUT [aws] terraform:  <= data "aws_partition" "current" {
+15:38:50.615 STDOUT [aws] terraform:       + dns_suffix         = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:       + id                 = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:       + partition          = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:       + reverse_dns_prefix = (known after apply)
+15:38:50.615 STDOUT [aws] terraform:     }
+15:38:50.615 STDOUT [aws] terraform:   # module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_policy.this[0] will be updated in-place
+15:38:50.615 STDOUT [aws] terraform:   ~ resource "aws_iam_policy" "this" {
+15:38:50.615 STDOUT [aws] terraform:         id               = "arn:aws:iam::916739622174:policy/alb-controller-2024110707461839820000001d"
+15:38:50.615 STDOUT [aws] terraform:         name             = "alb-controller-2024110707461839820000001d"
+15:38:50.615 STDOUT [aws] terraform:       ~ policy           = jsonencode(
+15:38:50.616 STDOUT [aws] terraform:             {
+15:38:50.616 STDOUT [aws] terraform:               - Statement = [
+15:38:50.616 STDOUT [aws] terraform:                   - {
+15:38:50.616 STDOUT [aws] terraform:                       - Action    = "iam:CreateServiceLinkedRole"
+15:38:50.616 STDOUT [aws] terraform:                       - Condition = {
+15:38:50.616 STDOUT [aws] terraform:                           - StringEquals = {
+15:38:50.616 STDOUT [aws] terraform:                               - "iam:AWSServiceName" = "elasticloadbalancing.amazonaws.com"
+15:38:50.616 STDOUT [aws] terraform:                             }
+15:38:50.616 STDOUT [aws] terraform:                         }
+15:38:50.616 STDOUT [aws] terraform:                       - Effect    = "Allow"
+15:38:50.616 STDOUT [aws] terraform:                       - Resource  = "*"
+15:38:50.616 STDOUT [aws] terraform:                     },
+15:38:50.616 STDOUT [aws] terraform:                   - {
+15:38:50.616 STDOUT [aws] terraform:                       - Action   = [
+15:38:50.616 STDOUT [aws] terraform:                           - "elasticloadbalancing:DescribeTrustStores",
+15:38:50.616 STDOUT [aws] terraform:                           - "elasticloadbalancing:DescribeTargetHealth",
+15:38:50.616 STDOUT [aws] terraform:                           - "elasticloadbalancing:DescribeTargetGroups",
+15:38:50.616 STDOUT [aws] terraform:                           - "elasticloadbalancing:DescribeTargetGroupAttributes",
+15:38:50.616 STDOUT [aws] terraform:                           - "elasticloadbalancing:DescribeTags",
+15:38:50.616 STDOUT [aws] terraform:                           - "elasticloadbalancing:DescribeSSLPolicies",
+15:38:50.616 STDOUT [aws] terraform:                           - "elasticloadbalancing:DescribeRules",
+15:38:50.616 STDOUT [aws] terraform:                           - "elasticloadbalancing:DescribeLoadBalancers",
+15:38:50.616 STDOUT [aws] terraform:                           - "elasticloadbalancing:DescribeLoadBalancerAttributes",
+15:38:50.616 STDOUT [aws] terraform:                           - "elasticloadbalancing:DescribeListeners",
+15:38:50.616 STDOUT [aws] terraform:                           - "elasticloadbalancing:DescribeListenerCertificates",
+15:38:50.616 STDOUT [aws] terraform:                           - "elasticloadbalancing:DescribeListenerAttributes",
+15:38:50.616 STDOUT [aws] terraform:                           - "elasticloadbalancing:DescribeCapacityReservation",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:GetSecurityGroupsForVpc",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:GetCoipPoolUsage",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:DescribeVpcs",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:DescribeVpcPeeringConnections",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:DescribeTags",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:DescribeSubnets",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:DescribeSecurityGroups",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:DescribeNetworkInterfaces",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:DescribeIpamPools",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:DescribeInternetGateways",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:DescribeInstances",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:DescribeCoipPools",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:DescribeAvailabilityZones",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:DescribeAddresses",
+15:38:50.616 STDOUT [aws] terraform:                           - "ec2:DescribeAccountAttributes",
+15:38:50.616 STDOUT [aws] terraform:                         ]
+15:38:50.616 STDOUT [aws] terraform:                       - Effect   = "Allow"
+15:38:50.616 STDOUT [aws] terraform:                       - Resource = "*"
+15:38:50.616 STDOUT [aws] terraform:                     },
+15:38:50.616 STDOUT [aws] terraform:                   - {
+15:38:50.616 STDOUT [aws] terraform:                       - Action   = [
+15:38:50.616 STDOUT [aws] terraform:                           - "wafv2:GetWebACLForResource",
+15:38:50.616 STDOUT [aws] terraform:                           - "wafv2:GetWebACL",
+15:38:50.616 STDOUT [aws] terraform:                           - "wafv2:DisassociateWebACL",
+15:38:50.616 STDOUT [aws] terraform:                           - "wafv2:AssociateWebACL",
+15:38:50.616 STDOUT [aws] terraform:                           - "waf-regional:GetWebACLForResource",
+15:38:50.616 STDOUT [aws] terraform:                           - "waf-regional:GetWebACL",
+15:38:50.616 STDOUT [aws] terraform:                           - "waf-regional:DisassociateWebACL",
+15:38:50.616 STDOUT [aws] terraform:                           - "waf-regional:AssociateWebACL",
+15:38:50.616 STDOUT [aws] terraform:                           - "shield:GetSubscriptionState",
+15:38:50.616 STDOUT [aws] terraform:                           - "shield:DescribeProtection",
+15:38:50.617 STDOUT [aws] terraform:                           - "shield:DeleteProtection",
+15:38:50.617 STDOUT [aws] terraform:                           - "shield:CreateProtection",
+15:38:50.617 STDOUT [aws] terraform:                           - "iam:ListServerCertificates",
+15:38:50.617 STDOUT [aws] terraform:                           - "iam:GetServerCertificate",
+15:38:50.617 STDOUT [aws] terraform:                           - "cognito-idp:DescribeUserPoolClient",
+15:38:50.617 STDOUT [aws] terraform:                           - "acm:ListCertificates",
+15:38:50.617 STDOUT [aws] terraform:                           - "acm:DescribeCertificate",
+15:38:50.617 STDOUT [aws] terraform:                         ]
+15:38:50.617 STDOUT [aws] terraform:                       - Effect   = "Allow"
+15:38:50.617 STDOUT [aws] terraform:                       - Resource = "*"
+15:38:50.617 STDOUT [aws] terraform:                     },
+15:38:50.617 STDOUT [aws] terraform:                   - {
+15:38:50.617 STDOUT [aws] terraform:                       - Action   = [
+15:38:50.617 STDOUT [aws] terraform:                           - "ec2:RevokeSecurityGroupIngress",
+15:38:50.617 STDOUT [aws] terraform:                           - "ec2:AuthorizeSecurityGroupIngress",
+15:38:50.617 STDOUT [aws] terraform:                         ]
+15:38:50.617 STDOUT [aws] terraform:                       - Effect   = "Allow"
+15:38:50.617 STDOUT [aws] terraform:                       - Resource = "*"
+15:38:50.617 STDOUT [aws] terraform:                     },
+15:38:50.617 STDOUT [aws] terraform:                   - {
+15:38:50.617 STDOUT [aws] terraform:                       - Action   = "ec2:CreateSecurityGroup"
+15:38:50.617 STDOUT [aws] terraform:                       - Effect   = "Allow"
+15:38:50.617 STDOUT [aws] terraform:                       - Resource = "*"
+15:38:50.617 STDOUT [aws] terraform:                     },
+15:38:50.617 STDOUT [aws] terraform:                   - {
+15:38:50.617 STDOUT [aws] terraform:                       - Action    = "ec2:CreateTags"
+15:38:50.617 STDOUT [aws] terraform:                       - Condition = {
+15:38:50.617 STDOUT [aws] terraform:                           - Null         = {
+15:38:50.617 STDOUT [aws] terraform:                               - "aws:RequestTag/elbv2.k8s.aws/cluster" = "false"
+15:38:50.617 STDOUT [aws] terraform:                             }
+15:38:50.617 STDOUT [aws] terraform:                           - StringEquals = {
+15:38:50.617 STDOUT [aws] terraform:                               - "ec2:CreateAction" = "CreateSecurityGroup"
+15:38:50.617 STDOUT [aws] terraform:                             }
+15:38:50.617 STDOUT [aws] terraform:                         }
+15:38:50.617 STDOUT [aws] terraform:                       - Effect    = "Allow"
+15:38:50.617 STDOUT [aws] terraform:                       - Resource  = "arn:aws:ec2:*:*:security-group/*"
+15:38:50.617 STDOUT [aws] terraform:                     },
+15:38:50.617 STDOUT [aws] terraform:                   - {
+15:38:50.617 STDOUT [aws] terraform:                       - Action    = [
+15:38:50.617 STDOUT [aws] terraform:                           - "ec2:DeleteTags",
+15:38:50.617 STDOUT [aws] terraform:                           - "ec2:CreateTags",
+15:38:50.617 STDOUT [aws] terraform:                         ]
+15:38:50.617 STDOUT [aws] terraform:                       - Condition = {
+15:38:50.617 STDOUT [aws] terraform:                           - Null = {
+15:38:50.617 STDOUT [aws] terraform:                               - "aws:RequestTag/elbv2.k8s.aws/cluster"  = "true"
+15:38:50.617 STDOUT [aws] terraform:                               - "aws:ResourceTag/elbv2.k8s.aws/cluster" = "false"
+15:38:50.617 STDOUT [aws] terraform:                             }
+15:38:50.617 STDOUT [aws] terraform:                         }
+15:38:50.617 STDOUT [aws] terraform:                       - Effect    = "Allow"
+15:38:50.617 STDOUT [aws] terraform:                       - Resource  = "arn:aws:ec2:*:*:security-group/*"
+15:38:50.617 STDOUT [aws] terraform:                     },
+15:38:50.617 STDOUT [aws] terraform:                   - {
+15:38:50.617 STDOUT [aws] terraform:                       - Action    = [
+15:38:50.617 STDOUT [aws] terraform:                           - "ec2:RevokeSecurityGroupIngress",
+15:38:50.617 STDOUT [aws] terraform:                           - "ec2:DeleteSecurityGroup",
+15:38:50.617 STDOUT [aws] terraform:                           - "ec2:AuthorizeSecurityGroupIngress",
+15:38:50.617 STDOUT [aws] terraform:                         ]
+15:38:50.617 STDOUT [aws] terraform:                       - Condition = {
+15:38:50.617 STDOUT [aws] terraform:                           - Null = {
+15:38:50.617 STDOUT [aws] terraform:                               - "aws:ResourceTag/elbv2.k8s.aws/cluster" = "false"
+15:38:50.617 STDOUT [aws] terraform:                             }
+15:38:50.617 STDOUT [aws] terraform:                         }
+15:38:50.617 STDOUT [aws] terraform:                       - Effect    = "Allow"
+15:38:50.617 STDOUT [aws] terraform:                       - Resource  = "*"
+15:38:50.617 STDOUT [aws] terraform:                     },
+15:38:50.617 STDOUT [aws] terraform:                   - {
+15:38:50.617 STDOUT [aws] terraform:                       - Action    = [
+15:38:50.618 STDOUT [aws] terraform:                           - "elasticloadbalancing:CreateTargetGroup",
+15:38:50.618 STDOUT [aws] terraform:                           - "elasticloadbalancing:CreateLoadBalancer",
+15:38:50.618 STDOUT [aws] terraform:                         ]
+15:38:50.618 STDOUT [aws] terraform:                       - Condition = {
+15:38:50.618 STDOUT [aws] terraform:                           - Null = {
+15:38:50.618 STDOUT [aws] terraform:                               - "aws:RequestTag/elbv2.k8s.aws/cluster" = "false"
+15:38:50.618 STDOUT [aws] terraform:                             }
+15:38:50.618 STDOUT [aws] terraform:                         }
+15:38:50.618 STDOUT [aws] terraform:                       - Effect    = "Allow"
+15:38:50.618 STDOUT [aws] terraform:                       - Resource  = "*"
+15:38:50.618 STDOUT [aws] terraform:                     },
+15:38:50.618 STDOUT [aws] terraform:                   - {
+15:38:50.618 STDOUT [aws] terraform:                       - Action   = [
+15:38:50.618 STDOUT [aws] terraform:                           - "elasticloadbalancing:DeleteRule",
+15:38:50.618 STDOUT [aws] terraform:                           - "elasticloadbalancing:DeleteListener",
+15:38:50.618 STDOUT [aws] terraform:                           - "elasticloadbalancing:CreateRule",
+15:38:50.618 STDOUT [aws] terraform:                           - "elasticloadbalancing:CreateListener",
+15:38:50.618 STDOUT [aws] terraform:                         ]
+15:38:50.618 STDOUT [aws] terraform:                       - Effect   = "Allow"
+15:38:50.618 STDOUT [aws] terraform:                       - Resource = "*"
+15:38:50.618 STDOUT [aws] terraform:                     },
+15:38:50.618 STDOUT [aws] terraform:                   - {
+15:38:50.618 STDOUT [aws] terraform:                       - Action    = [
+15:38:50.618 STDOUT [aws] terraform:                           - "elasticloadbalancing:RemoveTags",
+15:38:50.618 STDOUT [aws] terraform:                           - "elasticloadbalancing:AddTags",
+15:38:50.618 STDOUT [aws] terraform:                         ]
+15:38:50.618 STDOUT [aws] terraform:                       - Condition = {
+15:38:50.618 STDOUT [aws] terraform:                           - Null = {
+15:38:50.618 STDOUT [aws] terraform:                               - "aws:RequestTag/elbv2.k8s.aws/cluster"  = "true"
+15:38:50.618 STDOUT [aws] terraform:                               - "aws:ResourceTag/elbv2.k8s.aws/cluster" = "false"
+15:38:50.618 STDOUT [aws] terraform:                             }
+15:38:50.618 STDOUT [aws] terraform:                         }
+15:38:50.618 STDOUT [aws] terraform:                       - Effect    = "Allow"
+15:38:50.618 STDOUT [aws] terraform:                       - Resource  = [
+15:38:50.618 STDOUT [aws] terraform:                           - "arn:aws:elasticloadbalancing:*:*:targetgroup/*/*",
+15:38:50.618 STDOUT [aws] terraform:                           - "arn:aws:elasticloadbalancing:*:*:loadbalancer/net/*/*",
+15:38:50.618 STDOUT [aws] terraform:                           - "arn:aws:elasticloadbalancing:*:*:loadbalancer/app/*/*",
+15:38:50.618 STDOUT [aws] terraform:                         ]
+15:38:50.618 STDOUT [aws] terraform:                     },
+15:38:50.618 STDOUT [aws] terraform:                   - {
+15:38:50.618 STDOUT [aws] terraform:                       - Action   = [
+15:38:50.618 STDOUT [aws] terraform:                           - "elasticloadbalancing:RemoveTags",
+15:38:50.618 STDOUT [aws] terraform:                           - "elasticloadbalancing:AddTags",
+15:38:50.618 STDOUT [aws] terraform:                         ]
+15:38:50.618 STDOUT [aws] terraform:                       - Effect   = "Allow"
+15:38:50.618 STDOUT [aws] terraform:                       - Resource = [
+15:38:50.618 STDOUT [aws] terraform:                           - "arn:aws:elasticloadbalancing:*:*:listener/net/*/*/*",
+15:38:50.618 STDOUT [aws] terraform:                           - "arn:aws:elasticloadbalancing:*:*:listener/app/*/*/*",
+15:38:50.618 STDOUT [aws] terraform:                           - "arn:aws:elasticloadbalancing:*:*:listener-rule/net/*/*/*",
+15:38:50.618 STDOUT [aws] terraform:                           - "arn:aws:elasticloadbalancing:*:*:listener-rule/app/*/*/*",
+15:38:50.618 STDOUT [aws] terraform:                         ]
+15:38:50.618 STDOUT [aws] terraform:                     },
+15:38:50.618 STDOUT [aws] terraform:                   - {
+15:38:50.618 STDOUT [aws] terraform:                       - Action    = [
+15:38:50.618 STDOUT [aws] terraform:                           - "elasticloadbalancing:SetSubnets",
+15:38:50.618 STDOUT [aws] terraform:                           - "elasticloadbalancing:SetSecurityGroups",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:SetIpAddressType",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:ModifyTargetGroupAttributes",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:ModifyTargetGroup",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:ModifyLoadBalancerAttributes",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:ModifyListenerAttributes",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:ModifyIpPools",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:ModifyCapacityReservation",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:DeleteTargetGroup",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:DeleteLoadBalancer",
+15:38:50.619 STDOUT [aws] terraform:                         ]
+15:38:50.619 STDOUT [aws] terraform:                       - Condition = {
+15:38:50.619 STDOUT [aws] terraform:                           - Null = {
+15:38:50.619 STDOUT [aws] terraform:                               - "aws:ResourceTag/elbv2.k8s.aws/cluster" = "false"
+15:38:50.619 STDOUT [aws] terraform:                             }
+15:38:50.619 STDOUT [aws] terraform:                         }
+15:38:50.619 STDOUT [aws] terraform:                       - Effect    = "Allow"
+15:38:50.619 STDOUT [aws] terraform:                       - Resource  = "*"
+15:38:50.619 STDOUT [aws] terraform:                     },
+15:38:50.619 STDOUT [aws] terraform:                   - {
+15:38:50.619 STDOUT [aws] terraform:                       - Action    = "elasticloadbalancing:AddTags"
+15:38:50.619 STDOUT [aws] terraform:                       - Condition = {
+15:38:50.619 STDOUT [aws] terraform:                           - Null         = {
+15:38:50.619 STDOUT [aws] terraform:                               - "aws:RequestTag/elbv2.k8s.aws/cluster" = "false"
+15:38:50.619 STDOUT [aws] terraform:                             }
+15:38:50.619 STDOUT [aws] terraform:                           - StringEquals = {
+15:38:50.619 STDOUT [aws] terraform:                               - "elasticloadbalancing:CreateAction" = [
+15:38:50.619 STDOUT [aws] terraform:                                   - "CreateTargetGroup",
+15:38:50.619 STDOUT [aws] terraform:                                   - "CreateLoadBalancer",
+15:38:50.619 STDOUT [aws] terraform:                                 ]
+15:38:50.619 STDOUT [aws] terraform:                             }
+15:38:50.619 STDOUT [aws] terraform:                         }
+15:38:50.619 STDOUT [aws] terraform:                       - Effect    = "Allow"
+15:38:50.619 STDOUT [aws] terraform:                       - Resource  = [
+15:38:50.619 STDOUT [aws] terraform:                           - "arn:aws:elasticloadbalancing:*:*:targetgroup/*/*",
+15:38:50.619 STDOUT [aws] terraform:                           - "arn:aws:elasticloadbalancing:*:*:loadbalancer/net/*/*",
+15:38:50.619 STDOUT [aws] terraform:                           - "arn:aws:elasticloadbalancing:*:*:loadbalancer/app/*/*",
+15:38:50.619 STDOUT [aws] terraform:                         ]
+15:38:50.619 STDOUT [aws] terraform:                     },
+15:38:50.619 STDOUT [aws] terraform:                   - {
+15:38:50.619 STDOUT [aws] terraform:                       - Action   = [
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:RegisterTargets",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:DeregisterTargets",
+15:38:50.619 STDOUT [aws] terraform:                         ]
+15:38:50.619 STDOUT [aws] terraform:                       - Effect   = "Allow"
+15:38:50.619 STDOUT [aws] terraform:                       - Resource = "arn:aws:elasticloadbalancing:*:*:targetgroup/*/*"
+15:38:50.619 STDOUT [aws] terraform:                     },
+15:38:50.619 STDOUT [aws] terraform:                   - {
+15:38:50.619 STDOUT [aws] terraform:                       - Action   = [
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:SetWebAcl",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:SetRulePriorities",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:RemoveListenerCertificates",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:ModifyRule",
+15:38:50.619 STDOUT [aws] terraform:                           - "elasticloadbalancing:ModifyListener",
+15:38:50.620 STDOUT [aws] terraform:                           - "elasticloadbalancing:AddListenerCertificates",
+15:38:50.620 STDOUT [aws] terraform:                         ]
+15:38:50.620 STDOUT [aws] terraform:                       - Effect   = "Allow"
+15:38:50.620 STDOUT [aws] terraform:                       - Resource = "*"
+15:38:50.620 STDOUT [aws] terraform:                     },
+15:38:50.620 STDOUT [aws] terraform:                 ]
+15:38:50.620 STDOUT [aws] terraform:               - Version   = "2012-10-17"
+15:38:50.620 STDOUT [aws] terraform:             }
+15:38:50.620 STDOUT [aws] terraform:         ) -> (known after apply)
+15:38:50.620 STDOUT [aws] terraform:         tags             = {
+15:38:50.620 STDOUT [aws] terraform:             "team" = "yaya-tw"
+15:38:50.620 STDOUT [aws] terraform:         }
+15:38:50.620 STDOUT [aws] terraform:         # (7 unchanged attributes hidden)
+15:38:50.620 STDOUT [aws] terraform:     }
+15:38:50.620 STDOUT [aws] terraform:   # module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_role.this[0] will be updated in-place
+15:38:50.620 STDOUT [aws] terraform:   ~ reso
+15:38:50.620 STDOUT [aws] terraform: urce "aws_iam_role" "this" {
+15:38:50.620 STDOUT [aws] terraform:       ~ assume_role_policy    = jsonencode(
+15:38:50.620 STDOUT [aws] terraform:             {
+15:38:50.620 STDOUT [aws] terraform:               - Statement = [
+15:38:50.620 STDOUT [aws] terraform:                   - {
+15:38:50.620 STDOUT [aws] terraform:                       - Action    = "sts:AssumeRoleWithWebIdentity"
+15:38:50.620 STDOUT [aws] terraform:                       - Condition = {
+15:38:50.620 STDOUT [aws] terraform:                           - StringEquals = {
+15:38:50.620 STDOUT [aws] terraform:                               - "oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858:aud" = "sts.amazonaws.com"
+15:38:50.620 STDOUT [aws] terraform:                               - "oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858:sub" = "system:serviceaccount:kube-system:aws-load-balancer-controller-sa"
+15:38:50.620 STDOUT [aws] terraform:                             }
+15:38:50.620 STDOUT [aws] terraform:                         }
+15:38:50.620 STDOUT [aws] terraform:                       - Effect    = "Allow"
+15:38:50.620 STDOUT [aws] terraform:                       - Principal = {
+15:38:50.620 STDOUT [aws] terraform:                           - Federated = "arn:aws:iam::916739622174:oidc-provider/oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858"
+15:38:50.620 STDOUT [aws] terraform:                         }
+15:38:50.620 STDOUT [aws] terraform:                     },
+15:38:50.620 STDOUT [aws] terraform:                 ]
+15:38:50.620 STDOUT [aws] terraform:               - Version   = "2012-10-17"
+15:38:50.620 STDOUT [aws] terraform:             }
+15:38:50.620 STDOUT [aws] terraform:         ) -> (known after apply)
+15:38:50.620 STDOUT [aws] terraform:         id                    = "alb-controller-20241107074649133900000024"
+15:38:50.620 STDOUT [aws] terraform:         name                  = "alb-controller-20241107074649133900000024"
+15:38:50.620 STDOUT [aws] terraform:         tags                  = {
+15:38:50.620 STDOUT [aws] terraform:             "team" = "yaya-tw"
+15:38:50.620 STDOUT [aws] terraform:         }
+15:38:50.620 STDOUT [aws] terraform:         # (11 unchanged attributes hidden)
+15:38:50.620 STDOUT [aws] terraform:     }
+15:38:50.620 STDOUT [aws] terraform:   # module.eks_blueprints_addons.module.external_secrets.data.aws_caller_identity.current[0] will be read during apply
+15:38:50.620 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.620 STDOUT [aws] terraform:  <= data "aws_caller_identity" "current" {
+15:38:50.620 STDOUT [aws] terraform:       + account_id = (known after apply)
+15:38:50.620 STDOUT [aws] terraform:       + arn        = (known after apply)
+15:38:50.620 STDOUT [aws] terraform:       + id         = (known after apply)
+15:38:50.620 STDOUT [aws] terraform:       + user_id    = (known after apply)
+15:38:50.620 STDOUT [aws] terraform:     }
+15:38:50.620 STDOUT [aws] terraform:   # module.eks_blueprints_addons.module.external_secrets.data.aws_iam_policy_document.assume[0] will be read during apply
+15:38:50.620 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.620 STDOUT [aws] terraform:  <= data "aws_iam_policy_document" "assume" {
+15:38:50.620 STDOUT [aws] terraform:       + id            = (known after apply)
+15:38:50.620 STDOUT [aws] terraform:       + json          = (known after apply)
+15:38:50.620 STDOUT [aws] terraform:       + minified_json = (known after apply)
+15:38:50.620 STDOUT [aws] terraform:       + statement {
+15:38:50.620 STDOUT [aws] terraform:           + actions = [
+15:38:50.620 STDOUT [aws] terraform:               + "sts:AssumeRoleWithWebIdentity",
+15:38:50.620 STDOUT [aws] terraform:             ]
+15:38:50.620 STDOUT [aws] terraform:           + effect  = "Allow"
+15:38:50.620 STDOUT [aws] terraform:           + condition {
+15:38:50.620 STDOUT [aws] terraform:               + test     = "StringEquals"
+15:38:50.620 STDOUT [aws] terraform:               + values   = [
+15:38:50.620 STDOUT [aws] terraform:                   + "sts.amazonaws.com",
+15:38:50.620 STDOUT [aws] terraform:                 ]
+15:38:50.620 STDOUT [aws] terraform:               + variable = "oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858:aud"
+15:38:50.621 STDOUT [aws] terraform:             }
+15:38:50.621 STDOUT [aws] terraform:           + condition {
+15:38:50.621 STDOUT [aws] terraform:               + test     = "StringEquals"
+15:38:50.621 STDOUT [aws] terraform:               + values   = [
+15:38:50.621 STDOUT [aws] terraform:                   + "system:serviceaccount:external-secrets:external-secrets-sa",
+15:38:50.621 STDOUT [aws] terraform:                 ]
+15:38:50.621 STDOUT [aws] terraform:               + variable = "oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858:sub"
+15:38:50.621 STDOUT [aws] terraform:             }
+15:38:50.621 STDOUT [aws] terraform:           + principals {
+15:38:50.621 STDOUT [aws] terraform:               + identifiers = [
+15:38:50.621 STDOUT [aws] terraform:                   + "arn:aws:iam::916739622174:oidc-provider/oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858",
+15:38:50.621 STDOUT [aws] terraform:                 ]
+15:38:50.621 STDOUT [aws] terraform:               + type        = "Federated"
+15:38:50.621 STDOUT [aws] terraform:             }
+15:38:50.621 STDOUT [aws] terraform:         }
+15:38:50.621 STDOUT [aws] terraform:     }
+15:38:50.621 STDOUT [aws] terraform:   # module.eks_blueprints_addons.module.external_secrets.data.aws_iam_policy_document.this[0] will be read during apply
+15:38:50.621 STDOUT [aws] terraform:   # (config refers to values not yet known)
+15:38:50.621 STDOUT [aws] terraform:  <= data "aws_iam_policy_document" "this" {
+15:38:50.621 STDOUT [aws] terraform:       + id                        = (known after apply)
+15:38:50.621 STDOUT [aws] terraform:       + json                      = (known after apply)
+15:38:50.621 STDOUT [aws] terraform:       + minified_json             = (known after apply)
+15:38:50.621 STDOUT [aws] terraform:       + override_policy_documents = []
+15:38:50.621 STDOUT [aws] terraform:       + source_policy_documents   = [
+15:38:50.621 STDOUT [aws] terraform:           + (known after apply),
+15:38:50.621 STDOUT [aws] terraform:         ]
+15:38:50.621 STDOUT [aws] terraform:     }
+15:38:50.621 STDOUT [aws] terraform:   # module.eks_blueprints_addons.module.external_secrets.data.aws_partition.current[0] will be read during apply
+15:38:50.621 STDOUT [aws] terraform:   # (depends on a resource or a module with changes pending)
+15:38:50.621 STDOUT [aws] terraform:  <= data "aws_partition" "current" {
+15:38:50.621 STDOUT [aws] terraform:       + dns_suffix         = (known after apply)
+15:38:50.621 STDOUT [aws] terraform:       + id                 = (known after apply)
+15:38:50.621 STDOUT [aws] terraform:       + partition          = (known after apply)
+15:38:50.621 STDOUT [aws] terraform:       + reverse_dns_prefix = (known after apply)
+15:38:50.621 STDOUT [aws] terraform:     }
+15:38:50.621 STDOUT [aws] terraform:   # module.eks_blueprints_addons.module.external_secrets.aws_iam_policy.this[0] will be updated in-place
+15:38:50.621 STDOUT [aws] terraform:   ~ resource "aws_iam_policy" "this" {
+15:38:50.621 STDOUT [aws] terraform:         id               = "arn:aws:iam::916739622174:policy/external-secrets-2024110707461835920000001c"
+15:38:50.621 STDOUT [aws] terraform:         name             = "external-secrets-2024110707461835920000001c"
+15:38:50.621 STDOUT [aws] terraform:       ~ policy           = jsonencode(
+15:38:50.621 STDOUT [aws] terraform:             {
+15:38:50.621 STDOUT [aws] terraform:               - Statement = [
+15:38:50.621 STDOUT [aws] terraform:                   - {
+15:38:50.621 STDOUT [aws] terraform:                       - Action   = "ssm:DescribeParameters"
+15:38:50.621 STDOUT [aws] terraform:                       - Effect   = "Allow"
+15:38:50.621 STDOUT [aws] terraform:                       - Resource = "*"
+15:38:50.621 STDOUT [aws] terraform:                     },
+15:38:50.621 STDOUT [aws] terraform:                   - {
+15:38:50.621 STDOUT [aws] terraform:                       - Action   = [
+15:38:50.621 STDOUT [aws] terraform:                           - "ssm:GetParameters",
+15:38:50.621 STDOUT [aws] terraform:                           - "ssm:GetParameter",
+15:38:50.621 STDOUT [aws] terraform:                         ]
+15:38:50.621 STDOUT [aws] terraform:                       - Effect   = "Allow"
+15:38:50.621 STDOUT [aws] terraform:                       - Resource = "arn:aws:ssm:*:*:parameter/*"
+15:38:50.621 STDOUT [aws] terraform:                     },
+15:38:50.621 STDOUT [aws] terraform:                   - {
+15:38:50.621 STDOUT [aws] terraform:                       - Action   = "secretsmanager:ListSecrets"
+15:38:50.621 STDOUT [aws] terraform:                       - Effect   = "Allow"
+15:38:50.621 STDOUT [aws] terraform:                       - Resource = "*"
+15:38:50.621 STDOUT [aws] terraform:                     },
+15:38:50.621 STDOUT [aws] terraform:                   - {
+15:38:50.621 STDOUT [aws] terraform:                       - Action   = [
+15:38:50.621 STDOUT [aws] terraform:                           - "secretsmanager:ListSecretVersionIds",
+15:38:50.621 STDOUT [aws] terraform:                           - "secretsmanager:GetSecretValue",
+15:38:50.621 STDOUT [aws] terraform:                           - "secretsmanager:GetResourcePolicy",
+15:38:50.621 STDOUT [aws] terraform:                           - "secretsmanager:DescribeSecret",
+15:38:50.622 STDOUT [aws] terraform:                           - "secretsmanager:BatchGetSecretValue",
+15:38:50.622 STDOUT [aws] terraform:                         ]
+15:38:50.622 STDOUT [aws] terraform:                       - Effect   = "Allow"
+15:38:50.622 STDOUT [aws] terraform:                       - Resource = "arn:aws:secretsmanager:*:*:secret:*"
+15:38:50.622 STDOUT [aws] terraform:                     },
+15:38:50.622 STDOUT [aws] terraform:                   - {
+15:38:50.622 STDOUT [aws] terraform:                       - Action   = "kms:Decrypt"
+15:38:50.622 STDOUT [aws] terraform:                       - Effect   = "Allow"
+15:38:50.622 STDOUT [aws] terraform:                       - Resource = "arn:aws:kms:*:*:key/*"
+15:38:50.622 STDOUT [aws] terraform:                     },
+15:38:50.622 STDOUT [aws] terraform:                 ]
+15:38:50.622 STDOUT [aws] terraform:               - Version   = "2012-10-17"
+15:38:50.622 STDOUT [aws] terraform:             }
+15:38:50.622 STDOUT [aws] terraform:         ) -> (known after apply)
+15:38:50.622 STDOUT [aws] terraform:         tags             = {
+15:38:50.622 STDOUT [aws] terraform:             "team" = "yaya-tw"
+15:38:50.622 STDOUT [aws] terraform:         }
+15:38:50.622 STDOUT [aws] terraform:         # (7 unchanged attributes hidden)
+15:38:50.622 STDOUT [aws] terraform:     }
+15:38:50.622 STDOUT [aws] terraform:   # module.eks_blueprints_addons.module.external_secrets.aws_iam_role.this[0] will be updated in-place
+15:38:50.622 STDOUT [aws] terraform:   ~ resource "aws_iam_role" "this" {
+15:38:50.622 STDOUT [aws] terraform:       ~ assume_role_policy    = jsonencode(
+15:38:50.622 STDOUT [aws] terraform:             {
+15:38:50.622 STDOUT [aws] terraform:               - Statement = [
+15:38:50.622 STDOUT [aws] terraform:                   - {
+15:38:50.622 STDOUT [aws] terraform:                       - Action    = "sts:AssumeRoleWithWebIdentity"
+15:38:50.622 STDOUT [aws] terraform:                       - Condition = {
+15:38:50.622 STDOUT [aws] terraform:                           - StringEquals = {
+15:38:50.622 STDOUT [aws] terraform:                               - "oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858:aud" = "sts.amazonaws.com"
+15:38:50.622 STDOUT [aws] terraform:                               - "oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858:sub" = "system:serviceaccount:external-secrets:external-secrets-sa"
+15:38:50.622 STDOUT [aws] terraform:                             }
+15:38:50.622 STDOUT [aws] terraform:                         }
+15:38:50.622 STDOUT [aws] terraform:                       - Effect    = "Allow"
+15:38:50.622 STDOUT [aws] terraform:                       - Principal = {
+15:38:50.622 STDOUT [aws] terraform:                           - Federated = "arn:aws:iam::916739622174:oidc-provider/oidc.eks.us-east-2.amazonaws.com/id/315EB370F31974729811D6350256B858"
+15:38:50.622 STDOUT [aws] terraform:                         }
+15:38:50.622 STDOUT [aws] terraform:                     },
+15:38:50.622 STDOUT [aws] terraform:                 ]
+15:38:50.622 STDOUT [aws] terraform:               - Version   = "2012-10-17"
+15:38:50.622 STDOUT [aws] terraform:             }
+15:38:50.622 STDOUT [aws] terraform:         ) -> (known after apply)
+15:38:50.622 STDOUT [aws] terraform:         id                    = "external-secrets-20241107074649130900000023"
+15:38:50.622 STDOUT [aws] terraform:         name                  = "external-secrets-20241107074649130900000023"
+15:38:50.622 STDOUT [aws] terraform:         tags                  = {
+15:38:50.622 STDOUT [aws] terraform:             "team" = "yaya-tw"
+15:38:50.622 STDOUT [aws] terraform:         }
+15:38:50.622 STDOUT [aws] terraform:         # (11 unchanged attributes hidden)
+15:38:50.622 STDOUT [aws] terraform:     }
+15:38:50.622 STDOUT [aws] terraform: Plan: 0 to add, 13 to change, 2 to destroy.
+15:38:50.622 STDOUT [aws] terraform: Changes to Outputs:
+15:38:50.622 STDOUT [aws] terraform:   ~ eks_cluster                      = (sensitive value)
+15:38:50.622 STDOUT [aws] terraform: ─────────────────────────────────────────────────────────────────────────────
+15:38:50.622 STDOUT [aws] terraform: Note: You didn't use the -out option to save this plan, so Terraform can't
+15:38:50.622 STDOUT [aws] terraform: guarantee to take exactly these actions if you run "terraform apply" now.
+15:38:56.875 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["argocd-ingress"]: Reading...
+15:38:56.876 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["bloomreach-api-ingress:development"]: Reading...
+15:38:56.876 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["matomo-ingress"]: Reading...
+15:38:56.876 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["stl-app-2023-ingress:staging"]: Reading...
+15:38:56.876 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["hydrogen-payloadCMS:staging"]: Reading...
+15:38:56.876 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["n8n-ingress"]: Reading...
+15:38:56.876 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["crontab-ui-ingress"]: Reading...
+15:38:56.876 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["crontab-admin-ingress"]: Reading...
+15:38:56.876 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["bloomreach-api-ingress:production"]: Reading...
+15:38:57.487 STDOUT [datadog] terraform: data.aws_secretsmanager_secret.datadog: Reading...
+15:38:57.722 STDOUT [k8s] terraform: kubectl_manifest.troubleshooting_pod: Refreshing state... [id=/api/v1/namespaces/production/pods/troubleshooting-pod]
+15:38:57.722 STDOUT [k8s] terraform: helm_release.argocd: Refreshing state... [id=argocd]
+15:38:57.722 STDOUT [k8s] terraform: helm_release.reloader: Refreshing state... [id=reloader]
+15:38:57.722 STDOUT [k8s] terraform: helm_release.kyverno: Refreshing state... [id=kyverno]
+15:38:57.723 STDOUT [k8s] terraform: kubectl_manifest.argocd_ingress: Refreshing state... [id=/apis/networking.k8s.io/v1/namespaces/argocd/ingresses/argocd-ingress]
+15:38:57.724 STDOUT [k8s] terraform: kubectl_manifest.cluster_secretstore: Refreshing state... [id=/apis/external-secrets.io/v1beta1/clustersecretstores/cluster-secret-manager-secretstore]
+15:38:57.725 STDOUT [k8s] terraform: kubectl_manifest.deployment_policy: Refreshing state... [id=/apis/kyverno.io/v1/clusterpolicys/production-deployment-standards]
+15:38:57.767 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["wishlist-app-ingress:production"]: Reading...
+15:38:57.784 STDOUT [cicd] terraform: data.kubernetes_secret.argocd_initial_admin_secret: Reading...
+15:38:58.260 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["hydrogen-payloadCMS:staging"]: Read complete after 1s [id=staging/payload-app-ingress]
+15:38:58.261 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["matomo-ingress"]: Read complete after 1s [id=matomo/matomo-ingress]
+15:38:58.264 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["wishlist-app-ingress:development"]: Reading...
+15:38:58.264 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["loyalty-app-ingress:development"]: Reading...
+15:38:58.364 STDOUT [datadog] terraform: data.aws_secretsmanager_secret.datadog: Read complete after 1s [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:yaya-k8s/secret/datadog-gAXr7Y]
+15:38:58.367 STDOUT [datadog] terraform: data.aws_secretsmanager_secret_version.datadog_creds: Reading...
+15:38:58.448 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["crontab-ui-ingress"]: Read complete after 1s [id=production/crontab-ui-ingress]
+15:38:58.449 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["shopify-task-processor-ingress"]: Reading...
+15:38:58.450 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["bloomreach-api-ingress:development"]: Read complete after 1s [id=development/bloomreach-api-ingress]
+15:38:58.452 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["hydrogen-payloadCMS:production"]: Reading...
+15:38:58.466 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["n8n-ingress"]: Read complete after 1s [id=n8n/n8n-app-ingress]
+15:38:58.468 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["hydrogen-payloadCMS:development"]: Reading...
+15:38:58.468 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["crontab-admin-ingress"]: Read complete after 1s [id=production/crontab-admin-ingress]
+15:38:58.470 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["stl-app-2023-ingress:staging"]: Read complete after 1s [id=staging/stl-app-2023-ingress]
+15:38:58.470 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["personalized-app-ingress:production"]: Reading...
+15:38:58.470 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["bloomreach-api-ingress:production"]: Read complete after 1s [id=production/bloomreach-api-ingress]
+15:38:58.471 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["bullboard-ingress"]: Reading...
+15:38:58.471 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["argocd-ingress"]: Read complete after 1s [id=argocd/argocd-ingress]
+15:38:58.472 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["loyalty-app-ingress:staging"]: Reading...
+15:38:58.472 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["wishlist-app-ingress:production"]: Read complete after 0s [id=production/wishlist-app-ingress]
+15:38:58.473 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["bloomreach-api-ingress:staging"]: Reading...
+15:38:58.474 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["wishlist-app-ingress:staging"]: Reading...
+15:38:58.482 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["loyalty-app-ingress:development"]: Read complete after 0s [id=development/loyalty-admin-2025-ingress]
+15:38:58.488 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["personalized-app-ingress:development"]: Reading...
+15:38:58.597 STDOUT [k8s] terraform: data.aws_secretsmanager_secret.airflow_connection_creds: Reading...
+15:38:58.605 STDOUT [datadog] terraform: data.aws_secretsmanager_secret_version.datadog_creds: Read complete after 1s [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:yaya-k8s/secret/datadog-gAXr7Y|AWSCURRENT]
+15:38:58.620 STDOUT [datadog] terraform: helm_release.datadog: Refreshing state... [id=datadog-agent]
+15:38:58.658 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["wishlist-app-ingress:development"]: Read complete after 1s [id=development/wishlist-app-ingress]
+15:38:58.659 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["loyalty-app-ingress:production"]: Reading...
+15:38:58.685 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["hydrogen-payloadCMS:production"]: Read complete after 1s [id=payload/payload-app-ingress]
+15:38:58.685 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["shopify-task-processor-ingress"]: Read complete after 1s [id=production/shopify-task-processor-ingress]
+15:38:58.686 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["personalized-app-ingress:staging"]: Reading...
+15:38:58.687 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["personalized-app-ingress:production"]: Read complete after 1s [id=production/personalized-app-ingress]
+15:38:58.687 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["hydrogen-payloadCMS:development"]: Read complete after 1s [id=development/payload-app-ingress]
+15:38:58.688 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["bullboard-ingress"]: Read complete after 1s [id=bullboard/bullboard-ingress]
+15:38:58.690 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["wishlist-app-ingress:staging"]: Read complete after 1s [id=staging/wishlist-app-ingress]
+15:38:58.690 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["loyalty-app-ingress:staging"]: Read complete after 1s [id=staging/loyalty-admin-2025-ingress]
+15:38:58.691 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["bloomreach-api-ingress:staging"]: Read complete after 1s [id=staging/bloomreach-api-ingress]
+15:38:58.693 STDOUT [cicd] terraform: data.aws_secretsmanager_secret.aws_creds: Reading...
+15:38:58.693 STDOUT [cicd] terraform: data.aws_secretsmanager_secret.github_creds: Reading...
+15:38:58.694 STDOUT [cloudflare] terraform: data.aws_secretsmanager_secret.cloudflare_creds: Reading...
+15:38:58.703 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["personalized-app-ingress:development"]: Read complete after 1s [id=development/personalized-app-ingress]
+15:38:58.875 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["loyalty-app-ingress:production"]: Read complete after 0s [id=production/loyalty-admin-2025-ingress]
+15:38:58.904 STDOUT [cloudflare] terraform: data.kubernetes_ingress_v1.all_ingresses["personalized-app-ingress:staging"]: Read complete after 0s [id=staging/personalized-app-ingress]
+15:38:59.043 STDOUT [cicd] terraform: data.kubernetes_secret.argocd_initial_admin_secret: Read complete after 1s [id=argocd/argocd-initial-admin-secret]
+15:38:59.099 STDOUT [cicd] terraform: argocd_account_token.devops: Refreshing state... [id=8db582b2-28eb-4a4e-a1c8-1459cd7348f3]
+15:38:59.471 STDOUT [k8s] terraform: data.aws_secretsmanager_secret.airflow_connection_creds: Read complete after 0s [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:yaya-k8s/secret/airflow-NCrZ7e]
+15:38:59.473 STDOUT [k8s] terraform: data.aws_secretsmanager_secret_version.airflow_connection_creds: Reading...
+15:38:59.577 STDOUT [cicd] terraform: data.aws_secretsmanager_secret.github_creds: Read complete after 1s [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:yaya-k8s/secret/github-creds-DpTbly]
+15:38:59.578 STDOUT [cicd] terraform: data.aws_secretsmanager_secret.aws_creds: Read complete after 1s [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:yaya-k8s/secret/aws-creds-933Qgu]
+15:38:59.578 STDOUT [cloudflare] terraform: data.aws_secretsmanager_secret.cloudflare_creds: Read complete after 1s [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:yaya-k8s/secret/cloudflare-creds-wBILJp]
+15:38:59.579 STDOUT [cloudflare] terraform: data.aws_secretsmanager_secret_version.cloudflare_creds: Reading...
+15:38:59.579 STDOUT [cicd] terraform: data.aws_secretsmanager_secret_version.github_creds: Reading...
+15:38:59.580 STDOUT [cicd] terraform: data.aws_secretsmanager_secret_version.aws_creds: Reading...
+15:38:59.717 STDOUT [k8s] terraform: data.aws_secretsmanager_secret_version.airflow_connection_creds: Read complete after 1s [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:yaya-k8s/secret/airflow-NCrZ7e|AWSCURRENT]
+15:38:59.809 STDOUT [cicd] terraform: data.aws_secretsmanager_secret_version.github_creds: Read complete after 0s [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:yaya-k8s/secret/github-creds-DpTbly|AWSCURRENT]
+15:38:59.815 STDOUT [cloudflare] terraform: data.aws_secretsmanager_secret_version.cloudflare_creds: Read complete after 0s [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:yaya-k8s/secret/cloudflare-creds-wBILJp|AWSCURRENT]
+15:38:59.826 STDOUT [cicd] terraform: data.aws_secretsmanager_secret_version.aws_creds: Read complete after 0s [id=arn:aws:secretsmanager:us-east-2:916739622174:secret:yaya-k8s/secret/aws-creds-933Qgu|AWSCURRENT]
+15:38:59.889 STDOUT [cloudflare] terraform: data.cloudflare_zone.efmt_app: Reading...
+15:39:00.339 STDOUT [cloudflare] terraform: data.cloudflare_zone.efmt_app: Read complete after 0s [id=161b707d45122e4cb1372d606795f5f7]
+15:39:00.346 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["wishlist-app-staging"]: Refreshing state... [id=60faef1c11575377c17b930570ec126f]
+15:39:00.347 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["personalized-app-dev"]: Refreshing state... [id=6f410dee260abd5903c84497595f4a37]
+15:39:00.347 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["wishlist-app-dev"]: Refreshing state... [id=e07342dbaae1fc5104956f150c426a5a]
+15:39:00.347 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["efmt-task-processor"]: Refreshing state... [id=6180234d90ef51ae274482cc2941eb97]
+15:39:00.347 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["payloadcms-staging"]: Refreshing state... [id=0eb1821b96aaa95ac043b77219a6aaa6]
+15:39:00.347 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["crontab-admin"]: Refreshing state... [id=da6d4ed3a1190d48f202e8d29eba4eab]
+15:39:00.347 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["matomo-service"]: Refreshing state... [id=ad8f37ead738264e0c822c93ac574903]
+15:39:00.347 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["payloadcms-production"]: Refreshing state... [id=f4b18cdc6866e1e16bd7039e3e08ac33]
+15:39:00.347 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["loyalty-app-dev"]: Refreshing state... [id=fc775e3282b7f9d02b741d751da7119a]
+15:39:00.347 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["qc-task-processor"]: Refreshing state... [id=2b490928af1e28dcfab5ddd3d431d3f1]
+15:39:00.458 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["11"]: Refreshing state... [id=discount-app:AWS_SECRET_ACCESS_KEY]
+15:39:00.461 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["16"]: Refreshing state... [id=matomo:AWS_SECRET_ACCESS_KEY]
+15:39:00.461 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["8"]: Refreshing state... [id=payload-cms-tmp:AWS_SECRET_ACCESS_KEY]
+15:39:00.461 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["1"]: Refreshing state... [id=shopify-task-processor:AWS_SECRET_ACCESS_KEY]
+15:39:00.461 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["9"]: Refreshing state... [id=personalized-app:AWS_SECRET_ACCESS_KEY]
+15:39:00.461 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["15"]: Refreshing state... [id=stl-app-2023:AWS_SECRET_ACCESS_KEY]
+15:39:00.461 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["14"]: Refreshing state... [id=yaya-cluster-infra:AWS_SECRET_ACCESS_KEY]
+15:39:00.461 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["3"]: Refreshing state... [id=loyalty-app:AWS_SECRET_ACCESS_KEY]
+15:39:00.463 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["12"]: Refreshing state... [id=personalized-api:AWS_SECRET_ACCESS_KEY]
+15:39:00.595 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["loyalty-app"]: Refreshing state... [id=cdf459ae25d7cdc77e3d047c8c76b7e0]
+15:39:00.771 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["13"]: Refreshing state... [id=yaya-api-service:AWS_SECRET_ACCESS_KEY]
+15:39:00.870 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["ehmt-task-processor"]: Refreshing state... [id=4487aa1e47f2ac510222780a471a54f7]
+15:39:01.108 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["4"]: Refreshing state... [id=pma-2023:AWS_SECRET_ACCESS_KEY]
+15:39:01.133 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["n8n-app"]: Refreshing state... [id=d03b1acdff866933f40aeac044bbd5d8]
+15:39:01.442 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["2"]: Refreshing state... [id=wishlist-app:AWS_SECRET_ACCESS_KEY]
+15:39:01.560 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["personalized-app"]: Refreshing state... [id=00dc8aa6710623949168a283d4ac6e88]
+15:39:01.676 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["stl-app-staging"]: Refreshing state... [id=a62e05b6957e4b13d0d8098369b39e0e]
+15:39:01.768 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["5"]: Refreshing state... [id=loyalty-api-2025:AWS_SECRET_ACCESS_KEY]
+15:39:01.855 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["personalized-app-staging"]: Refreshing state... [id=608b72660b40db15c7ceb852a93b0355]
+15:39:02.074 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["10"]: Refreshing state... [id=hydrogen-payloadCMS:AWS_SECRET_ACCESS_KEY]
+15:39:02.155 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["argocd-admin"]: Refreshing state... [id=a8efca3ec33983c1442f3a620af62b60]
+15:39:02.354 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["yaya-testing-task-processor"]: Refreshing state... [id=8a752aa39b8fc67297dfc78b6e5653a1]
+15:39:02.370 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["0"]: Refreshing state... [id=bloomreach-api:AWS_SECRET_ACCESS_KEY]
+15:39:02.632 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["sff-task-processor"]: Refreshing state... [id=e82dea55fcbd4c83b7daf232383bf26c]
+15:39:02.691 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["6"]: Refreshing state... [id=loyalty-admin-2025:AWS_SECRET_ACCESS_KEY]
+15:39:02.865 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["bull-queue-admin"]: Refreshing state... [id=c16279cac8320d969e9bacd03c05e48b]
+15:39:03.007 STDOUT [cicd] terraform: github_actions_secret.AWS_SECRET_ACCESS_KEY["7"]: Refreshing state... [id=airflow:AWS_SECRET_ACCESS_KEY]
+15:39:03.106 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["bloomreach-event-track-staging"]: Refreshing state... [id=730f792653cfd4e3f76a66001a573416]
+15:39:03.352 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["wishlist-app"]: Refreshing state... [id=82d08e64bd47eddbccc2b00c6d0c5fbb]
+15:39:03.371 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["3"]: Refreshing state... [id=loyalty-app:SLACK_WEBHOOK_URL]
+15:39:03.598 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["wholesale-task-processor"]: Refreshing state... [id=f442e62d4b7711f41dd7f32b0f297b1c]
+15:39:03.685 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["8"]: Refreshing state... [id=payload-cms-tmp:SLACK_WEBHOOK_URL]
+15:39:03.867 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["bloomreach-event-track-dev"]: Refreshing state... [id=ca0a3b1429a39bb2cf1407b72557eeba]
+15:39:04.018 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["5"]: Refreshing state... [id=loyalty-api-2025:SLACK_WEBHOOK_URL]
+15:39:04.110 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["loyalty-app-staging"]: Refreshing state... [id=27ab39f0c63c7d8469387f12c89aac28]
+15:39:04.372 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["tcf-task-processor"]: Refreshing state... [id=943a1eb3cc1c99a79fa9f5c63452bf15]
+15:39:04.382 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["14"]: Refreshing state... [id=yaya-cluster-infra:SLACK_WEBHOOK_URL]
+15:39:04.600 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["bloomreach-event-track"]: Refreshing state... [id=9677e41adb4ee4dec06deeca87e621fa]
+15:39:04.680 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["11"]: Refreshing state... [id=discount-app:SLACK_WEBHOOK_URL]
+15:39:04.725 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["1"]: Refreshing state... [id=shopify-task-processor:SLACK_WEBHOOK_URL]
+15:39:04.852 STDOUT [cloudflare] terraform: cloudflare_record.dns_records["payloadcms-development"]: Refreshing state... [id=ea72885522cabab244a80efc60317469]
+15:39:05.042 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["2"]: Refreshing state... [id=wishlist-app:SLACK_WEBHOOK_URL]
+15:39:05.361 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["15"]: Refreshing state... [id=stl-app-2023:SLACK_WEBHOOK_URL]
+15:39:05.716 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["12"]: Refreshing state... [id=personalized-api:SLACK_WEBHOOK_URL]
+15:39:05.999 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["10"]: Refreshing state... [id=hydrogen-payloadCMS:SLACK_WEBHOOK_URL]
+15:39:06.176 STDOUT [datadog] terraform: No changes. Your infrastructure matches the configuration.
+15:39:06.176 STDOUT [datadog] terraform: Terraform has compared your real infrastructure against your configuration
+15:39:06.176 STDOUT [datadog] terraform: and found no differences, so no changes are needed.
+15:39:06.326 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["13"]: Refreshing state... [id=yaya-api-service:SLACK_WEBHOOK_URL]
+15:39:06.659 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["9"]: Refreshing state... [id=personalized-app:SLACK_WEBHOOK_URL]
+15:39:07.001 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["16"]: Refreshing state... [id=matomo:SLACK_WEBHOOK_URL]
+15:39:07.393 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["0"]: Refreshing state... [id=bloomreach-api:SLACK_WEBHOOK_URL]
+15:39:07.527 STDOUT [cloudflare] terraform: No changes. Your infrastructure matches the configuration.
+15:39:07.527 STDOUT [cloudflare] terraform: Terraform has compared your real infrastructure against your configuration
+15:39:07.527 STDOUT [cloudflare] terraform: and found no differences, so no changes are needed.
+15:39:07.730 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["4"]: Refreshing state... [id=pma-2023:SLACK_WEBHOOK_URL]
+15:39:08.046 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["6"]: Refreshing state... [id=loyalty-admin-2025:SLACK_WEBHOOK_URL]
+15:39:08.345 STDOUT [cicd] terraform: github_actions_secret.SLACK_WEBHOOK_URL["7"]: Refreshing state... [id=airflow:SLACK_WEBHOOK_URL]
+15:39:08.661 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["5"]: Refreshing state... [id=loyalty-api-2025:ARGOCD_ENDPOINT]
+15:39:08.953 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["11"]: Refreshing state... [id=discount-app:ARGOCD_ENDPOINT]
+15:39:09.285 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["7"]: Refreshing state... [id=airflow:ARGOCD_ENDPOINT]
+15:39:09.604 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["12"]: Refreshing state... [id=personalized-api:ARGOCD_ENDPOINT]
+15:39:10.043 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["3"]: Refreshing state... [id=loyalty-app:ARGOCD_ENDPOINT]
+15:39:10.203 STDOUT [k8s] terraform: kubectl_manifest.argocd_repository_creds_secret: Refreshing state... [id=/apis/external-secrets.io/v1beta1/namespaces/argocd/externalsecrets/argocd-repository-creds]
+15:39:10.203 STDOUT [k8s] terraform: kubectl_manifest.argocd_cm: Refreshing state... [id=/api/v1/namespaces/argocd/configmaps/argocd-cm]
+15:39:10.362 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["8"]: Refreshing state... [id=payload-cms-tmp:ARGOCD_ENDPOINT]
+15:39:10.670 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["2"]: Refreshing state... [id=wishlist-app:ARGOCD_ENDPOINT]
+15:39:10.988 STDOUT [k8s] terraform: kubectl_manifest.wishlist_app_staging_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/wishlist-app-staging]
+15:39:10.989 STDOUT [k8s] terraform: kubectl_manifest.argocd_rbac_cm: Refreshing state... [id=/api/v1/namespaces/argocd/configmaps/argocd-rbac-cm]
+15:39:10.989 STDOUT [k8s] terraform: kubectl_manifest.matomo_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/matomo]
+15:39:10.991 STDOUT [k8s] terraform: kubectl_manifest.bullboard_server_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/bullboard-server]
+15:39:10.992 STDOUT [k8s] terraform: kubectl_manifest.pma_2023_staging_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/pma-2023-staging]
+15:39:10.992 STDOUT [k8s] terraform: kubectl_manifest.stl_app_2023_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/stl-app-2023]
+15:39:10.992 STDOUT [k8s] terraform: kubectl_manifest.task_processor_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/shopify-task-processor]
+15:39:10.992 STDOUT [k8s] terraform: kubectl_manifest.loyalty_api_2025_development_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/loyalty-api-2025-development]
+15:39:11.009 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["13"]: Refreshing state... [id=yaya-api-service:ARGOCD_ENDPOINT]
+15:39:11.719 STDOUT [k8s] terraform: kubectl_manifest.discount_app_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/discount-app]
+15:39:11.760 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["9"]: Refreshing state... [id=personalized-app:ARGOCD_ENDPOINT]
+15:39:11.929 STDOUT [k8s] terraform: kubectl_manifest.bloomreach_api_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/bloomreach-api]
+15:39:11.957 STDOUT [k8s] terraform: kubectl_manifest.payload_app_production_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/payload-app]
+15:39:11.957 STDOUT [k8s] terraform: kubectl_manifest.wishlist_app_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/wishlist-app]
+15:39:11.958 STDOUT [k8s] terraform: kubectl_manifest.personalized_app_staging_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/personalized-app-staging]
+15:39:12.060 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["16"]: Refreshing state... [id=matomo:ARGOCD_ENDPOINT]
+15:39:12.144 STDOUT [k8s] terraform: kubectl_manifest.stl_app_2023_staging_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/stl-app-2023-staging]
+15:39:12.145 STDOUT [k8s] terraform: kubectl_manifest.api_service_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/yaya-api-service]
+15:39:12.145 STDOUT [k8s] terraform: kubectl_manifest.loyalty_admin_2025_staging_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/loyalty-admin-2025-staging]
+15:39:12.390 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["0"]: Refreshing state... [id=bloomreach-api:ARGOCD_ENDPOINT]
+15:39:12.580 STDOUT [k8s] terraform: kubectl_manifest.aws_service_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/aws-service]
+15:39:12.583 STDOUT [k8s] terraform: kubectl_manifest.n8n_app_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/n8n]
+15:39:12.609 STDOUT [k8s] terraform: kubectl_manifest.wishlist_app_development_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/wishlist-app-development]
+15:39:12.614 STDOUT [k8s] terraform: kubectl_manifest.stl_app_2023_development_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/stl-app-2023-development]
+15:39:12.616 STDOUT [k8s] terraform: kubectl_manifest.loyalty_api_2025_staging_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/loyalty-api-2025-staging]
+15:39:12.684 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["10"]: Refreshing state... [id=hydrogen-payloadCMS:ARGOCD_ENDPOINT]
+15:39:12.802 STDOUT [k8s] terraform: kubectl_manifest.personalized_app_development_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/personalized-app-development]
+15:39:12.806 STDOUT [k8s] terraform: kubectl_manifest.loyalty_api_2025_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/loyalty-api-2025]
+15:39:12.806 STDOUT [k8s] terraform: kubectl_manifest.cronjob_admin_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/cronjob-admin-server]
+15:39:12.986 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["1"]: Refreshing state... [id=shopify-task-processor:ARGOCD_ENDPOINT]
+15:39:13.088 STDOUT [k8s] terraform: kubectl_manifest.personalized_app_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/personalized-app]
+15:39:13.241 STDOUT [k8s] terraform: kubectl_manifest.discount_app_staging_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/discount-app-staging]
+15:39:13.246 STDOUT [k8s] terraform: kubectl_manifest.loyalty_admin_2025_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/loyalty-admin-2025]
+15:39:13.262 STDOUT [k8s] terraform: kubectl_manifest.bloomreach_api_development_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/bloomreach-api-development]
+15:39:13.263 STDOUT [k8s] terraform: kubectl_manifest.pma_2023_development_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/pma-2023-development]
+15:39:13.268 STDOUT [k8s] terraform: kubectl_manifest.portainer_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/portainer]
+15:39:13.316 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["15"]: Refreshing state... [id=stl-app-2023:ARGOCD_ENDPOINT]
+15:39:13.461 STDOUT [k8s] terraform: kubectl_manifest.pma_2023_qc_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/pma-2023-qc]
+15:39:13.463 STDOUT [k8s] terraform: kubectl_manifest.payload_app_development_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/payload-app-development]
+15:39:13.463 STDOUT [k8s] terraform: kubectl_manifest.payload_app_staging_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/payload-app-staging]
+15:39:13.621 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["6"]: Refreshing state... [id=loyalty-admin-2025:ARGOCD_ENDPOINT]
+15:39:13.735 STDOUT [k8s] terraform: kubectl_manifest.pma_2023_production_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/pma-2023]
+15:39:13.892 STDOUT [k8s] terraform: kubectl_manifest.bloomreach_api_staging_argocd_application: Refreshing state... [id=/apis/argoproj.io/v1alpha1/namespaces/argocd/applications/bloomreach-api-staging]
+15:39:13.931 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["14"]: Refreshing state... [id=yaya-cluster-infra:ARGOCD_ENDPOINT]
+15:39:14.237 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_ENDPOINT["4"]: Refreshing state... [id=pma-2023:ARGOCD_ENDPOINT]
+15:39:14.537 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["15"]: Refreshing state... [id=stl-app-2023:SLACK_GROUPS]
+15:39:14.668 STDOUT [k8s] terraform: No changes. Your infrastructure matches the configuration.
+15:39:14.669 STDOUT [k8s] terraform: Terraform has compared your real infrastructure against your configuration
+15:39:14.669 STDOUT [k8s] terraform: and found no differences, so no changes are needed.
+15:39:14.857 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["3"]: Refreshing state... [id=loyalty-app:SLACK_GROUPS]
+15:39:15.179 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["12"]: Refreshing state... [id=personalized-api:SLACK_GROUPS]
+15:39:15.502 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["6"]: Refreshing state... [id=loyalty-admin-2025:SLACK_GROUPS]
+15:39:15.790 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["11"]: Refreshing state... [id=discount-app:SLACK_GROUPS]
+15:39:16.084 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["16"]: Refreshing state... [id=matomo:SLACK_GROUPS]
+15:39:16.492 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["13"]: Refreshing state... [id=yaya-api-service:SLACK_GROUPS]
+15:39:16.901 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["4"]: Refreshing state... [id=pma-2023:SLACK_GROUPS]
+15:39:17.213 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["8"]: Refreshing state... [id=payload-cms-tmp:SLACK_GROUPS]
+15:39:17.540 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["9"]: Refreshing state... [id=personalized-app:SLACK_GROUPS]
+15:39:17.909 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["1"]: Refreshing state... [id=shopify-task-processor:SLACK_GROUPS]
+15:39:18.242 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["14"]: Refreshing state... [id=yaya-cluster-infra:SLACK_GROUPS]
+15:39:18.556 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["0"]: Refreshing state... [id=bloomreach-api:SLACK_GROUPS]
+15:39:18.872 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["5"]: Refreshing state... [id=loyalty-api-2025:SLACK_GROUPS]
+15:39:19.257 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["10"]: Refreshing state... [id=hydrogen-payloadCMS:SLACK_GROUPS]
+15:39:19.568 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["2"]: Refreshing state... [id=wishlist-app:SLACK_GROUPS]
+15:39:19.902 STDOUT [cicd] terraform: github_actions_secret.SLACK_GROUPS["7"]: Refreshing state... [id=airflow:SLACK_GROUPS]
+15:39:20.281 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["10"]: Refreshing state... [id=hydrogen-payloadCMS:AWS_ECR_URL]
+15:39:20.691 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["16"]: Refreshing state... [id=matomo:AWS_ECR_URL]
+15:39:21.085 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["9"]: Refreshing state... [id=personalized-app:AWS_ECR_URL]
+15:39:21.407 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["7"]: Refreshing state... [id=airflow:AWS_ECR_URL]
+15:39:21.733 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["4"]: Refreshing state... [id=pma-2023:AWS_ECR_URL]
+15:39:22.046 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["2"]: Refreshing state... [id=wishlist-app:AWS_ECR_URL]
+15:39:22.351 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["2"]: Refreshing state... [id=wishlist-app:AWS_REGION]
+15:39:22.697 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["3"]: Refreshing state... [id=loyalty-app:AWS_ECR_URL]
+15:39:23.003 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["1"]: Refreshing state... [id=shopify-task-processor:AWS_ECR_URL]
+15:39:23.353 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["8"]: Refreshing state... [id=payload-cms-tmp:AWS_ECR_URL]
+15:39:23.661 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["6"]: Refreshing state... [id=loyalty-admin-2025:AWS_ECR_URL]
+15:39:23.965 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["5"]: Refreshing state... [id=loyalty-api-2025:AWS_ECR_URL]
+15:39:24.378 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["15"]: Refreshing state... [id=stl-app-2023:AWS_ECR_URL]
+15:39:24.787 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["8"]: Refreshing state... [id=payload-cms-tmp:AWS_REGION]
+15:39:25.196 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["14"]: Refreshing state... [id=yaya-cluster-infra:AWS_REGION]
+15:39:25.606 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["3"]: Refreshing state... [id=loyalty-app:AWS_REGION]
+15:39:25.939 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["12"]: Refreshing state... [id=personalized-api:AWS_REGION]
+15:39:26.323 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["13"]: Refreshing state... [id=yaya-api-service:AWS_REGION]
+15:39:26.728 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["11"]: Refreshing state... [id=discount-app:AWS_REGION]
+15:39:27.044 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["0"]: Refreshing state... [id=bloomreach-api:AWS_REGION]
+15:39:27.396 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["9"]: Refreshing state... [id=personalized-app:AWS_REGION]
+15:39:27.709 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["5"]: Refreshing state... [id=loyalty-api-2025:AWS_REGION]
+15:39:28.015 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["7"]: Refreshing state... [id=airflow:AWS_REGION]
+15:39:28.344 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["0"]: Refreshing state... [id=bloomreach-api:AWS_ECR_URL]
+15:39:28.642 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["12"]: Refreshing state... [id=personalized-api:AWS_ECR_URL]
+15:39:28.942 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["14"]: Refreshing state... [id=yaya-cluster-infra:AWS_ECR_URL]
+15:39:29.250 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["13"]: Refreshing state... [id=yaya-api-service:AWS_ECR_URL]
+15:39:29.577 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["15"]: Refreshing state... [id=stl-app-2023:AWS_REGION]
+15:39:29.881 STDOUT [cicd] terraform: github_actions_secret.AWS_ECR_URL["11"]: Refreshing state... [id=discount-app:AWS_ECR_URL]
+15:39:30.203 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["6"]: Refreshing state... [id=loyalty-admin-2025:AWS_REGION]
+15:39:30.516 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["1"]: Refreshing state... [id=shopify-task-processor:AWS_REGION]
+15:39:30.839 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["16"]: Refreshing state... [id=matomo:AWS_REGION]
+15:39:31.148 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["4"]: Refreshing state... [id=pma-2023:AWS_REGION]
+15:39:31.485 STDOUT [cicd] terraform: github_actions_secret.AWS_REGION["10"]: Refreshing state... [id=hydrogen-payloadCMS:AWS_REGION]
+15:39:31.783 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["7"]: Refreshing state... [id=airflow:AWS_ACCESS_KEY_ID]
+15:39:32.109 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["5"]: Refreshing state... [id=loyalty-api-2025:AWS_ACCESS_KEY_ID]
+15:39:32.447 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["3"]: Refreshing state... [id=loyalty-app:AWS_ACCESS_KEY_ID]
+15:39:32.768 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["1"]: Refreshing state... [id=shopify-task-processor:AWS_ACCESS_KEY_ID]
+15:39:33.183 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["0"]: Refreshing state... [id=bloomreach-api:AWS_ACCESS_KEY_ID]
+15:39:33.478 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["12"]: Refreshing state... [id=personalized-api:AWS_ACCESS_KEY_ID]
+15:39:33.786 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["16"]: Refreshing state... [id=matomo:AWS_ACCESS_KEY_ID]
+15:39:34.089 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["2"]: Refreshing state... [id=wishlist-app:AWS_ACCESS_KEY_ID]
+15:39:34.415 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["8"]: Refreshing state... [id=payload-cms-tmp:AWS_ACCESS_KEY_ID]
+15:39:34.821 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["9"]: Refreshing state... [id=personalized-app:AWS_ACCESS_KEY_ID]
+15:39:35.131 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["14"]: Refreshing state... [id=yaya-cluster-infra:AWS_ACCESS_KEY_ID]
+15:39:35.537 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["15"]: Refreshing state... [id=stl-app-2023:AWS_ACCESS_KEY_ID]
+15:39:35.948 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["11"]: Refreshing state... [id=discount-app:AWS_ACCESS_KEY_ID]
+15:39:36.257 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["4"]: Refreshing state... [id=pma-2023:AWS_ACCESS_KEY_ID]
+15:39:36.572 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["10"]: Refreshing state... [id=hydrogen-payloadCMS:AWS_ACCESS_KEY_ID]
+15:39:36.880 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["13"]: Refreshing state... [id=yaya-api-service:AWS_ACCESS_KEY_ID]
+15:39:37.185 STDOUT [cicd] terraform: github_actions_secret.AWS_ACCESS_KEY_ID["6"]: Refreshing state... [id=loyalty-admin-2025:AWS_ACCESS_KEY_ID]
+15:39:37.504 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["13"]: Refreshing state... [id=yaya-api-service:SLACK_USERS]
+15:39:37.894 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["0"]: Refreshing state... [id=bloomreach-api:ACCESS_TOKEN]
+15:39:38.200 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["15"]: Refreshing state... [id=stl-app-2023:SLACK_USERS]
+15:39:38.519 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["0"]: Refreshing state... [id=bloomreach-api:SLACK_USERS]
+15:39:38.867 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["5"]: Refreshing state... [id=loyalty-api-2025:SLACK_USERS]
+15:39:39.224 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["1"]: Refreshing state... [id=shopify-task-processor:SLACK_USERS]
+15:39:39.573 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["10"]: Refreshing state... [id=hydrogen-payloadCMS:SLACK_USERS]
+15:39:39.891 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["14"]: Refreshing state... [id=yaya-cluster-infra:SLACK_USERS]
+15:39:40.187 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["11"]: Refreshing state... [id=discount-app:SLACK_USERS]
+15:39:40.516 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["12"]: Refreshing state... [id=personalized-api:SLACK_USERS]
+15:39:40.825 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["3"]: Refreshing state... [id=loyalty-app:SLACK_USERS]
+15:39:41.170 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["8"]: Refreshing state... [id=payload-cms-tmp:SLACK_USERS]
+15:39:41.459 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["7"]: Refreshing state... [id=airflow:SLACK_USERS]
+15:39:41.749 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["16"]: Refreshing state... [id=matomo:SLACK_USERS]
+15:39:42.091 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["9"]: Refreshing state... [id=personalized-app:SLACK_USERS]
+15:39:42.392 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["2"]: Refreshing state... [id=wishlist-app:SLACK_USERS]
+15:39:42.809 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["4"]: Refreshing state... [id=pma-2023:SLACK_USERS]
+15:39:43.217 STDOUT [cicd] terraform: github_actions_secret.SLACK_USERS["6"]: Refreshing state... [id=loyalty-admin-2025:SLACK_USERS]
+15:39:43.554 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["15"]: Refreshing state... [id=stl-app-2023:ACCESS_TOKEN]
+15:39:43.939 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["1"]: Refreshing state... [id=shopify-task-processor:ACCESS_TOKEN]
+15:39:44.239 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["14"]: Refreshing state... [id=yaya-cluster-infra:ACCESS_TOKEN]
+15:39:44.651 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["16"]: Refreshing state... [id=matomo:ACCESS_TOKEN]
+15:39:44.985 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["13"]: Refreshing state... [id=yaya-api-service:ACCESS_TOKEN]
+15:39:45.368 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["12"]: Refreshing state... [id=personalized-api:ACCESS_TOKEN]
+15:39:45.693 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["11"]: Refreshing state... [id=discount-app:ACCESS_TOKEN]
+15:39:46.013 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["8"]: Refreshing state... [id=payload-cms-tmp:ACCESS_TOKEN]
+15:39:46.392 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["10"]: Refreshing state... [id=hydrogen-payloadCMS:ACCESS_TOKEN]
+15:39:46.799 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["9"]: Refreshing state... [id=personalized-app:ACCESS_TOKEN]
+15:39:47.208 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["6"]: Refreshing state... [id=loyalty-admin-2025:ACCESS_TOKEN]
+15:39:47.524 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["7"]: Refreshing state... [id=airflow:ACCESS_TOKEN]
+15:39:47.844 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["2"]: Refreshing state... [id=wishlist-app:ACCESS_TOKEN]
+15:39:48.236 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["3"]: Refreshing state... [id=loyalty-app:ACCESS_TOKEN]
+15:39:48.512 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["4"]: Refreshing state... [id=pma-2023:ACCESS_TOKEN]
+15:39:48.849 STDOUT [cicd] terraform: github_actions_secret.GITHUB_TOKEN["5"]: Refreshing state... [id=loyalty-api-2025:ACCESS_TOKEN]
+15:39:49.261 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["7"]: Refreshing state... [id=airflow:ARGOCD_TOKEN]
+15:39:49.580 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["6"]: Refreshing state... [id=loyalty-admin-2025:ARGOCD_TOKEN]
+15:39:49.891 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["4"]: Refreshing state... [id=pma-2023:ARGOCD_TOKEN]
+15:39:50.284 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["10"]: Refreshing state... [id=hydrogen-payloadCMS:ARGOCD_TOKEN]
+15:39:50.693 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["15"]: Refreshing state... [id=stl-app-2023:ARGOCD_TOKEN]
+15:39:51.107 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["5"]: Refreshing state... [id=loyalty-api-2025:ARGOCD_TOKEN]
+15:39:51.510 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["0"]: Refreshing state... [id=bloomreach-api:ARGOCD_TOKEN]
+15:39:51.805 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["3"]: Refreshing state... [id=loyalty-app:ARGOCD_TOKEN]
+15:39:52.125 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["1"]: Refreshing state... [id=shopify-task-processor:ARGOCD_TOKEN]
+15:39:52.440 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["11"]: Refreshing state... [id=discount-app:ARGOCD_TOKEN]
+15:39:52.735 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["16"]: Refreshing state... [id=matomo:ARGOCD_TOKEN]
+15:39:53.022 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["13"]: Refreshing state... [id=yaya-api-service:ARGOCD_TOKEN]
+15:39:53.322 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["14"]: Refreshing state... [id=yaya-cluster-infra:ARGOCD_TOKEN]
+15:39:53.662 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["9"]: Refreshing state... [id=personalized-app:ARGOCD_TOKEN]
+15:39:53.966 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["8"]: Refreshing state... [id=payload-cms-tmp:ARGOCD_TOKEN]
+15:39:54.262 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["2"]: Refreshing state... [id=wishlist-app:ARGOCD_TOKEN]
+15:39:54.581 STDOUT [cicd] terraform: github_actions_secret.ARGOCD_TOKEN["12"]: Refreshing state... [id=personalized-api:ARGOCD_TOKEN]
+15:39:58.073 STDOUT [cicd] terraform: Terraform used the selected providers to generate the following execution
+15:39:58.073 STDOUT [cicd] terraform: plan. Resource actions are indicated with the following symbols:
+15:39:58.073 STDOUT [cicd] terraform:   + create
+15:39:58.074 STDOUT [cicd] terraform: Terraform will perform the following actions:
+15:39:58.074 STDOUT [cicd] terraform:   # github_actions_secret.AWS_ACCESS_KEY_ID["14"] will be created
+15:39:58.074 STDOUT [cicd] terraform:   + resource "github_actions_secret" "AWS_ACCESS_KEY_ID" {
+15:39:58.074 STDOUT [cicd] terraform:       + created_at      = (known after apply)
+15:39:58.074 STDOUT [cicd] terraform:       + id              = (known after apply)
+15:39:58.074 STDOUT [cicd] terraform:       + plaintext_value = (sensitive value)
+15:39:58.074 STDOUT [cicd] terraform:       + repository      = "yaya-cluster-infra"
+15:39:58.074 STDOUT [cicd] terraform:       + secret_name     = "AWS_ACCESS_KEY_ID"
+15:39:58.074 STDOUT [cicd] terraform:       + updated_at      = (known after apply)
+15:39:58.074 STDOUT [cicd] terraform:     }
+15:39:58.074 STDOUT [cicd] terraform:   # github_actions_secret.AWS_SECRET_ACCESS_KEY["14"] will be created
+15:39:58.074 STDOUT [cicd] terraform:   + resource "github_actions_secret" "AWS_SECRET_ACCESS_KEY" {
+15:39:58.074 STDOUT [cicd] terraform:       + created_at      = (known after apply)
+15:39:58.074 STDOUT [cicd] terraform:       + id              = (known after apply)
+15:39:58.074 STDOUT [cicd] terraform:       + plaintext_value = (sensitive value)
+15:39:58.074 STDOUT [cicd] terraform:       + repository      = "yaya-cluster-infra"
+15:39:58.074 STDOUT [cicd] terraform:       + secret_name     = "AWS_SECRET_ACCESS_KEY"
+15:39:58.074 STDOUT [cicd] terraform:       + updated_at      = (known after apply)
+15:39:58.074 STDOUT [cicd] terraform:     }
+15:39:58.074 STDOUT [cicd] terraform: Plan: 2 to add, 0 to change, 0 to destroy.
+15:39:58.074 STDOUT [cicd] terraform: ─────────────────────────────────────────────────────────────────────────────
+15:39:58.074 STDOUT [cicd] terraform: Note: You didn't use the -out option to save this plan, so Terraform can't
+15:39:58.074 STDOUT [cicd] terraform: guarantee to take exactly these actions if you run "terraform apply" now.
