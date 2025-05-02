@@ -29,12 +29,14 @@ jobs:
         id: plan
         run: |
           terraform plan -no-color > plan.txt
-          echo "PLAN<<EOF" >> $GITHUB_OUTPUT
-          cat plan.txt >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          echo "PLAN_OUTPUT<<EOF" >> $GITHUB_ENV
+          cat plan.txt >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
 
       - name: Comment on PR
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           message: |
-            Release ${{ github.sha }} to <https://pr-${{ github.event.number }}.example.com>
+            ## 📌 Terraform Plan Result
+            ```
+            ${{ env.PLAN_OUTPUT }}
