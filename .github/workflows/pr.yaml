@@ -28,7 +28,7 @@ jobs:
       - name: Terraform Plan
         id: plan
         run: |
-          terraform plan -no-color | grep -A20 'Terraform will perform the following actions' > plan.txt
+          terraform plan -no-color | grep -A20 'Terraform will perform the following actions' > plan.txt > plan.txt
           echo "PLAN_OUTPUT<<EOF" >> $GITHUB_ENV
           cat plan.txt >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
@@ -63,5 +63,5 @@ jobs:
         with:
           # tell the action the plan outputs
           terraform-text: ${{ github.workspace }}/terraform.text
-          terraform-json: ${{ github.workspace }}/terraform.json
+          # terraform-json: ${{ github.workspace }}/terraform.json
           show-diff: true
