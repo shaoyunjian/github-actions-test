@@ -33,10 +33,22 @@ jobs:
           cat plan.txt >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
+      # - name: Comment on PR
+      #   uses: marocchino/sticky-pull-request-comment@v2
+      #   with:
+      #     message: |
+      #       ## 📌 Terraform Plan Result
+      #       ```
+      #       ${{ env.PLAN_OUTPUT }}
+
       - name: Comment on PR
-        uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          message: |
-            ## 📌 Terraform Plan Result
-            ```
-            ${{ env.PLAN_OUTPUT }}
+      uses: peter-evans/create-or-update-comment@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        issue-number: ${{ github.event.pull_request.number }}
+        body: |
+          ## 📌 Terraform Plan Result
+          ```
+          ${{ env.PLAN_OUTPUT }}
+          ```
+    
