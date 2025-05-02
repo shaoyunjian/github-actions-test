@@ -5,8 +5,8 @@ on:
     branches:
       - main
 
-permissions:
-  contents: read
+# permissions:
+#   contents: read
 
 jobs:
   terraform-prerequisites:
@@ -28,13 +28,12 @@ jobs:
   manual-approval:
     timeout-minutes: 5
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
     needs: terraform-prerequisites
     steps:
       - uses: trstringer/manual-approval@v1
         with:
           secret: ${{ secrets.ACCESS_TOKEN }}
-        #   approvers: "DevOps"
+          #   approvers: "DevOps"
           approvers: shaoyunjian
           minimum-approvals: 1
           issue-title: "Deploying version ${{ github.sha }} to prod from staging"
@@ -44,6 +43,7 @@ jobs:
           additional-denied-words: ""
 
   terraform-apply:
+    name: Terraform Apply
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
