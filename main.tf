@@ -7,3 +7,21 @@ resource "null_resource" "example" {
     command = "echo Hello from Terraform"
   }
 }
+
+resource "null_resource" "example2" {
+  provisioner "local-exec" {
+    command = "echo TTTTTESTTTTTTTT"
+  }
+}
+
+# resource "null_resource" "example3" {
+#   provisioner "local-exec" {
+#     command = "echo TTTTTEST2"
+#   }
+# }
+
+resource "null_resource" "example4" {
+  provisioner "local-exec" {
+    command = "echo TTTTTEST2"
+  }
+}
