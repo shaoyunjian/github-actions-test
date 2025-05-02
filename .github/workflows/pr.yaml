@@ -62,5 +62,5 @@ jobs:
         with:
           # tell the action the plan outputs
           terraform-text: test.txt
-          terraform-json: test.json
-          show-diff: true
+          # terraform-json: test.json
+          # show-diff: true

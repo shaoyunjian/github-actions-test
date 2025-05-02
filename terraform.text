@@ -1,0 +1,20 @@
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+  - destroy
+
+Terraform will perform the following actions:
+
+  # null_resource.example3 will be destroyed
+  # (because null_resource.example3 is not in configuration)
+  - resource "null_resource" "example3" {
+      - id = "1948343682286871173" -> null
+    }
+
+  # null_resource.example4 will be created
+  + resource "null_resource" "example4" {
+      + id = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 1 to destroy.
