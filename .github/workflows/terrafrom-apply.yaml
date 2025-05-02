@@ -1,0 +1,60 @@
+name: Terraform Apply on Merge
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  terraform-prerequisites:
+    name: Terraform Init & Plan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.8.5
+      - name: Terraform Init
+        run: terraform init
+      - name: Terraform Plan
+        run: terraform plan
+
+  manual-approval:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    needs: terraform-prerequisites
+    steps:
+      - uses: trstringer/manual-approval@v1
+        with:
+          secret: ${{ secrets.ACCESS_TOKEN }}
+        #   approvers: "DevOps"
+          approvers: shaoyunjian
+          minimum-approvals: 1
+          issue-title: "Deploying version ${{ github.sha }} to prod from staging"
+          issue-body: "Please approve or deny the deployment of version ${{ github.sha }}."
+          exclude-workflow-initiator-as-approver: false
+          additional-approved-words: ""
+          additional-denied-words: ""
+
+  terraform-apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.8.5
+
+      - name: Terraform Apply
+        run: echo "Terraform Apply Test"
+    #   - name: Terraform Apply
+    #     run: terraform apply -auto-approve
