@@ -55,8 +55,8 @@ jobs:
             ```
 
       # 選手二
-      - run: terraform plan -lock=false -out terraform.plan
-      # generate plain output
+      - run: terraform plan -out terraform.plan
+
       - run: terraform show -no-color terraform.plan > terraform.text
 
       # generate json output
@@ -67,5 +67,5 @@ jobs:
           # tell the action the plan outputs
           terraform-text: ${{ github.workspace }}/terraform.text
           terraform-json: ${{ github.workspace }}/terraform.json
-          remove-stale-reports: true
+          show-diff: true
     
