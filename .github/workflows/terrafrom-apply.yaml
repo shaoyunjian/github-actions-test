@@ -15,7 +15,7 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v4
   manual-approval:
-    timeout-minutes: 10
+    timeout-minutes: 1
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     needs: build
@@ -23,7 +23,7 @@ jobs:
       - uses: trstringer/manual-approval@v1
         with:
           secret: ${{ secrets.ACCESS_TOKEN }}
-          approvers: 'DevOps'
+          approvers: 'shaoyunjian'
           minimum-approvals: 1
           issue-title: "Deploying version ${{ github.sha }} to prod from staging"
           issue-body: "Please approve or deny the deployment of version ${{ github.sha }}."
