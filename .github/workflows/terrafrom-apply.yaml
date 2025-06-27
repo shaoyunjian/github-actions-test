@@ -36,9 +36,20 @@ jobs:
     needs: [build, manual-approval]
     if: always()
     steps:
+      - name: fail if conditional job failed
+        if: ${{ needs.build.result != 'success' || needs.manual-approval.result != 'success' }}
+        run: exit 1
       - name: print job status
         run: |
           echo "Build job status: ${{ needs.build.result }}"
       - name: print job status
         run: |
           echo "Build job status: ${{ needs.manual-approval.result }}"
+      - name: Trigger when succeeded
+        if: success()
+        run: |
+          echo "success"
+      - name: Trigger when failed
+        if: failure()
+        run: |
+          echo "failure"
