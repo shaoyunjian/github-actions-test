@@ -42,4 +42,4 @@ jobs:
                 "attachment_type": "default"
               }
             ]
-          }' "SLACK_WEBHOOK_URL"
+          }' "$SLACK_WEBHOOK_URL"
