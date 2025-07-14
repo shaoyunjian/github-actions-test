@@ -36,7 +36,7 @@ jobs:
                 "text": ":tada: Image Build and Push to ECR Completed!
           • Repo: ${{ github.repository }}
           • Committer: ${{ github.event.pusher.name }}
-          • Commit Message: '"$commit_message"'
+          • Commit Message: "$commit_message"
           • <'$actions_url'|GitHub Action>",
                 "color": "#36a64f",
                 "attachment_type": "default"
