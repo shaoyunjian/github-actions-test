@@ -5,7 +5,7 @@ on:
       - main
     paths-ignore:
       - 'README.md'
-jobs:
+jobs: 
   deploy:
     env:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_TW_CI_URL }}
