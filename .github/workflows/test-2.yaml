@@ -14,29 +14,23 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
-      - name: Get commit message
+
+      - name: Get commit message and escape for JSON
+        id: get_commit_msg
         run: |
-          echo "GIT_COMMIT_MESSAGE<<EOF" >> "$GITHUB_ENV"
-          git log -1 --pretty=%B >> "$GITHUB_ENV"
-          echo "EOF" >> "$GITHUB_ENV"
-      - name: test
-        run: |
-              COMMIT=$(jq -Rs <<< '${{ env.GIT_COMMIT_MESSAGE }}')
-              echo "COMMIT_MESSAGE_ESCAPED=$COMMIT" >> "$GITHUB_ENV"
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          ESCAPED_COMMIT_MSG=$(jq -Rs <<< "$COMMIT_MSG")
+          echo "escaped_commit_message=$ESCAPED_COMMIT_MSG" >> "$GITHUB_OUTPUT"
+
       - name: Trigger when succeeded
         run: |
-          commit_message=$(jq -Rs <<< "${{ env.GIT_COMMIT_MESSAGE }}")
           actions_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           curl -X POST -H "Content-Type: application/json" -d '{
             "channel": "#alerts-channel",
             "icon_emoji": ":white_check_mark:",
             "attachments": [
               {
-                "text": ":tada: Image Build and Push to ECR Completed!
-          • Repo: ${{ github.repository }}
-          • Committer: ${{ github.event.pusher.name }}
-          • Commit Message: ${{ env.COMMIT_MESSAGE_ESCAPED }}
-          • <'$actions_url'|GitHub Action>",
+                "text": ":tada: Image Build and Push to ECR Completed!\n• Repo: '"${{ github.repository }}"'\n• Committer: '"${{ github.event.pusher.name }}"'\n• Commit Message: '"${{ steps.get_commit_msg.outputs.escaped_commit_message }}"'\n• <'"$actions_url"'|GitHub Action>",
                 "color": "#36a64f",
                 "attachment_type": "default"
               }
