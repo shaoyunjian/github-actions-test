@@ -1,10 +1,12 @@
 name: ECR Build Manual Approval Workflow
+
 on:
   push:
     branches:
       - main
     paths-ignore:
       - 'README.md'
+
 jobs:
   deploy:
     env:
@@ -14,32 +16,37 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
+
       - name: Get commit message
         run: |
           echo "GIT_COMMIT_MESSAGE<<EOF" >> "$GITHUB_ENV"
           git log -1 --pretty=%B >> "$GITHUB_ENV"
           echo "EOF" >> "$GITHUB_ENV"
+
       - name: test
         run: |
-          commit_message=$(jq -Rs <<< "${{ env.GIT_COMMIT_MESSAGE }}")
-          echo $commit_message
-          echo '"$commit_message"'
+          # 注意：這裡用 $GIT_COMMIT_MESSAGE，而不是 GitHub Actions 的語法
+          commit_message=$(jq -Rs <<< "$GIT_COMMIT_MESSAGE")
+          echo "$commit_message"
+          echo "\"$commit_message\""
+
       - name: Trigger when succeeded
         run: |
-          commit_message=$(jq -Rs <<< "${{ env.GIT_COMMIT_MESSAGE }}")
+          commit_message=$(jq -Rs <<< "$GIT_COMMIT_MESSAGE")
           actions_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          curl -X POST -H "Content-Type: application/json" -d '{
-            "channel": "#alerts-channel",
-            "icon_emoji": ":white_check_mark:",
-            "attachments": [
-              {
-                "text": ":tada: Image Build and Push to ECR Completed!
-          • Repo: ${{ github.repository }}
-          • Committer: ${{ github.event.pusher.name }}
-          • Commit Message: $(jq -Rs <<< "${{ env.GIT_COMMIT_MESSAGE }}")
-          • <'$actions_url'|GitHub Action>",
-                "color": "#36a64f",
-                "attachment_type": "default"
-              }
-            ]
-          }' "$SLACK_WEBHOOK_URL"
+
+          payload=$(cat <<EOF
+{
+  "channel": "#alerts-channel",
+  "icon_emoji": ":white_check_mark:",
+  "attachments": [
+    {
+      "text": ":tada: Image Build and Push to ECR Completed!\n• Repo: ${{ github.repository }}\n• Committer: ${{ github.event.pusher.name }}\n• Commit Message: $commit_message\n• <$actions_url|GitHub Action>",
+      "color": "#36a64f",
+      "attachment_type": "default"
+    }
+  ]
+}
+EOF
+)
+          curl -X POST -H "Content-Type: application/json" -d "$payload" "$SLACK_WEBHOOK_URL"
