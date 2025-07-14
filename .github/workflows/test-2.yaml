@@ -36,16 +36,16 @@ jobs:
           actions_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
 
           payload='{
-  "channel": "#alerts-channel",
-  "icon_emoji": ":white_check_mark:",
-  "attachments": [
-    {
-      "text": ":tada: Image Build and Push to ECR Completed!\n• Repo: shaoyunjian/github-actions-test\n• Committer: shaoyunjian\n• Commit Message: '"$commit_message"'\n• <'"$actions_url"'|GitHub Action>",
-      "color": "#36a64f",
-      "attachment_type": "default"
-    }
-  ]
-}'
+            "channel": "#alerts-channel",
+            "icon_emoji": ":white_check_mark:",
+            "attachments": [
+              {
+                "text": ":tada: Image Build and Push to ECR Completed!\n• Repo: shaoyunjian/github-actions-test\n• Committer: shaoyunjian\n• Commit Message: '"$commit_message"'\n• <'"$actions_url"'|GitHub Action>",
+                "color": "#36a64f",
+                "attachment_type": "default"
+              }
+            ]
+          }'
 
 
           curl -X POST -H "Content-Type: application/json" -d "$payload" "$SLACK_WEBHOOK_URL"
