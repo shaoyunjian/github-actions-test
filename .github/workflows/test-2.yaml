@@ -35,18 +35,17 @@ jobs:
           commit_message=$(jq -Rs <<< "$GIT_COMMIT_MESSAGE")
           actions_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
 
-          payload=$(cat <<EOF
-{
-  "channel": "#alerts-channel",
-  "icon_emoji": ":white_check_mark:",
-  "attachments": [
-    {
-      "text": ":tada: Image Build and Push to ECR Completed!\n• Repo: ${{ github.repository }}\n• Committer: ${{ github.event.pusher.name }}\n• Commit Message: $commit_message\n• <$actions_url|GitHub Action>",
-      "color": "#36a64f",
-      "attachment_type": "default"
-    }
-  ]
-}
-EOF
-)
+          payload='{
+            "channel": "#alerts-channel",
+            "icon_emoji": ":white_check_mark:",
+            "attachments": [
+              {
+                "text": ":tada: Image Build and Push to ECR Completed!\n• Repo: '"${{ github.repository }}"'\n• Committer: '"${{ github.event.pusher.name }}"'\n• Commit Message: '"$commit_message"'\n• <'"$actions_url"'|GitHub Action>",
+                "color": "#36a64f",
+                "attachment_type": "default"
+              }
+            ]
+          }'
+
           curl -X POST -H "Content-Type: application/json" -d "$payload" "$SLACK_WEBHOOK_URL"
+
