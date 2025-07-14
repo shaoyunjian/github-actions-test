@@ -21,7 +21,7 @@ jobs:
           echo "EOF" >> "$GITHUB_ENV"
       - name: test
         run: |
-              COMMIT=$(jq -Rs <<< "${{ env.GIT_COMMIT_MESSAGE }}")
+              COMMIT=$(jq -Rs <<< ${{ env.GIT_COMMIT_MESSAGE }})
               echo "COMMIT_MESSAGE_ESCAPED=$COMMIT" >> "$GITHUB_ENV"
       - name: Trigger when succeeded
         run: |
