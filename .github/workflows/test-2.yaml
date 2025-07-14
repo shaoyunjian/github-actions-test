@@ -7,7 +7,7 @@ on:
       - 'README.md'
 jobs:
   deploy:
-    env:
+    env: 
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_TW_CI_URL }}
     runs-on: ubuntu-latest
     if: always()
