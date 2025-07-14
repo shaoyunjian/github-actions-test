@@ -15,24 +15,33 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v4
 
-      - name: Get commit message and escape for JSON
+      - name: Get raw commit message with newlines
         id: get_commit_msg
         run: |
           COMMIT_MSG=$(git log -1 --pretty=%B)
-          ESCAPED_COMMIT_MSG=$(jq -Rs <<< "$COMMIT_MSG")
-          echo "escaped_commit_message=$ESCAPED_COMMIT_MSG" >> "$GITHUB_OUTPUT"
+          echo "commit_msg<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$COMMIT_MSG" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
 
-      - name: Trigger when succeeded
+      - name: Send Slack Notification
         run: |
+          commit_message="${{ steps.get_commit_msg.outputs.commit_msg }}"
           actions_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          curl -X POST -H "Content-Type: application/json" -d '{
-            "channel": "#alerts-channel",
-            "icon_emoji": ":white_check_mark:",
-            "attachments": [
-              {
-                "text": ":tada: Image Build and Push to ECR Completed!\n• Repo: '"${{ github.repository }}"'\n• Committer: '"${{ github.event.pusher.name }}"'\n• Commit Message: '"${{ steps.get_commit_msg.outputs.escaped_commit_message }}"'\n• <'"$actions_url"'|GitHub Action>",
-                "color": "#36a64f",
-                "attachment_type": "default"
-              }
-            ]
-          }' "$SLACK_WEBHOOK_URL"
+
+          payload=$(jq -n --arg repo "${{ github.repository }}" \
+                         --arg committer "${{ github.event.pusher.name }}" \
+                         --arg message "$commit_message" \
+                         --arg url "$actions_url" \
+                         '{
+              channel: "#alerts-channel",
+              icon_emoji: ":white_check_mark:",
+              attachments: [
+                {
+                  text: ":tada: Image Build and Push to ECR Completed!\n• Repo: \($repo)\n• Committer: \($committer)\n• Commit Message:\n\($message)\n• <\($url)|GitHub Action>",
+                  color: "#36a64f",
+                  attachment_type: "default"
+                }
+              ]
+            }')
+
+          curl -X POST -H "Content-Type: application/json" -d "$payload" "$SLACK_WEBHOOK_URL"
