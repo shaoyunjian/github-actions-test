@@ -1,0 +1,36 @@
+- name: Send Slack Notification
+  if: always()
+  run: |
+    commit_message="${{ steps.get_commit_msg.outputs.commit_msg }}"
+    actions_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+    if [ "${{ job.status }}" = "success" ]; then
+      STATUS_ICON=":white_check_mark:"
+      COLOR="#36a64f"
+      TITLE=":tada: Image Build and Push to ECR Completed!"
+    else
+      STATUS_ICON=":x:"
+      COLOR="#ff0000"
+      TITLE=":rotating_light: Image Build Failed!"
+    fi
+
+    payload=$(jq -n --arg repo "${{ github.repository }}" \
+                   --arg committer "${{ github.event.pusher.name }}" \
+                   --arg message "$commit_message" \
+                   --arg url "$actions_url" \
+                   --arg title "$TITLE" \
+                   --arg icon "$STATUS_ICON" \
+                   --arg color "$COLOR" \
+                   '{
+        channel: "#alerts-channel",
+        icon_emoji: $icon,
+        attachments: [
+          {
+            text: "\($title)\n• Repo: \($repo)\n• Committer: \($committer)\n• Commit Message:\n\($message)\n• <\($url)|GitHub Action>",
+            color: $color,
+            attachment_type: "default"
+          }
+        ]
+      }')
+
+    curl -X POST -H "Content-Type: application/json" -d "$payload" "$SLACK_WEBHOOK_URL"
