@@ -1,36 +1,28 @@
-- name: Send Slack Notification
-  if: always()
-  run: |
-    commit_message="${{ steps.get_commit_msg.outputs.commit_msg }}"
-    actions_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+jobs:
+  deploy:
+    env: 
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_TW_CI_URL }}
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
 
-    if [ "${{ job.status }}" = "success" ]; then
-      STATUS_ICON=":white_check_mark:"
-      COLOR="#36a64f"
-      TITLE=":tada: Image Build and Push to ECR Completed!"
-    else
-      STATUS_ICON=":x:"
-      COLOR="#ff0000"
-      TITLE=":rotating_light: Image Build Failed!"
-    fi
+      - name: Get raw commit message with newlines
+        id: get_commit_msg
+        run: |
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          echo "commit_msg<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$COMMIT_MSG" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
 
-    payload=$(jq -n --arg repo "${{ github.repository }}" \
-                   --arg committer "${{ github.event.pusher.name }}" \
-                   --arg message "$commit_message" \
-                   --arg url "$actions_url" \
-                   --arg title "$TITLE" \
-                   --arg icon "$STATUS_ICON" \
-                   --arg color "$COLOR" \
-                   '{
-        channel: "#alerts-channel",
-        icon_emoji: $icon,
-        attachments: [
-          {
-            text: "\($title)\n• Repo: \($repo)\n• Committer: \($committer)\n• Commit Message:\n\($message)\n• <\($url)|GitHub Action>",
-            color: $color,
-            attachment_type: "default"
-          }
-        ]
-      }')
+      # 👇 加在這裡
+      - name: Force failure (for testing)
+        run: |
+          echo "Simulating failure..."
+          exit 1
 
-    curl -X POST -H "Content-Type: application/json" -d "$payload" "$SLACK_WEBHOOK_URL"
+      - name: Send Slack Notification
+        if: always()
+        run: |
+          ...
