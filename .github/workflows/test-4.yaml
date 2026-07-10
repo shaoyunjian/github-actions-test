@@ -25,11 +25,11 @@ jobs:
           echo "$COMMIT_MSG" >> "$GITHUB_OUTPUT"
           echo "EOF" >> "$GITHUB_OUTPUT"
 
-      # 🔴 測試用：強制失敗（測完記得刪掉）
-      - name: Force failure (for testing)
-        run: |
-          echo "Simulating failure..."
-          exit 1
+      # # 🔴 測試用：強制失敗（測完記得刪掉）
+      # - name: Force failure (for testing)
+      #   run: |
+      #     echo "Simulating failure..."
+      #     exit 1
 
       # 🟢 成功才會執行
       - name: Send Slack Success Notification
