@@ -1,0 +1,79 @@
+name: ECR Build Manual Approval Workflow
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_TW_CI_URL }}
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Get raw commit message with newlines
+        id: get_commit_msg
+        run: |
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          echo "commit_msg<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$COMMIT_MSG" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+      # 🔴 測試用：直接送 Failed Slack
+      - name: Send Slack Failure Notification (Test)
+        run: |
+          commit_message="${{ steps.get_commit_msg.outputs.commit_msg }}"
+          actions_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+          payload=$(jq -n --arg repo "${{ github.repository }}" \
+                         --arg committer "${{ github.event.pusher.name }}" \
+                         --arg message "$commit_message" \
+                         --arg url "$actions_url" \
+                         '{
+              channel: "#alerts-channel",
+              icon_emoji: ":x:",
+              attachments: [
+                {
+                  text: ":rotating_light: Image Build Failed!\n• Repo: \($repo)\n• Committer: \($committer)\n• Commit Message:\n\($message)\n• <\($url)|View Failed Run>",
+                  color: "#ff0000"
+                }
+              ]
+            }')
+
+          curl -X POST -H "Content-Type: application/json" -d "$payload" "$SLACK_WEBHOOK_URL"
+
+      - name: Wait for manual cancel
+        run: |
+          echo "Slack notification sent."
+          echo "Cancel this workflow manually from GitHub within the next 10 minutes..."
+          sleep 600
+
+      # 🟢 成功才會執行（如果沒有被 Cancel）
+      - name: Send Slack Success Notification
+        if: success()
+        run: |
+          commit_message="${{ steps.get_commit_msg.outputs.commit_msg }}"
+          actions_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+          payload=$(jq -n --arg repo "${{ github.repository }}" \
+                         --arg committer "${{ github.event.pusher.name }}" \
+                         --arg message "$commit_message" \
+                         --arg url "$actions_url" \
+                         '{
+              channel: "#alerts-channel",
+              icon_emoji: ":white_check_mark:",
+              attachments: [
+                {
+                  text: ":tada: Image Build and Push to ECR Completed!\n• Repo: \($repo)\n• Committer: \($committer)\n• Commit Message:\n\($message)\n• <\($url)|GitHub Action>",
+                  color: "#36a64f"
+                }
+              ]
+            }')
+
+          curl -X POST -H "Content-Type: application/json" -d "$payload" "$SLACK_WEBHOOK_URL"
